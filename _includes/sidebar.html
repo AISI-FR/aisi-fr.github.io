@@ -1,0 +1,12 @@
+<!-- _includes/sidebar.html -->
+<div class="sidebar">
+  <h3>Navigation</h3>
+  <ul>
+    <li><a href="{{ site.baseurl }}/">Accueil</a></li>
+    {% for page in site.pages %}
+      {% if page.title %}
+        <li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
