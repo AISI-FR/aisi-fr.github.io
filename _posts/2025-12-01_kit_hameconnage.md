@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "Kit de hameçonnage"
+title: "Kit de hameconnage"
 date: 2026-01-08 12:00:00 +0100
 categories: [blog]
 tags: [jekyll, hacker]
 ---
 # Sensibilisation — Hameçonnage en tant que service
 
-![Hameçonnage](Hameçonnage.png)
 
 
 ## C'est quoi un kit d'hameçonnage ? 
@@ -26,22 +25,17 @@ Les kits d’hameçonnage se négocient sur des forums et places de marché crim
 
 ###  Compromission d'une boîte courriel d'un partenaire pour partager un document piégé via Sharepoint 
 
-![Détournement d'un domaine légitime](détournement.png)
 
 Le cybercriminel stocke sa pièce jointe sur un site Internet de confiance. Ce dernier peut être Dropbox, Canvas, etc.
 
 ### Utilisation d'un QR code pour rediriger un utilisateur vers un site Internet malveillant
 
-![QR Code](QRcode.png)
 
 ### Utilisation d'un bouton cliquable pour rediriger un utilisateur vers un site Internet malveillant
 
-![Bouton cliquable](boutoncliquable.png)
 
 ### Utilisation d'un site Internet de partage légitime pour relayer un document malveillant 
 
-![Site Internet de partage légitime](wetransfer.png)
-![Site Internet de partage légitime](wetransferbis.png)
 
 L'exemple se base sur le site Internet WeTransfer, mais d'autres site Internet peuvent être utilisés tels que Dropbox, Mega, etc.
 
@@ -55,4 +49,3 @@ Et si vous cliquez ? Prévenez votre service informatique !
 
 ----
 
-![Astuces](phishing_ai.webp)
