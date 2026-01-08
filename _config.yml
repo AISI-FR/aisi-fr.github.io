@@ -6,9 +6,9 @@ description: Cyber-Team Homepage
 
 # Paramètres de Jekyll
 #theme: minima  # Thème par défaut de Jekyll
-remote_theme: academicpages/academicpages.github.io@v0.8.4
+#remote_theme: academicpages/academicpages.github.io@v0.8.4
+remote_theme: pages-themes/hacker@v0.2.0
 plugins:
-- jekyll-seo-tag
 - jekyll-remote-theme
 markdown: kramdown  # Moteur de conversion Markdown
 
