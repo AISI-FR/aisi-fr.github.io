@@ -5,7 +5,10 @@ description: Cyber-Team Homepage
 # URL du site (remplacez par votre URL GitHub Pages)
 
 # Paramètres de Jekyll
-theme: beautiful-jekyll  # Thème par défaut de Jekyll
+#theme: minimal-jekyll  # Thème par défaut de Jekyll
+remote_theme: pages-themes/hacker@v0.2.0
+plugins:
+- jekyll-remote-theme
 markdown: kramdown  # Moteur de conversion Markdown
 
 # Dossiers et fichiers à inclure/exclure
