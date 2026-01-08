@@ -13,4 +13,4 @@ markdown: kramdown  # Moteur de conversion Markdown
 #exclude: [README.md, LICENSE]
 
 # Paramètres pour les articles de blog
-#permalink: /:year/:month/:day/:title/
+permalink: /:year/:month/:day/:title/
