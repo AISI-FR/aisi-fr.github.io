@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Kit de hameçonnage"
+date: 2026-01-08 12:00:00 +0100
+categories: [blog]
+tags: [jekyll, hacker]
+---
 # Sensibilisation — Hameçonnage en tant que service
 
 ![Hameçonnage](Hameçonnage.png)
