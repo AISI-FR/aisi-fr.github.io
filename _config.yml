@@ -1,0 +1,16 @@
+# Nom du site
+title: AISI Homepage
+description: AISI sécurise votre entreprise avec des solutions sur-mesure : audit, tests d'intrusion, SOC managé et formations. Faites confiance à notre expertise. 
+
+# URL du site (remplacez par votre URL GitHub Pages)
+
+# Paramètres de Jekyll
+theme: jekyll-theme-minimal  # Thème par défaut de Jekyll
+markdown: kramdown  # Moteur de conversion Markdown
+
+# Dossiers et fichiers à inclure/exclure
+#include: [_pages]
+#exclude: [README.md, LICENSE]
+
+# Paramètres pour les articles de blog
+permalink: /:year/:month/:day/:title/
