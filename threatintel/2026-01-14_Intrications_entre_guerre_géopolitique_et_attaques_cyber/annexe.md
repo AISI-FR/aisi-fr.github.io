@@ -1,4 +1,4 @@
-> **Un groupe de la menace affilié à un état ou à une nation est communément désigné sous les termes *nation-state actors* et *nation-states sponsored entities*. Ces termes désignent un gouvernement ou une entité étatique impliqué dans des cyberattaques ou d’autres activités ciblant les infrastructures critiques d’autres nations**
+> **Un groupe de la menace affilié à un état ou à une nation est communément désigné sous les termes *nation-state actors* et *nation-states sponsored entities*. Ces termes désignent un gouvernement ou une entité étatique impliqué dans des cyberattaques ou d’autres activités ciblant les infrastructures essentielles ou critiques d’autres nations.**
 
 # Quels sont les groupes de la menace affiliés à des états ou des nations ? 
 
@@ -52,7 +52,7 @@ sources :
 - Lazarus Group : https://attack.mitre.org/groups/G0032/
 - Kimsuky : https://attack.mitre.org/groups/G0094/
 
-## Le gouvernement russe, officiellement connu sous le nom de Fédération de Russie, déploie les groupes suivants 
+## Le gouvernement russe, officiellement connu sous le nom de Gouvernement de la fédération de Russie, déploie les groupes suivants 
 
 * Ember Bear (alias UNC2589, Bleeding Bear, DEV-0586, Cadet Blizzard, Frozenvista, UAC-0056)
 * Primitive Bear (alias IRON TILDEN,  Gamaredon Group, ACTINIUM, Armageddon, Shuckworm, DEV-0157, Aqua Blizzard)
@@ -119,7 +119,7 @@ Il n’est pas observé d’opérations de rançongiciel menées par des groupes
 
 ## Concernant les groupes sponsorisés par le gouvernement chinois 
 
-Aucune source crédible ne donne d’estimation fiable de revenus tirés d’opérations de rançongiciel. En effet, l'bjectif principal est l’espionnage et non la génération de revenus par extorsion, et les campagnes observées ne montrent pas de collecte publique de rançons à grande échelle.
+Aucune source crédible ne donne d’estimation fiable de revenus tirés d’opérations de rançongiciel. En effet, l'objectif principal est l’espionnage et non la génération de revenus par extorsion, et les campagnes observées ne montrent pas de collecte publique de rançons à grande échelle.
 
 ## Concernant les groupes sponsorisés par le gouvernement iranien 
 
@@ -129,15 +129,15 @@ https://www.morphisec.com/blog/pay2key-resurgence-iranian-cyber-warfare/
 
 ## Concernant les groupes sponsorisés par le gouvernement nord-coréen
 
-L'équipe de surveillance des sanctions multilatérales (MSMT), un mécanisme international pour signaler les évasions de sanctions, a calculé que de janvier 2024 à septembre 2025, les Nord-Coréens ont volé 2,84 milliards de dollars américains d’actifs en cryptomonnaies. Ce butin est en parti récolté via le paiement de rançon par les victimes. 
+L'équipe de surveillance des sanctions multilatérales (MSMT), un mécanisme international pour signaler les évasions de sanctions, a calculé que de janvier 2024 à septembre 2025, le gouvernement nord-coréen a volé 2,84 milliards de dollars américains d’actifs en cryptomonnaies. Ce butin est en parti récolté via le paiement de rançon par les victimes. 
 
 https://msmt.info/view/save/2025/10/22/26294780-c396-407d-bb33-88afe988cd96-The_DPRK%E2%80%99s_Violation_and_Evasion_of_UN_Sanctions_through_Cyber_and_Information_Technology_Worker_Activities_(MSMT_2025_2).pdf
 
 ## Concernant les groupes sponsorisés par le gouvernement russe
 
-Les groupes explicitement sponsorisé par l’État ne sont pas connus pour générer des revenus de rançongiciel. Toutefois, les groupes de la menace tels que LockBit, Conti et REvil existent dans un environnement toléré par les autorités russes et sont souvent opérés par des acteurs russophones, avec des indices d’affinité implicite aux intérêts nationaux ou à la politique du pays.
+Les groupes explicitement sponsorisés par l’État ne sont pas connus pour générer des revenus de rançongiciel. Toutefois, les groupes de la menace tels que LockBit, Conti et REvil existent dans un environnement toléré par les autorités russes et sont souvent opérés par des acteurs russophones, avec des indices d’affinité implicite aux intérêts nationaux ou à la politique du pays.
 
-LockBit 3.0 et affiliés ont réussi à extraire environ ~640 000 dollars américains de paiements de rançon sur ~210 attaques connues entre fin 2024 et avril 2025,avec une moyenne d’environ 35 500 dollars américains par rançon payée sur les cas documentés.
+LockBit 3.0 et affiliés ont réussi à extraire environ 640 000 dollars américains de paiements de rançon sur environ 210 attaques connues entre fin 2024 et avril 2025, avec une moyenne d’environ 35 500 dollars américains par rançon payée sur les cas documentés.
 
 https://www.lemagit.fr/actualites/366623818/Ransomware-les-comptes-peu-reluisants-de-LockBit-30
 
@@ -145,7 +145,7 @@ Le FINCEN rapport que la valeur cumulée du butin de LockBit entre janvier 2022 
 
 https://www.fincen.gov/system/files/2025-12/FTA-Ransomware.pdf
 
-En 2021, Le Monde Informatique rapporte que la société Advintel / Hyas estime que l'opérateur malveillant derrière le ransomware Ryuk est parvenu à extorquer près de 150 millions de dollars américains à ses victimes. 
+En 2021, Le Monde Informatique rapporte que la société Advintel / Hyas estime que l'opérateur malveillant derrière le rançongiciel Ryuk est parvenu à extorquer près de 150 millions de dollars américains à ses victimes. 
 
 https://www.lemondeinformatique.fr/actualites/lire-ryuk-assis-sur-un-pactole-de-150-m$-81583.html
 
@@ -178,7 +178,7 @@ Exemple concret : Début octobre 2024, les médias ont rapporté que des acteurs
 
 https://www.congress.gov/crs-product/IF12798
 
-###  Compromission d'infrastructures industrielles (OT) critiques critiques, notamment dans :
+###  Compromission d'infrastructures industrielles (OT) critiques, notamment dans :
 
 - Énergie
 - Eau
@@ -204,13 +204,13 @@ Les groupes impliqués sont :
 
 - Violet Typhoon (APT31)
 
-Exemple concret : Des membres du groupe APT31, associé au gouvernement chinois, ont été accusés d'intrusions informatiques visant des détracteurs présumés de la Chine ainsi des entreprises et politiciens américains. Plus de 10 000 courriels malveillants ont été envoyés, touchant des milliers de victimes sur plusieurs continents. Comme l'indique l'acte d'accusation rendu public aujourd'hui, cette opération de piratage informatique mondiale prolifique, soutenue par le gouvernement chinois, visait des journalistes, des responsables politiques et des entreprises afin de réprimer les détracteurs du régime chinois, de compromettre les institutions gouvernementales et de voler des secrets commerciaux.
+Exemple concret : Des membres du groupe APT31, associé au gouvernement chinois, ont été accusés d'intrusions informatique visant des détracteurs présumés de la Chine ainsi que des entreprises et politiciens américains. Plus de 10 000 courriels malveillants ont été envoyés, touchant des milliers de victimes sur plusieurs continents. Comme l'indique l'acte d'accusation rendu public aujourd'hui, cette opération de piratage informatique mondiale prolifique, soutenue par le gouvernement chinois, visait des journalistes, des responsables politiques et des entreprises afin de réprimer les détracteurs du régime chinois, de compromettre des institutions gouvernementales et de voler des secrets commerciaux.
 
 https://www.justice.gov/archives/opa/pr/seven-hackers-associated-chinese-government-charged-computer-intrusions-targeting-perceived
 
 ## Concernant les groupes sponsorisés par le gouvernement iranien 
 
-### Opérations de dégradation de sites web visant à :
+### Opérations de dégradation de sites Internet visant à :
 
 - Diffuser des messages politiques
 - Revendiquer une présence idéologique
@@ -239,7 +239,7 @@ Les groupes impliqués sont :
 - Remix Kitten (APT39)
 - Charming Kitten (APT35)
 
-Exemple concret : Selon les conclusions actuelles de l'Office fédéral pour la protection de la Constitution (BfV), des tentatives concrètes d'espionnage par le groupe APT Charming Kitten contre des personnes et des organisations iraniennes en Allemagne sont attendues depuis la fin de l'année 2022. Les cyberattaques visaient principalement des organisations et des individus dissidents – tels que des avocats, des journalistes ou des militants des droits de l'homme – à l'intérieur et à l'extérieur de l'Iran.
+Exemple concret : Selon les conclusions actuelles de l'Office fédéral pour la protection de la Constitution (BfV), des tentatives concrètes d'espionnage par le groupe persistant Charming Kitten contre des personnes et des organisations iraniennes en Allemagne sont en cours depuis la fin de l'année 2022. Les cyberattaques visaient principalement des organisations et des individus dissidents, tels que des avocats, des journalistes ou des militants des droits de l'Homme, à l'intérieur et à l'extérieur de l'Iran.
 
 https://www.verfassungsschutz.de/SharedDocs/kurzmeldungen/DE/2023/2023-08-10-cyber-brief-01-2023.html?nn=679196#Start
 
@@ -251,7 +251,7 @@ https://www.verfassungsschutz.de/SharedDocs/kurzmeldungen/DE/2023/2023-08-10-cyb
 - Groupes de réflexion et experts sectoriels
 - Institutions éducatives
 - Secteur des services aux entreprises
-- Industrie manufacturièree 
+- Industrie manufacturière 
 
 à des fins de collecte de renseignements stratégiques et de soutien aux priorités diplomatiques et militaires
 
@@ -278,7 +278,7 @@ Les groupes impliqués sont :
 - Silent Chollima (Andariel)
 - Labyrinth Chollima (Lazarus Group)
 
-Exemple concret : La cyberattaque de 2014 contre Sony Pictures Entertainment qui a effacé des données, détruit des systèmes et paralysé l’infrastructure IT de l’entreprise, a été attribuée par la justice américaine à au groupe de la menace Lazarus (Labyrinth Chollima).
+Exemple concret : La cyberattaque de 2014 contre Sony Pictures Entertainment qui a effacé des données, détruit des systèmes et paralysé l’infrastructure IT de l’entreprise, a été attribuée par la justice américaine au groupe de la menace Lazarus (Labyrinth Chollima).
 
 https://www.justice.gov/archives/opa/pr/north-korean-regime-backed-programmer-charged-conspiracy-conduct-multiple-cyber-attacks-and
 
@@ -344,7 +344,7 @@ Les groupes impliqués sont :
 
 Exemple concret : La diplomatie française condamne l’usage par le renseignement militaire russe (GRU) du mode opératoire Fancy Bear (APT28) dans plusieurs cyberattaques dont le piratage de la campagne présidentielle de 2017, qualifiée de tentative de déstabilisation
 
-https://www.diplomatie.gouv.fr/fr/dossiers-pays/russie/evenements/evenements-de-l-annee-2025/article/russie-attribution-de-cyberattaques-contre-la-france-au-service-de?utm_source=chatgpt.com
+https://www.diplomatie.gouv.fr/fr/dossiers-pays/russie/evenements/evenements-de-l-annee-2025/article/russie-attribution-de-cyberattaques-contre-la-france-au-service-de
 
 ### Déploiement d'attaques destructrices envers des réseaux électriques, des infrastructures gouvernementales et des systèmes industriels (ICS)
 
@@ -462,7 +462,7 @@ https://fr.timesofisrael.com/desarmement-du-hezbollah-le-liban-demande-a-liran-u
 
 ## Chine (République populaire de Chine)
 
-- Avec Taïwan,fortes tensions et pressions militaires continues, avec exercices autour du détroit de Taïwan et escalade des discours sur une « réunification » parfois qualifiée d’objectif politique par Pékin
+- Avec Taïwan, fortes tensions et pressions militaires continues, avec exercices autour du détroit de Taïwan et escalade des discours sur une « réunification » parfois qualifiée d’objectif politique par Pékin
 
 https://asialyst.com/fr/2026/01/03/etau-chinois-resserre-taiwan-pekin-temps-presse/
 
@@ -479,7 +479,7 @@ https://ici.radio-canada.ca/info/long-format/2216111/dix-conflits-surveiller-mon
 
 - Opérations dans la péninsule arabique / Yémen
 
-Operation Rough RIder : les États‑Unis ont mené une série de frappes aériennes et navales contre les Houthis au Yémen dans le cadre de la crise régionale et des attaques sur la navigation commerciale dans la mer Rouge.
+Operation Rough Rider : les États‑Unis ont mené une série de frappes aériennes et navales contre les Houthis au Yémen dans le cadre de la crise régionale et des attaques sur la navigation commerciale dans la mer Rouge.
 
 https://www.intelligenceonline.fr/ameriques/2025/09/25/malgre-le-succes-revendique-de-l-operation-rough-rider-les-armateurs-americains-boudent-la-mer-rouge,110525475-artusa
 
