@@ -95,7 +95,7 @@ source : https://attack.mitre.org/software/S0556/
 
 ## Concernant les groupes sponsorisés par le gouvernement nord-coréen
 
-Il est observé des opérations de rançongiciels associées à des vols de monnaies et cryptomonnaie. Par exemple, le groupe de la menace Labyrinth Chollima a été observé déployer le rançongiciel WannaCry et demander une rançon en Bitcoin. Également, le groupe de la menace Stardust Chollima a été observé utiliser le rançongiciel Hermes.
+Il est observé des opérations de rançongiciel associées à des vols de monnaies et cryptomonnaie. Par exemple, le groupe de la menace Labyrinth Chollima a été observé déployer le rançongiciel WannaCry et demander une rançon en Bitcoin. Également, le groupe de la menace Stardust Chollima a été observé utiliser le rançongiciel Hermes.
 
 sources : 
 - WannaCry : https://attack.mitre.org/software/S0366/
@@ -113,9 +113,9 @@ sources :
 
 ## Concernant les groupes sponsorisés par le gouvernement états-unien
 
-Il n’est pas observé d’opérations de rançongiciel menées par des groupes sponsorisés par le gouvernement américain dans un but de financement ou d’extorsion. Les opérations attribuées aux États-Unis privilégient des implants furtifs, persistants et non destructifs, afin de conserver un accès durable aux systèmes ciblés. Elle opère via des unités militaires cyber intégrées à la doctrine de défense nationale et l'attribution publique est évitée, volontairement, pour préserver la dissuasion et la dénégation plausible.
+Il n’est pas observé d’opérations de rançongiciel menées par des groupes sponsorisés par le gouvernement américain dans un but de financement ou d’extorsion. Les opérations attribuées aux États-Unis privilégient des implants furtifs, persistants et non destructifs, afin de conserver un accès durable aux systèmes ciblés. Le pays opère via des unités militaires cyber intégrées à la doctrine de défense nationale et l'attribution publique est évitée, volontairement, pour préserver la dissuasion et la dénégation plausible.
 
-# Parmis ceux-ci quel est le butin estimé ?
+# Parmi ceux-ci quel est le butin estimé ?
 
 ## Concernant les groupes sponsorisés par le gouvernement chinois 
 
@@ -123,13 +123,13 @@ Aucune source crédible ne donne d’estimation fiable de revenus tirés d’op�
 
 ## Concernant les groupes sponsorisés par le gouvernement iranien 
 
-Ler rançongiciel Pay2Key, liée à l’APT Fox Kitten et opérant comme rançongiciels-en-tant-que-service, a généré plus de 51 paiements de rançon totalisant plus de 4 millions de dollars américains en environ quatre mois d’activité (février–juin 2025). Les opérateurs individuels affichant 100 000 dollars américains de bénéfices
+Le rançongiciel Pay2Key, liée à l’APT Fox Kitten et opérant comme rançongiciels-en-tant-que-service, a généré plus de 51 paiements de rançon totalisant plus de 4 millions de dollars américains en environ quatre mois d’activité (février–juin 2025). Les opérateurs individuels affichant 100 000 dollars américains de bénéfices
 
 https://www.morphisec.com/blog/pay2key-resurgence-iranian-cyber-warfare/
 
 ## Concernant les groupes sponsorisés par le gouvernement nord-coréen
 
-L'équipe de surveillance des sanctions multilatérales (MSMT), un mécanisme international pour signaler les évasions de sanctions, a calculé que de janvier 2024 à septembre 2025, le gouvernement nord-coréen a volé 2,84 milliards de dollars américains d’actifs en cryptomonnaies. Ce butin est en parti récolté via le paiement de rançon par les victimes. 
+L'équipe de surveillance des sanctions multilatérales (MSMT), un mécanisme international pour signaler les évasions de sanctions, a calculé que de janvier 2024 à septembre 2025, le gouvernement nord-coréen a volé 2,84 milliards de dollars américains d’actifs en cryptomonnaies. Ce butin est en partie récolté via le paiement de rançon par les victimes. 
 
 https://msmt.info/view/save/2025/10/22/26294780-c396-407d-bb33-88afe988cd96-The_DPRK%E2%80%99s_Violation_and_Evasion_of_UN_Sanctions_through_Cyber_and_Information_Technology_Worker_Activities_(MSMT_2025_2).pdf
 
@@ -155,7 +155,7 @@ Le rançongiciel n'est pas un outil de financement utilisé par les États-Unis.
 
 https://www.spiegel.de/international/world/the-nsa-uses-powerful-toolbox-in-effort-to-spy-on-global-networks-a-940969.html
 
-# Quels sont les autres opérations opérées : coupure d'approvisionnement (internet, electrique, etc.), destabilisation, espionnage
+# Quels sont les autres opérations opérées : coupure d'approvisionnement (internet, électrique, etc.), destabilisation, espionnage
 
 ## Concernant les groupes sponsorisés par le gouvernement chinois 
 
@@ -324,7 +324,7 @@ https://www.nccgroup.com/research-blog/in-depth-technical-analysis-of-the-bybit-
 - Cozy Bear (APT29)
 - Venomous Bear (Turla)
 
-Exemple concret : Le groupe de la menace Cozy Bear (APT29) a accédé à l'infrastructure de développement logiciel de la société américaine SolarWinds, peut-être dès janvier 2019 selon son PDG, et a secrètement modifié le code source de son logiciel de gestion de réseau Orion afin de permettre des activités malveillantes ultérieures. La compromission a été découvert quelques mois plus tard en décembre 2020
+Exemple concret : Le groupe de la menace Cozy Bear (APT29) a accédé à l'infrastructure de développement logiciel de la société américaine SolarWinds, peut-être dès janvier 2019 selon son PDG, et a secrètement modifié le code source de son logiciel de gestion de réseau Orion afin de permettre des activités malveillantes ultérieures. La compromission a été découverte quelques mois plus tard en décembre 2020
 
 https://www.dni.gov/files/NCSC/documents/SafeguardingOurFuture/SolarWinds%20Orion%20Software%20Supply%20Chain%20Attack.pdf
 https://www.intel471.com/blog/threat-hunt-deep-dives-solarwinds-supply-chain-compromise-solorigate-sunburst-backdoor
@@ -352,7 +352,7 @@ Les groupes impliqués sont :
 
 - Voodoo Bear (Sandworm)
 
-Exemple concret : Le 23 décembre 2015, une compromission a été attribuée au groupe de la menace Voodoo Bear (Sandworm) utilisant le malware BlackEnergy après une violation des systèmes d’information de trois distributeurs d’énergie en Ukraine qui a conduite à une interruption temporaire  l’alimentation électrique de 80 000 clients.
+Exemple concret : Le 23 décembre 2015, une compromission a été attribuée au groupe de la menace Voodoo Bear (Sandworm) utilisant le malware BlackEnergy après une violation des systèmes d’information de trois distributeurs d’énergie en Ukraine qui a conduit à une interruption temporaire  l’alimentation électrique de 80 000 clients.
 
 https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2016/05/20081514/E-ISAC_SANS_Ukraine_DUC_5.pdf
 
@@ -456,7 +456,7 @@ https://www.bbc.com/afrique/articles/cdj9vn40gm7o
 
 ## Iran (République islamique d’Iran)
 
-- Hezbollah / Liban & Israël : Hezbollah soutenu par l’Iran, impliqué dans le conflit intermittant avec Israël depuis 2023
+- Hezbollah / Liban & Israël : Hezbollah soutenu par l’Iran, impliqué dans le conflit intermittent avec Israël depuis 2023
 
 https://fr.timesofisrael.com/desarmement-du-hezbollah-le-liban-demande-a-liran-une-nouvelle-approche/
 
