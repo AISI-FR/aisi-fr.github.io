@@ -81,7 +81,7 @@ Le groupe de la menace Labyrinth Chollima a été observé déployer le rançong
 
 Ces opérations servent directement à financer le régime, contourner les sanctions internationales et soutenir l’effort militaire.
 
-> Entre 2024 et 2025, les vols de cryptomonnaies et rançons attribués à la Corée du Nord sont estimés à près de [2,84 milliards de dollars américains](https://msmt.info/view/save/2025/10/22/26294780-c396-407d-bb33-88afe988cd96-The_DPRK%E2%80%99s_Violation_and_Evasion_of_UN_Sanctions_through_Cyber_and_Information_Technology_Worker_Activities_(MSMT_2025_2).pdf).
+> Entre 2024 et 2025, les vols de cryptomonnaies et rançons attribués à la Corée du Nord sont estimés à près de [2,84 milliards de dollars américains](https://msmt.info/view/save/2025/10/22/26294780-c396-407d-bb33-88afe988cd96-The_DPRK%E2%80%99s_Violation_and_Evasion_of_UN_Sanctions_through_Cyber_and_Information_Technology_Worker_Activities_%28MSMT_2025_2%29.pdf).
 
 Concernant le deuxième cas, la Russie illustre l'usage toléré car l'État n’utilise pas officiellement les rançongiciels mais tolère l’activité de groupes criminels russophones, tant que
 
