@@ -1,3 +1,12 @@
+---
+layout: post
+title: "Sensibilisation - Sensibiliser les dirigeants de haut niveau"
+date: 2025-10-07 09:00:00 +0100
+author: elf
+categories: [blog]
+tags: [sensibilisation]
+---
+
 # Contexte 
 
 Les attaques cyber ne relèvent plus de l’hypothèse : elles font désormais partie du paysage des risques auxquels toute organisation doit faire face. Leur impact ne se limite pas aux systèmes informatiques : il touche directement la continuité d’activité, la confiance des partenaires et, de plus en plus souvent, la réputation de la société.

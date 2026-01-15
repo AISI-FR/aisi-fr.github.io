@@ -34,7 +34,7 @@ L’ingénierie sociale englobe un ensemble de techniques de manipulation psycho
 
 > L'abus de confiance est le fait pour une personne, à qui vous avez remis volontairement de l'argent ou un bien, d'en détourner l'usage à son profit ou de l'utiliser frauduleusement.
 >
-> *Source : https://www.service-public.fr/particuliers/vosdroits/F1515*
+> *Source : [https://www.service-public.fr/particuliers/vosdroits/F1515](https://www.service-public.fr/particuliers/vosdroits/F1515)*
 
 Dans le contexte de l'arnaque au président, l'escroc se fait passer pour une personne de confiance, très souvent le président d'une société, afin de prendre contact avec des employés pour que ces derniers effectuent les actions requises par l'escroc. Par exemple, ce dernier peut demander la mise en place d'un virement vers un compte à l'étranger. Ce type de fraude est connu sous le nom d’escroquerie aux faux ordres de virement (FOVI), qui constituera le cœur de cet article.
 
@@ -326,11 +326,11 @@ Pour faire cela, l'outil de Crowdstrike [CRT](https://www.crowdstrike.com/en-us/
 
 ## Quelques ressources pour vous accompagner 
 
-Cybermalveillance : https://www.cybermalveillance.gouv.fr/tous-nos-contenus/fiches-reflexes/escroquerie-faux-ordres-virement-fovi
+Cybermalveillance : [https://www.cybermalveillance.gouv.fr/tous-nos-contenus/fiches-reflexes/escroquerie-faux-ordres-virement-fovi](https://www.cybermalveillance.gouv.fr/tous-nos-contenus/fiches-reflexes/escroquerie-faux-ordres-virement-fovi)
 
-CollectiviteLocales.gouv.fr : https://www.collectivites-locales.gouv.fr/finances-locales/lutte-contre-les-tentatives-descroquerie
+CollectiviteLocales.gouv.fr : [https://www.collectivites-locales.gouv.fr/finances-locales/lutte-contre-les-tentatives-descroquerie](https://www.collectivites-locales.gouv.fr/finances-locales/lutte-contre-les-tentatives-descroquerie)
 
-Ministère de l'économie : https://www.economie.gouv.fr/files/files/directions_services/dgccrf/documentation/publications/depliants/guide-des-arnaques-task-force.pdf#page=8&zoom=auto,-5,659
+Ministère de l'économie : [https://www.economie.gouv.fr/files/files/directions_services/dgccrf/documentation/publications/depliants/guide-des-arnaques-task-force.pdf#page=8&zoom=auto,-5,659](https://www.economie.gouv.fr/files/files/directions_services/dgccrf/documentation/publications/depliants/guide-des-arnaques-task-force.pdf#page=8&zoom=auto,-5,659)
 
 ## Checklist de sécurité à télécharger
 

@@ -1,26 +1,16 @@
+---
+layout: post
+title: "Sensibilisation - Hameçonnage MITM"
+date: 2025-10-07 09:00:00 +0100
+author: elf
+categories: [blog]
+tags: [sensibilisation, hameçonnage, phishing, mitm]
+---
+
 # Hameçonnage Man-In-The-Middle (MITM)
 
-| ![img](mitmphishing.png) | ![img](killchain.png) |
+| ![img](img/mitmphishing.png) | ![img](img/killchain.png) |
 | ------------------------ | --------------------- |
-
-- [Hameçonnage Man-In-The-Middle (MITM)](#hameçonnage-man-in-the-middle-mitm)
-  - [Cas concret](#cas-concret)
-  - [Qu’est-ce qu’une attaque Man-In-The-Middle (MITM) par courriel ?](#quest-ce-quune-attaque-man-in-the-middle-mitm-par-courriel-)
-  - [Étapes du scénario observé](#étapes-du-scénario-observé)
-  - [Étude de cas AISI](#étude-de-cas-aisi)
-    - [Analyse et investigation](#analyse-et-investigation)
-    - [Comment l'acteur malveillant intercepte le premier courriel et s'insère dans les échanges ?](#comment-lacteur-malveillant-intercepte-le-premier-courriel-et-sinsère-dans-les-échanges-)
-  - [Que faire en cas de réception d'un courriel d'hameçonnage ?](#que-faire-en-cas-de-réception-dun-courriel-dhameçonnage-)
-    - [Bons réflexes](#bons-réflexes)
-    - [Actions en cas de spoofing](#actions-en-cas-de-spoofing)
-    - [Surveillance des domaines de typosquatting](#surveillance-des-domaines-de-typosquatting)
-  - [Checklist de sécurité à télécharger](#checklist-de-sécurité-à-télécharger)
-    - [En cas de réception d’un courriel suspect](#en-cas-de-réception-dun-courriel-suspect)
-    - [En cas de réponse donnée au courriel frauduleux](#en-cas-de-réponse-donnée-au-courriel-frauduleux)
-    - [Si un compte a été compromis](#si-un-compte-a-été-compromis)
-      - [Compte utilisateur](#compte-utilisateur)
-      - [Boîte courriel](#boîte-courriel)
-    - [En cas de spoofing (usurpation d'adresse courriel)](#en-cas-de-spoofing-usurpation-dadresse-courriel)
 
 ## Cas concret 
 
@@ -30,7 +20,7 @@ Un cas concret a été remonté par [CheckPoint](https://research.checkpoint.com
 
 Un groupe d’attaquants a intercepté un virement d’1 million de dollars américains entre une startup et un fonds de capital-risque. Ils ont enregistré deux domaines très proches des domaines officiels et les ont utilisés pour relayer des dizaines de courriels.
 
-![img](checkpoint.png)
+![img](img/checkpoint.png)
 
 Les messages étaient interceptés, parfois modifiés (coordonnées bancaires), puis retransmis depuis les domaines usurpés, à chaque échange. L'acteur de la menace a même annulé un rendez-vous physique entre les partenaires pour empêcher toute vérification
 
@@ -42,7 +32,7 @@ Une attaque Man-In-The-Middle (MITM) est une technique d’interception avancée
 
 Dans le cas d’un hameçonnage MITM, l'acteur malveillant intercepte les courriels échangés entre deux parties. Il va enregistrer des noms de domaine usurpant leur identité, visuellement très proches des domaines officiels (ex. : changement d'une lettre, ajout d’un caractère), afin de les utiliser pour se faire passer pour l’une ou l’autre des parties. Une fois les courriels récupérés, ils vont être consultés et modifiés avant d'être relayés.
 
-![img](mitmphishing.png)
+![img](img/mitmphishing.png)
 
 Grâce à cette dissimulation, l’attaquant peut :
 - espionner des échanges confidentiels sans éveiller les soupçons
@@ -53,7 +43,7 @@ Ce type d’attaque est particulièrement dangereux car il exploite la confiance
 
 L'objectif est très souvent le gain financier. Les cybercriminels ciblent en priorité les échanges commerciaux, les paiements en attente ou les demandes de virement, dans le but de détourner des fonds. Ils vont alors modifier les relevés d'identité bancaire (RIB) pour déclencher un virement vers un compte contrôlé par l'attaquant. Cela se nomme les FOVI.
 
-![img](fovi.jpeg)
+![img](img/fovi.jpeg)
 
 ## Étapes du scénario observé
 
@@ -135,7 +125,7 @@ Le spoofing est une technique d’usurpation d’adresse courriel, souvent utili
 
 Pour limiter ces attaques, il est essentiel de configurer correctement les mécanismes SPF, DKIM et DMARC.
 
-![img](recomailbox)
+![img](img/recomailbox.png)
 
 Il est également possible de mettre en place :
 
@@ -152,10 +142,10 @@ Pour renforcer la défense contre les attaques de phishing MITM, il est essentie
 - Utiliser des services spécialisés comme qui détectent automatiquement les enregistrements de domaines proches ou similaires, incluant les homoglyphes et substitutions de caractères.
 
 - Mettre en place une veille manuelle régulière en consultant les bases de données publiques WHOIS et en effectuant des recherches sur les variantes orthographiques de votre domaine.
-  - DNSTwist (https://dnstwist.it/) : Génère automatiquement des variantes typo d'un domaine
-  - URLCrazy (https://morningstarsecurity.com/research/urlcrazy) : Génère des variations de noms de domaine
+  - DNSTwist ([https://dnstwist.it/](https://dnstwist.it/)) : Génère automatiquement des variantes typo d'un domaine
+  - URLCrazy ([https://morningstarsecurity.com/research/urlcrazy](https://morningstarsecurity.com/research/urlcrazy)) : Génère des variations de noms de domaine
 
-- Mettre en place une veille automatique grâce à un script utilisant l'outil Python DNSTwist : https://github.com/elceef/dnstwist
+- Mettre en place une veille automatique grâce à un script utilisant l'outil Python DNSTwist : [https://github.com/elceef/dnstwist](https://github.com/elceef/dnstwis)
 
 - Former les collaborateurs pour qu’ils signalent immédiatement tout courriel ou communication suspect provenant de domaines inhabituels ou ressemblant à votre organisation.
 

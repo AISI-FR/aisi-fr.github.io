@@ -1,3 +1,12 @@
+---
+layout: post
+title: "Sensibilisation - Hameçonnage en tant que service"
+date: 2025-10-20 09:00:00 +0100
+author: elf
+categories: [blog]
+tags: [hameçonnage, phishing, sensibilisation]
+---
+
 # Sensibilisation — Hameçonnage en tant que service
 
 ![Hameçonnage](img/Hameçonnage.png)
