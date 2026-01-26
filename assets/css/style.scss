@@ -4,15 +4,9 @@
 @import "{{ site.theme }}";
 /* Assombrir le fond et personnaliser la typo */
 body {
-  background-color: #1a1a1a !important;
-  color: #e0e0e0 !important;
   font-family: 'Helvetica Neue', Arial, sans-serif !important;
 }
 
-#main-content {
-  width: 800px;
-  float: left;
-}
 
 /* Agrandir la fenêtre d'écriture **
 .main-content,
