@@ -1,9 +1,9 @@
 ---
-layout: post
 title: "Sensibilisation - Arnaque au président"
 date: 2025-10-07 09:00:00 +0100
 author: elf
 categories: [blog]
+layout: default
 tags: [sensibilisation, hameçonnage, phishing, arnaque]
 ---
 

@@ -1,8 +1,8 @@
 ---
-layout: post
 title: "Intrications entre guerre-géopolitique et attaques cyber"
 date: 2026-01-14 09:00:00 +0100
 author: elf
+layout: default
 categories: [blog]
 tags: [threatintel, geopolitique]
 ---
