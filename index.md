@@ -4,11 +4,11 @@ title: Accueil
 
 AISI sécurise votre entreprise avec des solutions sur-mesure : audit, tests d'intrusion, SOC managé et formations. Faites confiance à notre expertise.
 <ul>
-  {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      <span>{{ post.date   date: "%B %d, %Y" }}</span>
+      <a href="dfir/">Nos articles "Investigations & Réponse à incident"</a>
     </li>
-  {% endfor %}
+    <li>
+      <a href="threatintel/">Nos articles Intelligence de la menace *-ThreatIntel-*</a>
+    </li>
 </ul>
 
