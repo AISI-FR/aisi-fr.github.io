@@ -4,7 +4,10 @@
 @import "{{ site.theme }}";
 /* Assombrir le fond et personnaliser la typo */
 body {
-  font-family: 'Helvetica Neue', Arial, sans-serif !important;
+  //font-family: 'Helvetica Neue', Arial, sans-serif !important;
+  font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !important;
+  font-weight: 400; /* Poids normal */
+  line-height: 1.6; /* Espacement optimal pour la lisibilité */
 }
 
 
