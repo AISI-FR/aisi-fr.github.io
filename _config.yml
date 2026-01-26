@@ -14,9 +14,6 @@ plugins:
 - jekyll-toc
 
 custom_css_path: /assets/css/style.css
-toc:
-  min_level: 1
-  max_level: 3
 
 markdown: kramdown  # Moteur de conversion Markdown
 
