@@ -18,13 +18,10 @@ markdown: kramdown  # Moteur de conversion Markdown
 
 # Dossiers et fichiers à inclure/exclure
 #include: [_pages]
-include:
-  - dfir
-  - dfir/*
-  - offsec
-  - offsec/*
-  - threatintel
-  - threatintel/*
+#include:
+#  - dfir
+#  - offsec
+#  - threatintel
 #exclude: [README.md, LICENSE]
 
 # Paramètres pour les articles de blog
