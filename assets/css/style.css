@@ -1,0 +1,33 @@
+---
+---
+
+@import "{{ site.theme }}";
+/* Assombrir le fond et personnaliser la typo */
+body {
+  background-color: #1a1a1a !important;
+  color: #e0e0e0 !important;
+  font-family: 'Helvetica Neue', Arial, sans-serif !important;
+}
+
+/* Agrandir la fenêtre d'écriture */
+.main-content,
+.page-content,
+.post-content {
+  max-width: 800px !important; /* Largeur fixe pour une meilleure lisibilité */
+  margin: 0 auto !important;
+  padding: 2em !important;
+  font-size: 1.1em !important;
+}
+
+/* Personnaliser les liens pour un meilleur contraste */
+a {
+  color: #4dabf7 !important;
+}
+
+/* Assombrir l'en-tête *
+.site-header {
+  background-color: #111 !important;
+  border-bottom: 1px solid #333 !important;
+}
+/***/ 
+
