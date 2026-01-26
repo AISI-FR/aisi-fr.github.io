@@ -11,11 +11,7 @@ description: Cyber-Team Homepage
 remote_theme: pages-themes/architect@v0.2.0
 plugins:
 - jekyll-remote-theme
-- jekyll-toc
 
-toc:
-  min: 1
-  max: 3
 #custom_css_path: /assets/css/style.css
 
 markdown: kramdown  # Moteur de conversion Markdown
@@ -24,8 +20,11 @@ markdown: kramdown  # Moteur de conversion Markdown
 #include: [_pages]
 include:
   - dfir
+  - dfir/*
   - offsec
+  - offsec/*
   - threatintel
+  - threatintel/*
 #exclude: [README.md, LICENSE]
 
 # Paramètres pour les articles de blog
