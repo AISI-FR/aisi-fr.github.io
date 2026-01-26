@@ -2,11 +2,6 @@
 title: Table des matières - DFIR
 layout: default
 ---
-<pre>
-  {% for page in site.pages %}
-    {{ page.path }}
-  {% endfor %}
-</pre>
 
 # Liste des articles
 
@@ -14,9 +9,9 @@ layout: default
   {% assign articles = site.pages | where_exp: "item", "item.path contains 'dfir/'" %}
   {% for article in articles %}
     {% assign path_parts = article.path | split: "/" %}
-    {% if path_parts.size == 4 and path_parts[1] == "dfir" %}
+    {% if path_parts.size == 3 and path_parts[0] == "dfir" %}
       <li>
-        <a href="{{ article.url | relative_url }}">{{ path_parts[2] }}</a>
+        <a href="{{ article.url | relative_url }}">{{ path_parts[1] }}{{article.title}}</a>
       </li>
     {% endif %}
   {% endfor %}
