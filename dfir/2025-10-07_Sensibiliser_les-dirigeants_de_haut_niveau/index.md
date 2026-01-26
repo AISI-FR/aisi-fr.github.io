@@ -1,8 +1,8 @@
 ---
-layout: post
 title: "Sensibilisation - Sensibiliser les dirigeants de haut niveau"
 date: 2025-10-07 09:00:00 +0100
 author: elf
+layout: default
 categories: [blog]
 tags: [sensibilisation]
 ---
