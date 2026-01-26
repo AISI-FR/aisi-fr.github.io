@@ -2,6 +2,11 @@
 title: Table des matières - DFIR
 layout: default
 ---
+<pre>
+  {% for page in site.pages %}
+    {{ page.path }}
+  {% endfor %}
+</pre>
 
 # Liste des articles
 
