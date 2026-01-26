@@ -14,11 +14,11 @@ La liste des acteurs de la menace ci-dessous n'est pas exhaustive et un groupe p
 * Gingham Typhoon (alias Leviathan, MUDCARP, Kryptonite Panda, Gadolinium, BRONZE MOHAWK, TEMP.Jumper, APT40, TEMP.Periscop)
 
 sources : 
-- Volt Typhoon : https://attack.mitre.org/groups/G1017/
-- APT5 : https://attack.mitre.org/groups/G1023/
-- ZIRCONIUM : https://attack.mitre.org/groups/G0128/
-- Leviathan : https://attack.mitre.org/groups/G0065/
-- APT41 : https://attack.mitre.org/groups/G0096/
+- Volt Typhoon : [https://attack.mitre.org/groups/G1017/](https://attack.mitre.org/groups/G1017/)
+- APT5 : [https://attack.mitre.org/groups/G1023/](https://attack.mitre.org/groups/G1023/)
+- ZIRCONIUM : [https://attack.mitre.org/groups/G0128/](https://attack.mitre.org/groups/G0128/)
+- Leviathan : [https://attack.mitre.org/groups/G0065/](https://attack.mitre.org/groups/G0065/)
+- APT41 : [https://attack.mitre.org/groups/G0096/](https://attack.mitre.org/groups/G0096/)
 
 
 ## Le gouvernement iranien, officiellement connu sous le nom de République islamique d'Iran, déploie les groupes suivants 
@@ -29,11 +29,11 @@ sources :
 * Static Kitten (alias MuddyWater, Earth Vetala, MERCURY,  Seedworm, TEMP.Zagros, Mango Sandstorm, TA450)
 
 sources : 
-- Ajax Security Team : https://attack.mitre.org/groups/G0130/
-- OilRig : https://attack.mitre.org/groups/G0049/
-- APT39 : https://attack.mitre.org/groups/G0087/
-- MuddyWater : https://attack.mitre.org/groups/G0069/
-- Magic Hound : https://attack.mitre.org/groups/G0059/
+- Ajax Security Team : [https://attack.mitre.org/groups/G0130/](https://attack.mitre.org/groups/G0130/)
+- OilRig : [https://attack.mitre.org/groups/G0049/](https://attack.mitre.org/groups/G0049/)
+- APT39 : [https://attack.mitre.org/groups/G0087/](https://attack.mitre.org/groups/G0087/)
+- MuddyWater : [https://attack.mitre.org/groups/G0069/](https://attack.mitre.org/groups/G0069/)
+- Magic Hound : [https://attack.mitre.org/groups/G0059/](https://attack.mitre.org/groups/G0059/)
 
 ## Le gouvernement nord-coréen, officiellement connu sous le nom de République populaire démocratique de Corée (RPDC), déploie les groupes suivants : 
 
@@ -45,12 +45,12 @@ sources :
 * Velvet Chollima (alias Black Banshee, Kimsuky, Emerald Sleet, THALLIUM, APT43, TA427, Springtail)
 
 sources : 
-- APT37 : https://attack.mitre.org/groups/G0067/
-- Andariel : https://attack.mitre.org/groups/G0138/
-- APT38 : https://attack.mitre.org/groups/G0082/
-- AppleJeus : https://attack.mitre.org/groups/G1049/
-- Lazarus Group : https://attack.mitre.org/groups/G0032/
-- Kimsuky : https://attack.mitre.org/groups/G0094/
+- APT37 : [https://attack.mitre.org/groups/G0067/](https://attack.mitre.org/groups/G0067/)
+- Andariel : [https://attack.mitre.org/groups/G0138/](https://attack.mitre.org/groups/G0138/)
+- APT38 : [https://attack.mitre.org/groups/G0082/](https://attack.mitre.org/groups/G0082/)
+- AppleJeus : [https://attack.mitre.org/groups/G1049/](https://attack.mitre.org/groups/G1049/)
+- Lazarus Group : [https://attack.mitre.org/groups/G0032/](https://attack.mitre.org/groups/G0032/)
+- Kimsuky : [https://attack.mitre.org/groups/G0094/](https://attack.mitre.org/groups/G0094/)
 
 ## Le gouvernement russe, officiellement connu sous le nom de Gouvernement de la fédération de Russie, déploie les groupes suivants 
 
@@ -63,19 +63,19 @@ sources :
 * Venomous Bear (alias RON HUNTER, Group 88, Waterbug, WhiteBear, Snake, Krypton, Turla, Secret Blizzard, BELUGASTURGEON) 
 
 sources : 
-- Ember Bear : https://attack.mitre.org/groups/G1003/
-- Gamaredon Group : https://attack.mitre.org/groups/G0047/
-- Dragonfly : https://attack.mitre.org/groups/G0035/
-- APT28 : https://attack.mitre.org/groups/G0007/
-- Voodoo Bear : https://attack.mitre.org/groups/G0034/ 
-- APT29 : https://attack.mitre.org/groups/G0016/
-- Turla : https://attack.mitre.org/groups/G0010/
+- Ember Bear : [https://attack.mitre.org/groups/G1003/](https://attack.mitre.org/groups/G1003/)
+- Gamaredon Group : [https://attack.mitre.org/groups/G0047/](https://attack.mitre.org/groups/G0047/)
+- Dragonfly : [https://attack.mitre.org/groups/G0035/](https://attack.mitre.org/groups/G0035/)
+- APT28 : [https://attack.mitre.org/groups/G0007/](https://attack.mitre.org/groups/G0007/)
+- Voodoo Bear : [https://attack.mitre.org/groups/G0034/](https://attack.mitre.org/groups/G0034/ )
+- APT29 : [https://attack.mitre.org/groups/G0016/](https://attack.mitre.org/groups/G0016/)
+- Turla : [https://attack.mitre.org/groups/G0010/](https://attack.mitre.org/groups/G0010/)
 
 ## Le gouvernement états-unien, officiellement connu sous le nom du Gouvernement fédéral des États-Unis, déploie les groupes suivants : 
 
 * Equation Group
 
-https://attack.mitre.org/groups/G0020/
+[https://attack.mitre.org/groups/G0020/](https://attack.mitre.org/groups/G0020/)
 
 # Par qui sont menées les opérations de rançongiciel sponsorisées par un état ?
 
@@ -85,31 +85,27 @@ Les rançongiciels sont efficaces car ils enchaînent vol des données, chiffrem
 
 Il n'est pas communément observé le déploiement de rançongiciel car l'objectif du gouvernement est avant tout l'espionnage stratégique et non l'extorsion de fonds. Toutefois, le groupe de la menace Brass Typhoon a été observé déployer le rançongiciel-en-tant-que-service (RaaS) Encryptor pour chiffrer les systèmes ciblés.
 
-source : https://attack.mitre.org/groups/G0096/
+[https://attack.mitre.org/groups/G0096/](https://attack.mitre.org/groups/G0096/)
 
 ## Concernant les groupes sponsorisés par le gouvernement iranien 
 
 Il n'est pas communément observé le déploiement de rançongiciel car l'objectif du gouvernement est avant tout l'espionnage stratégique et non l'extorsion de fonds. Toutefois, le groupe de la menace Fox Kitten, suspecté d'être sponsorisé par l'état, a été observé déployer le rançongiciel Pay2Key pour chiffrer les systèmes ciblés.
 
-source : https://attack.mitre.org/software/S0556/
-
 ## Concernant les groupes sponsorisés par le gouvernement nord-coréen
 
 Il est observé des opérations de rançongiciel associées à des vols de monnaies et cryptomonnaie. Par exemple, le groupe de la menace Labyrinth Chollima a été observé déployer le rançongiciel WannaCry et demander une rançon en Bitcoin. Également, le groupe de la menace Stardust Chollima a été observé utiliser le rançongiciel Hermes.
-
-sources : 
-- WannaCry : https://attack.mitre.org/software/S0366/
-- Stardust Chollima : https://attack.mitre.org/groups/G0082/
+ 
+- WannaCry : [https://attack.mitre.org/software/S0366/](https://attack.mitre.org/software/S0366/)
+- Stardust Chollima : [https://attack.mitre.org/groups/G0082/](https://attack.mitre.org/groups/G0082/)
 
 ## Concernant les groupes sponsorisés par le gouvernement russe
 
 Les groupes de la menace sponsorisés par l'état ne sont pas connus pour déployer des rançongiciels. Mais, il est communément admis que les groupes criminels russophones sont tolérés par le gouvernement et ainsi indirectement affiliés à ce dernier. Parmi ces groupes nous pouvons citer les rançongiciels-en-tant-que-service Lockbit et Conti mais aussi les rançongciels Ryuk et REvil.
 
-sources : 
-- REvil : https://attack.mitre.org/software/S0496/
-- Ryuk : https://attack.mitre.org/software/S0446/
-- Conti : https://attack.mitre.org/software/S0575/
-- LockBit : https://attack.mitre.org/software/S1202/
+- REvil : [https://attack.mitre.org/software/S0496/](https://attack.mitre.org/software/S0496/)
+- Ryuk : [https://attack.mitre.org/software/S0446/](https://attack.mitre.org/software/S0446/)
+- Conti : [https://attack.mitre.org/software/S0575/](https://attack.mitre.org/software/S0575/)
+- LockBit : [https://attack.mitre.org/software/S1202/](https://attack.mitre.org/software/S1202/)
 
 ## Concernant les groupes sponsorisés par le gouvernement états-unien
 
@@ -125,13 +121,13 @@ Aucune source crédible ne donne d’estimation fiable de revenus tirés d’op�
 
 Le rançongiciel Pay2Key, liée à l’APT Fox Kitten et opérant comme rançongiciels-en-tant-que-service, a généré plus de 51 paiements de rançon totalisant plus de 4 millions de dollars américains en environ quatre mois d’activité (février–juin 2025). Les opérateurs individuels affichant 100 000 dollars américains de bénéfices
 
-https://www.morphisec.com/blog/pay2key-resurgence-iranian-cyber-warfare/
+[https://www.morphisec.com/blog/pay2key-resurgence-iranian-cyber-warfare/](https://www.morphisec.com/blog/pay2key-resurgence-iranian-cyber-warfare/)
 
 ## Concernant les groupes sponsorisés par le gouvernement nord-coréen
 
 L'équipe de surveillance des sanctions multilatérales (MSMT), un mécanisme international pour signaler les évasions de sanctions, a calculé que de janvier 2024 à septembre 2025, le gouvernement nord-coréen a volé 2,84 milliards de dollars américains d’actifs en cryptomonnaies. Ce butin est en partie récolté via le paiement de rançon par les victimes. 
 
-https://msmt.info/view/save/2025/10/22/26294780-c396-407d-bb33-88afe988cd96-The_DPRK%E2%80%99s_Violation_and_Evasion_of_UN_Sanctions_through_Cyber_and_Information_Technology_Worker_Activities_(MSMT_2025_2).pdf
+[https://msmt.info/view/save/2025/10/22/26294780-c396-407d-bb33-88afe988cd96-The_DPRK%E2%80%99s_Violation_and_Evasion_of_UN_Sanctions_through_Cyber_and_Information_Technology_Worker_Activities_(MSMT_2025_2).pdf](https://msmt.info/view/save/2025/10/22/26294780-c396-407d-bb33-88afe988cd96-The_DPRK%E2%80%99s_Violation_and_Evasion_of_UN_Sanctions_through_Cyber_and_Information_Technology_Worker_Activities_(MSMT_2025_2).pdf)
 
 ## Concernant les groupes sponsorisés par le gouvernement russe
 
@@ -139,21 +135,21 @@ Les groupes explicitement sponsorisés par l’État ne sont pas connus pour gé
 
 LockBit 3.0 et affiliés ont réussi à extraire environ 640 000 dollars américains de paiements de rançon sur environ 210 attaques connues entre fin 2024 et avril 2025, avec une moyenne d’environ 35 500 dollars américains par rançon payée sur les cas documentés.
 
-https://www.lemagit.fr/actualites/366623818/Ransomware-les-comptes-peu-reluisants-de-LockBit-30
+[https://www.lemagit.fr/actualites/366623818/Ransomware-les-comptes-peu-reluisants-de-LockBit-30](https://www.lemagit.fr/actualites/366623818/Ransomware-les-comptes-peu-reluisants-de-LockBit-30)
 
 Le FINCEN rapport que la valeur cumulée du butin de LockBit entre janvier 2022 et décembre 2024  est de 252,4 millions de dollars américains
 
-https://www.fincen.gov/system/files/2025-12/FTA-Ransomware.pdf
+[https://www.fincen.gov/system/files/2025-12/FTA-Ransomware.pdf](https://www.fincen.gov/system/files/2025-12/FTA-Ransomware.pdf)
 
 En 2021, Le Monde Informatique rapporte que la société Advintel / Hyas estime que l'opérateur malveillant derrière le rançongiciel Ryuk est parvenu à extorquer près de 150 millions de dollars américains à ses victimes. 
 
-https://www.lemondeinformatique.fr/actualites/lire-ryuk-assis-sur-un-pactole-de-150-m$-81583.html
+[https://www.lemondeinformatique.fr/actualites/lire-ryuk-assis-sur-un-pactole-de-150-m$-81583.html](https://www.lemondeinformatique.fr/actualites/lire-ryuk-assis-sur-un-pactole-de-150-m$-81583.html)
 
 ## Concernant les groupes sponsorisés par le gouvernement états-unien
 
 Le rançongiciel n'est pas un outil de financement utilisé par les États-Unis. Le groupe de la menace Equation Group est généralement associé à la NSA et au programme Tailored Access Operations (TAO), une unité offensive majeure de cyber-espionnage.
 
-https://www.spiegel.de/international/world/the-nsa-uses-powerful-toolbox-in-effort-to-spy-on-global-networks-a-940969.html
+[https://www.spiegel.de/international/world/the-nsa-uses-powerful-toolbox-in-effort-to-spy-on-global-networks-a-940969.html](https://www.spiegel.de/international/world/the-nsa-uses-powerful-toolbox-in-effort-to-spy-on-global-networks-a-940969.html)
 
 # Quels sont les autres opérations opérées : coupure d'approvisionnement (internet, électrique, etc.), destabilisation, espionnage
 
@@ -176,7 +172,8 @@ Les groupes impliqués sont :
 
 Exemple concret : Début octobre 2024, les médias ont rapporté que des acteurs de la menace soutenus par l'État chinois et identifiés en tant que Salt Typhoon avaient infiltré des entreprises de télécommunications américaines (y compris des fournisseurs d'accès à Internet). Le gouvernement américain a depuis confirmé les actions de groupe de la menace et l'existence d'une enquête en cours sur ces piratages. Il est rapporté que ce n'est pas la première fois que la RPC s'en prend au secteur des communications américain, ce qui reflète une tendance à cibler ce secteur à la fois pour son rôle dans le fonctionnement d'autres secteurs et pour la valeur des systèmes et des données qu'il contient. 
 
-https://www.congress.gov/crs-product/IF12798
+[https://www.congress.gov/crs-product/IF12798](https://www.congress.gov/crs-product/IF12798
+)
 
 ###  Compromission d'infrastructures industrielles (OT) critiques, notamment dans :
 
@@ -192,7 +189,7 @@ Les groupes impliqués sont :
 
 Exemple concret : Le DOJ a annoncé avoir démantelé le botnet KV Botnet attribué à Volt Typhoon et utilisé pour dissimuler des intrusions dans des réseaux méthodiquement liés à des infrastructures critiques aux États‑Unis.
 
-https://www.justice.gov/archives/opa/pr/us-government-disrupts-botnet-peoples-republic-china-used-conceal-hacking-critical
+[https://www.justice.gov/archives/opa/pr/us-government-disrupts-botnet-peoples-republic-china-used-conceal-hacking-critical](https://www.justice.gov/archives/opa/pr/us-government-disrupts-botnet-peoples-republic-china-used-conceal-hacking-critical)
 
 ###  Opérations ciblant les institutions politiques et électorales, ayant pour objectif
 
@@ -206,7 +203,7 @@ Les groupes impliqués sont :
 
 Exemple concret : Des membres du groupe APT31, associé au gouvernement chinois, ont été accusés d'intrusions informatique visant des détracteurs présumés de la Chine ainsi que des entreprises et politiciens américains. Plus de 10 000 courriels malveillants ont été envoyés, touchant des milliers de victimes sur plusieurs continents. Comme l'indique l'acte d'accusation rendu public aujourd'hui, cette opération de piratage informatique mondiale prolifique, soutenue par le gouvernement chinois, visait des journalistes, des responsables politiques et des entreprises afin de réprimer les détracteurs du régime chinois, de compromettre des institutions gouvernementales et de voler des secrets commerciaux.
 
-https://www.justice.gov/archives/opa/pr/seven-hackers-associated-chinese-government-charged-computer-intrusions-targeting-perceived
+[https://www.justice.gov/archives/opa/pr/seven-hackers-associated-chinese-government-charged-computer-intrusions-targeting-perceived](https://www.justice.gov/archives/opa/pr/seven-hackers-associated-chinese-government-charged-computer-intrusions-targeting-perceived)
 
 ## Concernant les groupes sponsorisés par le gouvernement iranien 
 
@@ -241,7 +238,7 @@ Les groupes impliqués sont :
 
 Exemple concret : Selon les conclusions actuelles de l'Office fédéral pour la protection de la Constitution (BfV), des tentatives concrètes d'espionnage par le groupe persistant Charming Kitten contre des personnes et des organisations iraniennes en Allemagne sont en cours depuis la fin de l'année 2022. Les cyberattaques visaient principalement des organisations et des individus dissidents, tels que des avocats, des journalistes ou des militants des droits de l'Homme, à l'intérieur et à l'extérieur de l'Iran.
 
-https://www.verfassungsschutz.de/SharedDocs/kurzmeldungen/DE/2023/2023-08-10-cyber-brief-01-2023.html?nn=679196#Start
+[https://www.verfassungsschutz.de/SharedDocs/kurzmeldungen/DE/2023/2023-08-10-cyber-brief-01-2023.html?nn=679196#Start](https://www.verfassungsschutz.de/SharedDocs/kurzmeldungen/DE/2023/2023-08-10-cyber-brief-01-2023.html?nn=679196#Start)
 
 ## Concernant les groupes sponsorisés par le gouvernement nord-coréen
 
@@ -263,7 +260,7 @@ Les groupes impliqués sont :
 
 Exemple concret : Une alerte conjointe du FBI et de la NSA décrit que le groupe nord-coréen Kimsuky (alias APT43 / Velvet Chollima) utilise des campagnes de spear-phishing en se faisant passer pour des journalistes ou universitaires afin de voler des renseignements à des think tanks, centres de recherche, ONG et organisations médiatiques. 
 
-source : https://media.defense.gov/2023/Jun/01/2003234055/-1/-1/0/JOINT_CSA_DPRK_SOCIAL_ENGINEERING.PDF
+[https://media.defense.gov/2023/Jun/01/2003234055/-1/-1/0/JOINT_CSA_DPRK_SOCIAL_ENGINEERING.PDF](https://media.defense.gov/2023/Jun/01/2003234055/-1/-1/0/JOINT_CSA_DPRK_SOCIAL_ENGINEERING.PDF)
 
 ###  Déploiement d’attaques destructrices (wipers, perturbations IT) contre :
 
@@ -280,7 +277,7 @@ Les groupes impliqués sont :
 
 Exemple concret : La cyberattaque de 2014 contre Sony Pictures Entertainment qui a effacé des données, détruit des systèmes et paralysé l’infrastructure IT de l’entreprise, a été attribuée par la justice américaine au groupe de la menace Lazarus (Labyrinth Chollima).
 
-https://www.justice.gov/archives/opa/pr/north-korean-regime-backed-programmer-charged-conspiracy-conduct-multiple-cyber-attacks-and
+[https://www.justice.gov/archives/opa/pr/north-korean-regime-backed-programmer-charged-conspiracy-conduct-multiple-cyber-attacks-and](https://www.justice.gov/archives/opa/pr/north-korean-regime-backed-programmer-charged-conspiracy-conduct-multiple-cyber-attacks-and)
 
 ### Campagnes ciblant directement des entités financières, notamment :
 
@@ -301,7 +298,7 @@ Les groupes impliqués sont :
 
 Exemple concret : Le 21 février 2025, Bybit a subi le plus grand vol de cryptomonnaie jamais enregistré, avec plus de 1,4 milliard de dollars américains d’actifs, dont 401347 ETH, vidés de son cold wallet. La compromission a été attribuée au groupe de la menace Labyrinth Chollima (Lazarus Group).
 
-https://www.nccgroup.com/research-blog/in-depth-technical-analysis-of-the-bybit-hack/
+[https://www.nccgroup.com/research-blog/in-depth-technical-analysis-of-the-bybit-hack/](https://www.nccgroup.com/research-blog/in-depth-technical-analysis-of-the-bybit-hack/)
 
 ## Concernant les groupes sponsorisés par le gouvernement russe
 
@@ -326,8 +323,8 @@ https://www.nccgroup.com/research-blog/in-depth-technical-analysis-of-the-bybit-
 
 Exemple concret : Le groupe de la menace Cozy Bear (APT29) a accédé à l'infrastructure de développement logiciel de la société américaine SolarWinds, peut-être dès janvier 2019 selon son PDG, et a secrètement modifié le code source de son logiciel de gestion de réseau Orion afin de permettre des activités malveillantes ultérieures. La compromission a été découverte quelques mois plus tard en décembre 2020
 
-https://www.dni.gov/files/NCSC/documents/SafeguardingOurFuture/SolarWinds%20Orion%20Software%20Supply%20Chain%20Attack.pdf
-https://www.intel471.com/blog/threat-hunt-deep-dives-solarwinds-supply-chain-compromise-solorigate-sunburst-backdoor
+[https://www.dni.gov/files/NCSC/documents/SafeguardingOurFuture/SolarWinds%20Orion%20Software%20Supply%20Chain%20Attack.pdf](https://www.dni.gov/files/NCSC/documents/SafeguardingOurFuture/SolarWinds%20Orion%20Software%20Supply%20Chain%20Attack.pdf)
+[https://www.intel471.com/blog/threat-hunt-deep-dives-solarwinds-supply-chain-compromise-solorigate-sunburst-backdoor](https://www.intel471.com/blog/threat-hunt-deep-dives-solarwinds-supply-chain-compromise-solorigate-sunburst-backdoor)
 
 ### Opérations de déstabilisation, notamment :
 
@@ -344,7 +341,7 @@ Les groupes impliqués sont :
 
 Exemple concret : La diplomatie française condamne l’usage par le renseignement militaire russe (GRU) du mode opératoire Fancy Bear (APT28) dans plusieurs cyberattaques dont le piratage de la campagne présidentielle de 2017, qualifiée de tentative de déstabilisation
 
-https://www.diplomatie.gouv.fr/fr/dossiers-pays/russie/evenements/evenements-de-l-annee-2025/article/russie-attribution-de-cyberattaques-contre-la-france-au-service-de
+[https://www.diplomatie.gouv.fr/fr/dossiers-pays/russie/evenements/evenements-de-l-annee-2025/article/russie-attribution-de-cyberattaques-contre-la-france-au-service-de](https://www.diplomatie.gouv.fr/fr/dossiers-pays/russie/evenements/evenements-de-l-annee-2025/article/russie-attribution-de-cyberattaques-contre-la-france-au-service-de)
 
 ### Déploiement d'attaques destructrices envers des réseaux électriques, des infrastructures gouvernementales et des systèmes industriels (ICS)
 
@@ -354,7 +351,7 @@ Les groupes impliqués sont :
 
 Exemple concret : Le 23 décembre 2015, une compromission a été attribuée au groupe de la menace Voodoo Bear (Sandworm) utilisant le malware BlackEnergy après une violation des systèmes d’information de trois distributeurs d’énergie en Ukraine qui a conduit à une interruption temporaire  l’alimentation électrique de 80 000 clients.
 
-https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2016/05/20081514/E-ISAC_SANS_Ukraine_DUC_5.pdf
+[https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2016/05/20081514/E-ISAC_SANS_Ukraine_DUC_5.pdf](https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2016/05/20081514/E-ISAC_SANS_Ukraine_DUC_5.pdf)
 
 ## Concernant les groupes sponsorisés par le gouvernement états-unien
 
@@ -373,8 +370,8 @@ Les outils supposémment utilisés par ces équipes et documentés (ANT Catalog)
 - IRATEMONK – implant firmware disque
 - VALIDATOR – persistance matérielle
 
-https://cryptome.org/2013/12/nsa-tao-ant.pdf
-https://www.spiegel.de/international/world/the-nsa-uses-powerful-toolbox-in-effort-to-spy-on-global-networks-a-940969.html
+[https://cryptome.org/2013/12/nsa-tao-ant.pdf](https://cryptome.org/2013/12/nsa-tao-ant.pdf)
+[https://www.spiegel.de/international/world/the-nsa-uses-powerful-toolbox-in-effort-to-spy-on-global-networks-a-940969.html](https://www.spiegel.de/international/world/the-nsa-uses-powerful-toolbox-in-effort-to-spy-on-global-networks-a-940969.html)
  
 ### Compromission d’organisations civiles, étatiques et industrielles ainsi que collecte massive de renseignements (SIGINT) et surveillance globale, notamment :
 
@@ -399,7 +396,7 @@ Exemple concret : Les documents divulgués par Edward Snowden ont révélé l'ex
 - Collecte Upstream — interception des communications transitant par les principaux réseaux.
 - Boundless Informant — outil de cartographie de métadonnées.
 
-https://www.theguardian.com/world/interactive/2013/nov/01/snowden-nsa-files-surveillance-revelations-decoded
+[https://www.theguardian.com/world/interactive/2013/nov/01/snowden-nsa-files-surveillance-revelations-decoded](https://www.theguardian.com/world/interactive/2013/nov/01/snowden-nsa-files-surveillance-revelations-decoded)
 
 ### Opérations de sabotage cyber ciblé contre des systèmes industriels
 
@@ -416,9 +413,8 @@ Les groupes / opérations impliqués sont :
 
 Exemple concret : L’opération Olympic Games, attribuée aux États-Unis et à Israël, a conduit au déploiement du malware Stuxnet contre les centrifugeuses du site nucléaire iranien de Natanz, provoquant la destruction physique d’équipements industriels et retardant significativement le programme nucléaire iranien. 
 
-https://www.opex360.com/2012/06/02/cyberguerre-operation-olympic-games-contre-le-programme-nucleaire-iranien/
-
-https://attack.mitre.org/software/S0603/
+[https://www.opex360.com/2012/06/02/cyberguerre-operation-olympic-games-contre-le-programme-nucleaire-iranien/](https://www.opex360.com/2012/06/02/cyberguerre-operation-olympic-games-contre-le-programme-nucleaire-iranien/)
+[https://attack.mitre.org/software/S0603/](https://attack.mitre.org/software/S0603/)
 
 ### Extraterritorialité du droit américain (CLOUD Act / FISA / USD)
 
@@ -426,7 +422,7 @@ https://attack.mitre.org/software/S0603/
 
 - FISA (Section 702) : des dispositions de la loi FISA permettent à la NSA et à d’autres agences américaines de cibler des personnes non-américaines à l’étranger dans le cadre de la sécurité nationale, ce qui pose des questions sur la « souveraineté numérique » et la protection des données.
 
-https://www.irsem.fr/en/strategic-brief-no-70-2024.html
+[https://www.irsem.fr/en/strategic-brief-no-70-2024.html](https://www.irsem.fr/en/strategic-brief-no-70-2024.html)
 
 # Quelles sont les conflits armées dans  lesquels sont impliqués ces états / nations ?
 
@@ -434,60 +430,60 @@ https://www.irsem.fr/en/strategic-brief-no-70-2024.html
 
 - Guerre de Corée (1950–1953) : conflit toujours juridiquement non résolu (armistice uniquement) et de ce fait tensions militaires permanentes avec la Corée du Sud (DMZ, escarmouches navales, missiles) 
 
-https://www.france24.com/fr/asie-pacifique/20250824-cor%C3%A9e-du-nord-deux-nouveaux-missiles-test%C3%A9s-tensions-avec-cor%C3%A9e-du-sud-trump
+[https://www.france24.com/fr/asie-pacifique/20250824-cor%C3%A9e-du-nord-deux-nouveaux-missiles-test%C3%A9s-tensions-avec-cor%C3%A9e-du-sud-trump](https://www.france24.com/fr/asie-pacifique/20250824-cor%C3%A9e-du-nord-deux-nouveaux-missiles-test%C3%A9s-tensions-avec-cor%C3%A9e-du-sud-trump)
 
 - Soutien militaire à la Russie dans la guerre en Ukraine (munitions, missiles)
 
-https://www.radiofrance.fr/franceinfo/podcasts/d-un-monde-a-l-autre/guerre-en-ukraine-le-soutien-a-la-russie-fait-de-la-coree-du-nord-un-acteur-a-surveiller-de-pres-7537563
+[https://www.radiofrance.fr/franceinfo/podcasts/d-un-monde-a-l-autre/guerre-en-ukraine-le-soutien-a-la-russie-fait-de-la-coree-du-nord-un-acteur-a-surveiller-de-pres-7537563](https://www.radiofrance.fr/franceinfo/podcasts/d-un-monde-a-l-autre/guerre-en-ukraine-le-soutien-a-la-russie-fait-de-la-coree-du-nord-un-acteur-a-surveiller-de-pres-7537563)
 
 ## Russie (Fédération de Russie)
 
 - Guerre en Ukraine (depuis 2014, invasion à grande échelle en 2022)
 
-https://www.defense.gouv.fr/ukraine-point-situation
+[https://www.defense.gouv.fr/ukraine-point-situation](https://www.defense.gouv.fr/ukraine-point-situation)
 
 - Guerre en Géorgie (2008)
 
-https://spds.fr/2025/04/22/linvasion-de-la-georgie-par-la-russie-en-2008/
+[https://spds.fr/2025/04/22/linvasion-de-la-georgie-par-la-russie-en-2008/](https://spds.fr/2025/04/22/linvasion-de-la-georgie-par-la-russie-en-2008/)
 
 - Présence au Mali, Burkina Faso et Niger gouvernés par des juntes militaires qui ont choisi la Russie comme support. Par exemple, au Mali, présence de la société privée paramilitaire Africa Corps
 
-https://www.bbc.com/afrique/articles/cdj9vn40gm7o
+[https://www.bbc.com/afrique/articles/cdj9vn40gm7o](https://www.bbc.com/afrique/articles/cdj9vn40gm7o)
 
 ## Iran (République islamique d’Iran)
 
 - Hezbollah / Liban & Israël : Hezbollah soutenu par l’Iran, impliqué dans le conflit intermittent avec Israël depuis 2023
 
-https://fr.timesofisrael.com/desarmement-du-hezbollah-le-liban-demande-a-liran-une-nouvelle-approche/
+[https://fr.timesofisrael.com/desarmement-du-hezbollah-le-liban-demande-a-liran-une-nouvelle-approche/](https://fr.timesofisrael.com/desarmement-du-hezbollah-le-liban-demande-a-liran-une-nouvelle-approche/)
 
 ## Chine (République populaire de Chine)
 
 - Avec Taïwan, fortes tensions et pressions militaires continues, avec exercices autour du détroit de Taïwan et escalade des discours sur une « réunification » parfois qualifiée d’objectif politique par Pékin
 
-https://asialyst.com/fr/2026/01/03/etau-chinois-resserre-taiwan-pekin-temps-presse/
+[https://asialyst.com/fr/2026/01/03/etau-chinois-resserre-taiwan-pekin-temps-presse/](https://asialyst.com/fr/2026/01/03/etau-chinois-resserre-taiwan-pekin-temps-presse/)
 
 - La Chine revendique la quasi-totalité de la mer de Chine méridionale, la plaçant en conflit avec plusieurs de ses voisins, dont les Philippines et le Japon.
 
-https://ici.radio-canada.ca/info/long-format/2216111/dix-conflits-surveiller-monde-2026-perspectives
+[https://ici.radio-canada.ca/info/long-format/2216111/dix-conflits-surveiller-monde-2026-perspectives](https://ici.radio-canada.ca/info/long-format/2216111/dix-conflits-surveiller-monde-2026-perspectives)
 
 ## USA
 
 - Guerre contre l’État islamique (ISIS / IS) et groupements terroristes - Syrie, Nigeria & régions voisines
 
-    1. Opération Hawkeye Strike : depuis décembre 2025, campagne de frappes aériennes et opérations contre l’État islamique (ISIS) en Syrie, en réaction à des attaques contre des soldats américains. www.reuters.com/world/middle-east/us-military-says-it-carried-out-strikes-across-syria-targeting-islamic-state-2026-01-10
-    2. Frappes contre l’État islamique : décembre 2025, les États‑Unis ont effectué des frappes aériennes ciblées au Nigeria contre des militants affiliés à l’État islamique et des groupes djihadistes, en coordination avec le gouvernement nigérian. Cette action fait partie de l’effort continu de lutte contre le terrorisme dans la région du Sahel et du bassin du lac Tchad. https://www.reuters.com/world/africa/us-launches-strikes-against-islamic-state-militants-northwest-nigeria-trump-says-2025-12-25/
+    1. Opération Hawkeye Strike : depuis décembre 2025, campagne de frappes aériennes et opérations contre l’État islamique (ISIS) en Syrie, en réaction à des attaques contre des soldats américains. [www.reuters.com/world/middle-east/us-military-says-it-carried-out-strikes-across-syria-targeting-islamic-state-2026-01-10](www.reuters.com/world/middle-east/us-military-says-it-carried-out-strikes-across-syria-targeting-islamic-state-2026-01-10)
+    2. Frappes contre l’État islamique : décembre 2025, les États‑Unis ont effectué des frappes aériennes ciblées au Nigeria contre des militants affiliés à l’État islamique et des groupes djihadistes, en coordination avec le gouvernement nigérian. Cette action fait partie de l’effort continu de lutte contre le terrorisme dans la région du Sahel et du bassin du lac Tchad. [https://www.reuters.com/world/africa/us-launches-strikes-against-islamic-state-militants-northwest-nigeria-trump-says-2025-12-25/](https://www.reuters.com/world/africa/us-launches-strikes-against-islamic-state-militants-northwest-nigeria-trump-says-2025-12-25/)
 
 - Opérations dans la péninsule arabique / Yémen
 
 Operation Rough Rider : les États‑Unis ont mené une série de frappes aériennes et navales contre les Houthis au Yémen dans le cadre de la crise régionale et des attaques sur la navigation commerciale dans la mer Rouge.
 
-https://www.intelligenceonline.fr/ameriques/2025/09/25/malgre-le-succes-revendique-de-l-operation-rough-rider-les-armateurs-americains-boudent-la-mer-rouge,110525475-artusa
+[https://www.intelligenceonline.fr/ameriques/2025/09/25/malgre-le-succes-revendique-de-l-operation-rough-rider-les-armateurs-americains-boudent-la-mer-rouge,110525475-artusa](https://www.intelligenceonline.fr/ameriques/2025/09/25/malgre-le-succes-revendique-de-l-operation-rough-rider-les-armateurs-americains-boudent-la-mer-rouge,110525475-artusa)
 
 - Venezuela : intervention et capture de Nicolas Maduro (janvier 2026)
 
 Début janvier 2026, les États‑Unis ont mené une opération militaire au Venezuela, entraînant l’arrestation du président Nicolás Maduro et de son épouse, dans un contexte de pression politique, économique et sécuritaire croissante.
 
-https://www.liberation.fr/international/amerique/venezuela-de-fortes-explosions-entendues-a-caracas-20260103_Z2X6ESCCONCTHOOG5J3FWSHNYI/
+[https://www.liberation.fr/international/amerique/venezuela-de-fortes-explosions-entendues-a-caracas-20260103_Z2X6ESCCONCTHOOG5J3FWSHNYI/](https://www.liberation.fr/international/amerique/venezuela-de-fortes-explosions-entendues-a-caracas-20260103_Z2X6ESCCONCTHOOG5J3FWSHNYI/)
 
 # Les victimes des groupes de rançongiciel sont elles des entreprises ou des collectivités territoriales ? Quels sont les domaines d'activité majeure de ces entreprises ?
 
