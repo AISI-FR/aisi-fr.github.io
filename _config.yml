@@ -10,11 +10,24 @@ description: Cyber-Team Homepage
 remote_theme: pages-themes/hacker@v0.2.0
 plugins:
 - jekyll-remote-theme
+- jekyll-toc
+
+toc:
+  min_level: 1
+  max_level: 3
+
 markdown: kramdown  # Moteur de conversion Markdown
 
 # Dossiers et fichiers à inclure/exclure
 #include: [_pages]
+include:
+  - dfir
+  - offsec
+  - threatintel
 #exclude: [README.md, LICENSE]
 
 # Paramètres pour les articles de blog
 permalink: /:year/:month/:day/:title/
+
+
+
