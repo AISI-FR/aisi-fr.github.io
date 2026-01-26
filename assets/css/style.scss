@@ -13,7 +13,8 @@ body {
 .main-content,
 .page-content,
 .post-content {
-  max-width: 800px !important; 
+  max-width: 1200px !important; 
+  min-width: 600px !important; 
   margin: 0 auto !important;
   padding: 2em !important;
   font-size: 1.1em !important;
