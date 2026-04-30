@@ -1,9 +1,9 @@
 ---
+layout : post 
 title: "Analyse statique d'un script distribué via MSHTA embarquant un injecteur C#"
 date: 2026-03-01 09:00:00 +0100
 author: elf
 categories: [blog]
-layout: default
 tags: [malware,reverse,static,loader,c#,mshta,powershell]
 ---
 
