@@ -7,9 +7,6 @@ categories: [blog]
 tags: [malware,reverse,static,loader,c#,mshta,powershell]
 ---
 
-
-# Analyse statique d'un script distribué via MSHTA embarquant un injecteur C#
-
 Dans cet article, AISI présente l'analyse d'un script malveillant détecté par le service SOC et récupéré par les équipes de réponse à incident. 
 
 AISI a reçu une alerte d'un EDR signalant qu'un processus suspect a utilisé mshta pour tenter de télécharger et d’exécuter une charge utile. En effet, l'EDR a bloqué la commande suivante : 
