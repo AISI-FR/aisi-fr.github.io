@@ -1,0 +1,100 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.5 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36" version="28.2.5">
+  <diagram name="Page-1" id="9CvnSpGm7-sT6ndjexJa">
+    <mxGraphModel dx="1678" dy="1125" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nXt1s3wHksdzEtP6TdvB-36" value="Phase 1 : préparation" style="swimlane;rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="1140" width="460" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="nXt1s3wHksdzEtP6TdvB-43" value="Chargement ressource embarquée&lt;div&gt;&lt;br&gt;&lt;font face=&quot;Courier New&quot;&gt;GetExecutingAssembly + GetManifestResourceStream&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="nXt1s3wHksdzEtP6TdvB-36">
+          <mxGeometry x="50" y="50" width="360" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="nXt1s3wHksdzEtP6TdvB-44" value="Copie en mémoire&lt;div&gt;&lt;br&gt;&lt;font face=&quot;Courier New&quot;&gt;Stream → MemoryStream → byte[]&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="nXt1s3wHksdzEtP6TdvB-36">
+          <mxGeometry x="50" y="140" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nXt1s3wHksdzEtP6TdvB-45" value="Interprétation Bitmap&lt;div&gt;&lt;br&gt;&lt;font face=&quot;Courier New&quot;&gt;byte[] → image&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="nXt1s3wHksdzEtP6TdvB-36">
+          <mxGeometry x="50" y="220" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nXt1s3wHksdzEtP6TdvB-46" value="Extraction des données cachée&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;s&lt;/span&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;Lecture pixel → byte[]&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="nXt1s3wHksdzEtP6TdvB-36">
+          <mxGeometry x="50" y="300" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nXt1s3wHksdzEtP6TdvB-47" value="Déchiffrement AES&lt;div&gt;&lt;br&gt;&lt;font face=&quot;Courier New&quot;&gt;key + IV → données claires&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="nXt1s3wHksdzEtP6TdvB-36">
+          <mxGeometry x="50" y="380" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nXt1s3wHksdzEtP6TdvB-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;" edge="1" parent="nXt1s3wHksdzEtP6TdvB-36" source="nXt1s3wHksdzEtP6TdvB-43" target="nXt1s3wHksdzEtP6TdvB-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nXt1s3wHksdzEtP6TdvB-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;" edge="1" parent="nXt1s3wHksdzEtP6TdvB-36" source="nXt1s3wHksdzEtP6TdvB-44" target="nXt1s3wHksdzEtP6TdvB-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nXt1s3wHksdzEtP6TdvB-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;" edge="1" parent="nXt1s3wHksdzEtP6TdvB-36" source="nXt1s3wHksdzEtP6TdvB-45" target="nXt1s3wHksdzEtP6TdvB-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nXt1s3wHksdzEtP6TdvB-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;" edge="1" parent="nXt1s3wHksdzEtP6TdvB-36" source="nXt1s3wHksdzEtP6TdvB-46" target="nXt1s3wHksdzEtP6TdvB-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nXt1s3wHksdzEtP6TdvB-37" value="Phase 2 : exécution" style="swimlane;rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="1140" width="460" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="nXt1s3wHksdzEtP6TdvB-49" value="Compilation en mémoire&lt;div&gt;&lt;br&gt;&lt;font face=&quot;Courier New&quot;&gt;CSharpCodeProvider +&amp;nbsp;GenerateInMemory = true&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="nXt1s3wHksdzEtP6TdvB-37">
+          <mxGeometry x="65" y="130" width="330" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="nXt1s3wHksdzEtP6TdvB-38" value="Phase 3 : injection" style="swimlane;rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1640" y="1140" width="490" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="nXt1s3wHksdzEtP6TdvB-48" value="Reconstruction code C#" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1130" y="1190" width="330" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nXt1s3wHksdzEtP6TdvB-50" value="Chargement assembly compilé&lt;div&gt;&lt;br&gt;&lt;font face=&quot;Courier New&quot;&gt;Type + méthode dynamiques&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1130" y="1360" width="340" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nXt1s3wHksdzEtP6TdvB-51" value="Invocation dynamique&lt;div&gt;&lt;br&gt;&lt;font face=&quot;Courier New&quot;&gt;Invoke(...)&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1130" y="1440" width="340" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nXt1s3wHksdzEtP6TdvB-52" value="Exécution de la charge&amp;nbsp;C#" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1720" y="1190" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nXt1s3wHksdzEtP6TdvB-53" value="Déchiffrement de chaînes&#xa;Base64 + AES" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1720" y="1270" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nXt1s3wHksdzEtP6TdvB-54" value="Résolution du processus cible&lt;div&gt;&lt;br&gt;&lt;font face=&quot;Courier New&quot;&gt;C:\Windows\System32\notepad.exe&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1720" y="1350" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nXt1s3wHksdzEtP6TdvB-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="nXt1s3wHksdzEtP6TdvB-55" target="nXt1s3wHksdzEtP6TdvB-78">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nXt1s3wHksdzEtP6TdvB-55" value="⚠️ Process Hollowing" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f4cccc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1720" y="1430" width="300" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="nXt1s3wHksdzEtP6TdvB-56" value="Payload final exécuté dans notepad.exe" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ea9999;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1720" y="1520" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nXt1s3wHksdzEtP6TdvB-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;" edge="1" parent="1" source="nXt1s3wHksdzEtP6TdvB-48" target="nXt1s3wHksdzEtP6TdvB-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nXt1s3wHksdzEtP6TdvB-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;" edge="1" parent="1" source="nXt1s3wHksdzEtP6TdvB-49" target="nXt1s3wHksdzEtP6TdvB-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nXt1s3wHksdzEtP6TdvB-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;" edge="1" parent="1" source="nXt1s3wHksdzEtP6TdvB-50" target="nXt1s3wHksdzEtP6TdvB-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nXt1s3wHksdzEtP6TdvB-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;" edge="1" parent="1" source="nXt1s3wHksdzEtP6TdvB-52" target="nXt1s3wHksdzEtP6TdvB-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nXt1s3wHksdzEtP6TdvB-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;" edge="1" parent="1" source="nXt1s3wHksdzEtP6TdvB-53" target="nXt1s3wHksdzEtP6TdvB-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nXt1s3wHksdzEtP6TdvB-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;" edge="1" parent="1" source="nXt1s3wHksdzEtP6TdvB-54" target="nXt1s3wHksdzEtP6TdvB-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nXt1s3wHksdzEtP6TdvB-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;" edge="1" parent="1" source="nXt1s3wHksdzEtP6TdvB-55" target="nXt1s3wHksdzEtP6TdvB-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nXt1s3wHksdzEtP6TdvB-78" value="⚠️ Process Hollowing&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;font-weight: normal; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;1. création d’un processus suspendu&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;2. suppression de son image mémoire&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;3. injection d’un exécutable malveillant&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;4. redirection du flux d’exécution. &lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;dashed=1;dashPattern=1 4;" vertex="1" parent="1">
+          <mxGeometry x="2170" y="1390" width="300" height="150" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
