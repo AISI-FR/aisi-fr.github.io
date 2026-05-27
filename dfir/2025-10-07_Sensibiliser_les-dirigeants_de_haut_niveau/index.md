@@ -255,7 +255,7 @@ Une formation régulière et une sensibilisation continue du personnel permetten
 
 ---
 
-# Démonstration de compromissions ayant eu un impact financier et réputationnel traités chez xxx
+# Démonstration de compromissions ayant eu un impact financier et réputationnel traités chez AISI
 
 Chez AISI, nous avons constaté que l’ampleur des dégâts d’une cyberattaque dépend surtout de la rapidité de détection et de l’efficacité de la réponse. Une identification précoce permet de limiter significativement l’impact financier et opérationnel. La réactivité et la maturité sont également déterminantes : un collaborateur doit être capable d'identifier rapidement les signes d’alerte, alerter les bonnes parties prenantes et mobiliser efficacement les ressources appropriées.
 
@@ -400,15 +400,15 @@ La segmentation et la surveillance des privilèges administratifs permettent de 
 
 ## Quatrième incident
 
-Le dernier incident pris en charge par xxx concerne également une PME que nous appellerons **Cuatro**.
+Le dernier incident pris en charge par AISI concerne également une PME que nous appellerons **Cuatro**.
 
-Cuatro a sollicité l’assistance d’xxx après qu’une campagne d’hameçonnage ait permis de récupérer des identifiants via un kit d’hameçonnage sophistiqué. Le courriel malveillant provenait de la boîte légitime d’un partenaire compromis, renforçant son apparence légitime et exploitant la confiance de l’utilisateur.
+Cuatro a sollicité l’assistance d’AISI après qu’une campagne d’hameçonnage ait permis de récupérer des identifiants via un kit d’hameçonnage sophistiqué. Le courriel malveillant provenait de la boîte légitime d’un partenaire compromis, renforçant son apparence légitime et exploitant la confiance de l’utilisateur.
 
 L’attaquant a récupéré des courriels depuis cette boîte pour envoyer de nouveaux messages d’hameçonnage, en y ajoutant une URL malveillante afin de maintenir la chaîne de compromission.
 
 Le premier utilisateur touché — le patient zéro — a été compromis via une technique d'hameçonnage de type « homme du milieu » comme l'ont montré des connexions depuis l'étranger. Les évènements indiquaient également que l’authentification multifacteur était validée et réussie à chaque connexion malveillante.
 
-Le courriel contenait une invitation SharePoint redirigeant l’utilisateur vers un site hébergeant un fichier malveillant. Si l’utilisateur ouvrait ce fichier, il était ensuite dirigé vers une fausse page de connexion Microsoft. En sxxxssant ses identifiants et en validant l’authentification multifacteur, l’attaquant interceptait les authentifiants et le jeton généré pour se connecter au compte de l’utilisateur. Ce dernier était finalement redirigé vers une page légitime de Microsoft pour ne pas éveiller de suspicion.
+Le courriel contenait une invitation SharePoint redirigeant l’utilisateur vers un site hébergeant un fichier malveillant. Si l’utilisateur ouvrait ce fichier, il était ensuite dirigé vers une fausse page de connexion Microsoft. En saisissant ses identifiants et en validant l’authentification multifacteur, l’attaquant interceptait les authentifiants et le jeton généré pour se connecter au compte de l’utilisateur. Ce dernier était finalement redirigé vers une page légitime de Microsoft pour ne pas éveiller de suspicion.
 
 L’analyse du domaine hébergeant le fichier malveillant a révélé que six utilisateurs avaient reçu le courriel d’hameçonnage, dont un potentiellement compromis.
 
@@ -444,7 +444,7 @@ Une réactivité rapide et coordonnée des équipes de sécurité permet de cont
 
 # Conclusion
 
-Les incidents publiés dans la presse et de ceux traités par xxx démontrent que la gravité d’une cyberattaque ne dépend pas uniquement du niveau de sophistication de l’attaquant, mais surtout de la préparation, de la réactivité et de la gouvernance interne de l’entreprise. Une faille connue mais non corrigée, une réaction tardive ou une communication maladroite peuvent transformer un incident technique maîtrisable en une crise financière, opérationnelle et réputationnelle majeure.
+Les incidents publiés dans la presse et de ceux traités par AISI démontrent que la gravité d’une cyberattaque ne dépend pas uniquement du niveau de sophistication de l’attaquant, mais surtout de la préparation, de la réactivité et de la gouvernance interne de l’entreprise. Une faille connue mais non corrigée, une réaction tardive ou une communication maladroite peuvent transformer un incident technique maîtrisable en une crise financière, opérationnelle et réputationnelle majeure.
 
 La bonne posture implique d'aller au-delà de la simple conformité :
 il s’agit de développer une culture partagée du risque, de tester régulièrement les dispositifs de crise, et de placer la cybersécurité au cœur de la gouvernance stratégique.
