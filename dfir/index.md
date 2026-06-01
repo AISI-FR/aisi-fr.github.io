@@ -1,5 +1,5 @@
 ---
-title: Table des matières - DFIR
+title: Table des matières - Dfir
 layout: default
 ---
 
@@ -7,11 +7,12 @@ layout: default
 
 <ul>
   {% assign articles = site.pages | where_exp: "item", "item.path contains 'dfir/'" %}
-  {% for article in articles %}
+  {% assign sorted_articles = articles | sort: "date" | reverse %}
+  {% for article in sorted_articles %}
     {% assign path_parts = article.path | split: "/" %}
     {% if path_parts.size == 3 and path_parts[0] == "dfir" %}
       <li>
-        <a href="{{ article.url | relative_url }}">{{article.title}}</a>
+        <span>{{ article.date | date: "%Y-%m-%d" }}</span> - <a href="{{ article.url | relative_url }}">{{ article.title }}</a>
       </li>
     {% endif %}
   {% endfor %}
