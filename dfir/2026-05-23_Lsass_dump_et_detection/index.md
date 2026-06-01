@@ -1,6 +1,6 @@
 ---
 title: "Lsass dump et détection"
-date: 2026-03-23 09:00:00 +0100
+date: 2026-05-23 09:00:00 +0100
 author: ngt
 categories: [blog]
 layout: default
