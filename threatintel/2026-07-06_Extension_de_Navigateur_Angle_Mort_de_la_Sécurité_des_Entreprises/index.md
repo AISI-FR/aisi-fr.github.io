@@ -13,7 +13,7 @@ tags: [threatintel]
 
 Les navigateurs web *- Chrome, Firefox, etc.-* et leur structure logiciel *- Electron/Chromium -*   sont aujourd'hui au cœur de tous les usages, personnels et professionnels. Dans les environnements d'entreprise, ils sont devenus un point d’accès central : messageries, applications SaaS, consoles d’administration cloud, environnements de dev (VSCode), voire accès distants via des portails web. 
 
-Dans ce contexte, les extensions de navigateur se sont imposées comme des outils indispensables. Qu’il s’agisse de bloqueurs de publicités, de gestionnaires de mots de passe, d’outils de développement, de solutions de productivité, elles enrichissent considérablement les capacités du navigateur.
+Dans ce contexte, **les extensions se sont imposées comme des outils indispensables**. Qu’il s’agisse de bloqueurs de publicités, de gestionnaires de mots de passe, d’outils de développement, de solutions de productivité, elles enrichissent considérablement les capacités du navigateur.
 
 Cette omniprésence s’accompagne cependant d’un **élargissement significatif de la surface d’attaque**. Les extensions bénéficient souvent de privilèges étendus sur le contenu des pages et sur les données utilisateurs, ce qui en fait des cibles particulièrement attractives pour les attaquants, tout en restant largement **sous-estimées** du point de vue de la sécurité.
 
@@ -101,7 +101,7 @@ Afin de toucher autant de monde, les attaquants s'appuient sur des méthodes de 
 
 
 
-![img](../img/Model_Diffusion_Extension_Nav_Mal.png)
+![img](img/Model_Diffusion_Extension_Nav_Mal.png)
 
 ### Cloner une extension existante
 
@@ -118,7 +118,7 @@ https://microsoftedge.microsoft.com/addons/search/ChatGPT
 
 Il existe, lorsque j'écris cet article, plusieurs centaines d'extensions (par exemple plus de 1200 chez Mozilla) dont, pour l'immense majorité, auront une interface similaire, des fonctionnalités similaires, et un code source, là aussi, profondément similaire. 
 
-![img](../img/Addon_Firefox_Chatgpt.png)
+![img](img/Addon_Firefox_Chatgpt.png)
 
 Et même si un certain nombre de ces extensions sont légitimes, possèdent les droits d'utilisation de la marque déposée, et n'ont pas de comportement suspect. Ce n'est pas le cas de toutes les extensions affichées.
 
@@ -152,7 +152,7 @@ LayerXSecurity a publié dans ses chiffres de 2025, que 20% des utilisateurs uti
 Ils ont aussi identifié que certaines autorisations permissives sont plus régulièrement utilisées avec ces outils GenAI.  La permission "scripting" qui donne les droits à l'API chrome correspondante (pouvoir exécuter des scripts arbitrairement dans les pages webs), est deux fois plus utilisée pour les extensions GenAI que pour les autres.
 23.92% contre 14,34 habituellement.
 
-![img](../img/Evolution_Extension_Nav_Mal.png)
+![img](img/Evolution_Extension_Nav_Mal.png)
 
 Cette évolution d'échelle s'accompagne donc aussi d'un changement de la nature, les permissions historiquement sensibles deviennent peu à peu normales et de nombreuses extensions légitimes présentent maintenant des comportements très intrusifs, rendant significativement plus dur de distinguer les extensions légitimes des extensions illégitimes. 
 
@@ -217,8 +217,9 @@ Enfin, la sensibilisation des utilisateurs reste essentielle, notamment sur les 
 | Domaine                                 | Mesures recommandées                                                                                                                                                                                                                               |
 | --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Gouvernance                             | Définir une liste blanche exhaustive d’extensions autorisées<br>Interdire par défaut toute extension non validée<br>Mettre en place un processus de revue de sécurité avant validation<br>Intégrer le navigateur comme un composant critique du SI |
-| Protection des environnements sensibles | Interdire les extensions sur les postes à privilèges élevés (T0 / T1)<br>Interdire les extensions sur les serveurs                                                                                                                                 |
-| Contrôle des usages                     | Empêcher et interdire la synchronisation entre environnements personnels et professionnels<br>                                                                                                                                                     |
+| Protection des environnements sensibles | Interdire les extensions sur les postes à privilèges élevés (T0 / T1) [sous VSCode](https://code.visualstudio.com/docs/enterprise/extensions) ou sur [Chrome](https://support.google.com/chrome/a/answer/9296680?hl=fr) 
+<br>Interdire les extensions sur les serveurs ([voir doc](https://learn.microsoft.com/fr-fr/deployedge/microsoft-edge-manage-extensions-policies))  |
+| Contrôle des usages                     | Empêcher et interdire la synchronisation entre environnements personnels et professionnels via une [architecture à point de sortie unique](#architecture-renforcée)                                                                                                                                                       |
 | Sensibilisation                         | Sensibiliser les utilisateurs aux risques liés aux permissions                                                                                                                                                                                     |
 
 
@@ -231,10 +232,34 @@ La mise en place de politiques de sécurité strictes ne remplace pas une expert
 
 
 
-
 # Annexes
-## Références
+## Architecture renforcée
+Une architecture à point de sortie unique est une architecture qui intègre : 
+* Une accès aux services Cloud via des sorties contrôlées par l'entreprise (Forced Egress / IP Whitelisting)
+* Une double authentification au système d'information (interne ou via VPN) : 
+    * Authentification machine via certificat
+    * Authentification utilisateur via identifiant/mot de passe ou certificat
 
+Cette architecture permet de limiter l'accès aux services Cloud aux machines de l'entreprise connues et de confiance.
+```mermaid
+graph TD
+    subgraph Entreprise
+        A[Utilisateur] -->|Authentification utilisateur| B[VPN/Point d'accès]
+        C[Machine] -->|Authentification machine| B
+        B -->|Accès autorisé| D[Point de Sortie Unique]
+    end
+    
+    D -->|Trafic contrôlé| E[Services Cloud]
+    
+    style A fill:#f9f,stroke:#333
+    style C fill:#bbf,stroke:#333
+    style B fill:#9f9,stroke:#333
+    style D fill:#ff9,stroke:#333
+    style E fill:#99f,stroke:#333
+```
+
+
+## Références
 Attaques sur les navigateurs : https://cdn.builder.io/o/assets%2Ff3a1111ff5be48cdbb123cd9f5795a05%2F18836a2b5990433cabf1e9eaac50df34?alt=media&token=b2fe32c4-b4b5-4ec7-be21-d6b237d9f075&apiKey=f3a1111ff5be48cdbb123cd9f5795a05
 
 Statistiques d'extensions : https://www.aboutchromebooks.com/chrome-extension-ecosystem/
