@@ -244,6 +244,8 @@ Cette architecture permet de limiter l'accès aux services Cloud aux machines de
 
 Ainsi un utilisateur ne peut, de manière triviale, s'authentifier ou synchroniser des données avec un poste personnel ou une machine non maitrisée par l'entreprise.
 
+![img](img/schema.png)
+
 ```mermaid
 graph TD
     subgraph Entreprise
