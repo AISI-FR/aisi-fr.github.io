@@ -1,18 +1,26 @@
+---
+layout: post
+title: "Extension de navigateur, un angle mort de la sécurité des entreprises"
+date: 2026-07-06 12:00:00 +0100
+author: thomas.milleret@aisi.fr
+categories: [blog]
+tags: [threatintel]
+---
 
-## 1. Introduction
+# Introduction
 
 *Les extensions de navigateurs ont-elles aujourd’hui plus de visibilité sur l’activité d’un utilisateur qu’un agent EDR ?*
 
-Les navigateurs web sont aujourd'hui devenus au cœur de tous les usages, personnels et professionnels. Dans les environnements d'entreprise, ils sont devenus un point d’accès central : messageries, applications SaaS, consoles d’administration cloud, environnements de dev, voire accès distants via des portails web. 
+Les navigateurs web *- Chrome, Firefox, etc.-* et leur structure logiciel *- Electron/Chromium -*   sont aujourd'hui au cœur de tous les usages, personnels et professionnels. Dans les environnements d'entreprise, ils sont devenus un point d’accès central : messageries, applications SaaS, consoles d’administration cloud, environnements de dev (VSCode), voire accès distants via des portails web. 
 
 Dans ce contexte, les extensions de navigateur se sont imposées comme des outils indispensables. Qu’il s’agisse de bloqueurs de publicités, de gestionnaires de mots de passe, d’outils de développement, de solutions de productivité, elles enrichissent considérablement les capacités du navigateur.
 
-Cette omniprésence s’accompagne cependant d’un élargissement significatif de la surface d’attaque. Les extensions bénéficient souvent de privilèges étendus sur le contenu des pages et sur les données utilisateurs, ce qui en fait des cibles particulièrement attractives pour les attaquants, tout en restant largement sous-estimées du point de vue de la sécurité.
+Cette omniprésence s’accompagne cependant d’un **élargissement significatif de la surface d’attaque**. Les extensions bénéficient souvent de privilèges étendus sur le contenu des pages et sur les données utilisateurs, ce qui en fait des cibles particulièrement attractives pour les attaquants, tout en restant largement **sous-estimées** du point de vue de la sécurité.
 
-Cet article a pour but d'alerter sur la réalité de cette menace, tout en fournissant des cléfs de compréhension, ainsi que des conseils et recommandations pratiques. Nous analyserons donc dans un premier temps ces risques et les paradoxes qu'ils contiennent, avant d'étudier l'historique de la menace, et les techniques récentes de diffusion.
-Nous conclurons cet article par nos recommandations stratégiques, pour prévenir de ces risques.
+Cet article a pour but d'alerter sur la réalité de cette menace, tout en fournissant des clés de compréhension, ainsi que des conseils et recommandations pratiques. Nous analyserons donc dans un premier temps ces risques et les paradoxes qu'ils contiennent, avant d'étudier l'historique de la menace, et les techniques récentes de diffusion.
+Nous conclurons cet article par nos recommandations de sécurité, pour prévenir de ces risques.
 
-## 2. Un angle mort persistant des stratégies de sécurité
+# Un angle mort persistant des stratégies de sécurité
 
 La démocratisation de l'utilisation d'extensions de navigateur, malgré le gain de productivité incontestable qu'elle apporte, crée un nouveau point d'entrée de choix pour les attaquants, et expose les utilisateurs comme les entreprises à de nouveaux risques, souvent en dehors des méthodes de détection traditionnelles.
 
@@ -36,7 +44,7 @@ Plusieurs constats expliquent ce décalage :
 Tous ces éléments font des extensions de navigateur un vecteur privilégié pour les attaquants, en même temps persistant et discret, peu supervisé tout en étant industrialisable.
 
 
-## 3. Une menace ancienne
+# Une menace ancienne
 
 Les extensions de navigateurs frauduleuses sont pourtant une très vieille menace, et même si les premières extensions correspondaient plus à des projets personnels qu'à des équipes de développeurs, les premières dérives sont arrivées très tôt.
 Le Chrome Web Store, la principale plateforme de distribution d'extensions Chrome, a été lancé en 2010, et c'est peu après que les premières extensions malveillantes ont fait leur apparition.
@@ -74,7 +82,7 @@ Une équipe de l'institut indien de recherche [technologique de Jammu](https://a
 
 Ces nombreuses attaques au cours de l'histoire indiquent clairement le décalage entre ces nouveaux vecteurs et le manque de prise de conscience des utilisateurs. 
 
-## 4. Un changement d’échelle récent
+# Un changement d’échelle récent
 
 Les tendances observées ces dernières années marquent une véritable rupture dans l’évolution de cette menace. Là où les extensions malveillantes relevaient historiquement d’initiatives opportunistes, on observe désormais des campagnes structurées, outillées et pensées pour passer à l’échelle.
 
@@ -87,7 +95,7 @@ Ces chiffres nous montrent que les extensions de navigateurs sont devenues un po
 
 Des compromissions d'extensions à plusieurs centaines de milliers d'utilisateurs sont publiées chaque semaine, tout en impliquant des capacités de persistance et d'exécution beaucoup plus avancées que ces autres vecteurs initiaux.
 
-### Industrialisation des techniques de diffusion
+## Industrialisation des techniques de diffusion
 Ce changement d'échelle est aussi mis en lumière par l'évolution des techniques de diffusion des charges malveillantes.
 Afin de toucher autant de monde, les attaquants s'appuient sur des méthodes de diffusion qui ont fait leur preuve, tout en étant standardisées et industrialisables.
 
@@ -95,7 +103,7 @@ Afin de toucher autant de monde, les attaquants s'appuient sur des méthodes de 
 
 ![img](../img/Model_Diffusion_Extension_Nav_Mal.png)
 
-#### Cloner une extension existante
+### Cloner une extension existante
 
 L’une des plus simples approches, et donc des plus répandues consiste à cloner une extension existante, souvent populaire, en y injectant du code malveillant. 
 Ces copies reprennent l’interface, les fonctionnalités et parfois même les descriptions originales, rendant leur identification difficile pour un utilisateur non averti. Dans certains cas, seules quelques lignes de code suffisent à ajouter des capacités d’exfiltration ou de manipulation de contenu, tout en conservant un comportement globalement conforme aux attentes.
@@ -114,7 +122,7 @@ Il existe, lorsque j'écris cet article, plusieurs centaines d'extensions (par e
 
 Et même si un certain nombre de ces extensions sont légitimes, possèdent les droits d'utilisation de la marque déposée, et n'ont pas de comportement suspect. Ce n'est pas le cas de toutes les extensions affichées.
 
-#### Compromettre une extension légitime
+### Compromettre une extension légitime
 
 La seconde méthode de distribution de la menace consiste à réutiliser une extension légitime. Cette approche est particulièrement efficace car elle s’appuie sur une base d’utilisateurs déjà existante et sur un capital confiance déjà établi.
 
@@ -131,7 +139,7 @@ Cette méthode peut être réalisée de plusieurs manières, comme observé lors
   Au même titre que les autres applications, les extensions de navigateurs reposent souvent sur de nombreuses dépendances externes, et ne sont pas épargnées par les compromissions à large échelle permettant d'introduire du code malveillant via ces dépendances. La différence étant que certaines extensions étant très peu maintenues, les paquets compromis persistent davantage.
 
 
-### L’émergence des extensions basées sur l’IA
+## L’émergence des extensions basées sur l’IA
 
 L’intégration massive de fonctionnalités d’intelligence artificielle en tant qu'extensions de navigateur a profondément modifié le paysage des menaces. En quelques mois, des milliers d’extensions se sont positionnées comme assistants à la rédaction, outils de résumé, copilotes de navigation ou interfaces vers des modèles de langage.
 
@@ -169,7 +177,7 @@ Par leur volume, leurs similitudes avec des extensions légitimes et l’évolut
 
 
 
-## 5. Impacts concrets pour l’entreprise
+# Impacts concrets pour l’entreprise
 
 Les capacités techniques des extensions leur permettent donc d’accéder directement à des données critiques, souvent avant même que les mécanismes de sécurité traditionnels ne puissent intervenir.  
 Elles opèrent au plus près de l’utilisateur, dans le navigateur lui-même, là où transitent identifiants, contenus métiers et interactions avec le système d’information.
@@ -193,7 +201,7 @@ Dans un contexte professionnel, ces risques se traduisent par :
 - exposition réglementaire (RGPD, conformité)
 
 
-## 6. Recommandations stratégiques
+# Recommandations de sécurité
 
 Face à ce constat, AISI recommande plusieurs mesures structurantes pouvant être mises en place à l’échelle d'une organisation afin de réduire significativement cette surface d'exposition.
 La première repose sur une gouvernance stricte des extensions autorisées, en définissant une liste blanche exhaustive, et en interdisant par défaut les extensions non validées.
@@ -224,7 +232,8 @@ La mise en place de politiques de sécurité strictes ne remplace pas une expert
 
 
 
-# Références
+# Annexes
+## Références
 
 Attaques sur les navigateurs : https://cdn.builder.io/o/assets%2Ff3a1111ff5be48cdbb123cd9f5795a05%2F18836a2b5990433cabf1e9eaac50df34?alt=media&token=b2fe32c4-b4b5-4ec7-be21-d6b237d9f075&apiKey=f3a1111ff5be48cdbb123cd9f5795a05
 
