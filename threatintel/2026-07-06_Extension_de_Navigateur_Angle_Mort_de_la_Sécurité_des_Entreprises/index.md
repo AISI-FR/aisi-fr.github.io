@@ -241,6 +241,9 @@ Une architecture à point de sortie unique est une architecture qui intègre :
     * Authentification utilisateur via identifiant/mot de passe ou certificat
 
 Cette architecture permet de limiter l'accès aux services Cloud aux machines de l'entreprise connues et de confiance.
+
+Ainsi un utilisateur ne peut, de manière triviale, s'authentifier ou synchroniser des données avec un poste personnel ou une machine non maitrisée par l'entreprise.
+
 ```mermaid
 graph TD
     subgraph Entreprise
@@ -250,11 +253,11 @@ graph TD
     end
     
     D -->|Trafic contrôlé| E[Services Cloud]
-    
-    style A fill:#f9f,stroke:#333
-    style C fill:#bbf,stroke:#333
-    style B fill:#9f9,stroke:#333
-    style D fill:#ff9,stroke:#333
+
+    style A fill:#944,stroke:#333
+    style C fill:#0bb,stroke:#333
+    style B fill:#a63,stroke:#333
+    style D fill:#593,stroke:#333
     style E fill:#99f,stroke:#333
 ```
 
