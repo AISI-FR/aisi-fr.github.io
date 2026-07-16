@@ -1,0 +1,8 @@
+{%- comment -%}
+  Date longue en français (sans plugin — compatible GitHub Pages).
+  Usage : {% include date-fr.html date=page.date %} → « 15 juillet 2026 »
+{%- endcomment -%}
+{%- assign months = "janvier,février,mars,avril,mai,juin,juillet,août,septembre,octobre,novembre,décembre" | split: "," -%}
+{%- assign mi = include.date | date: "%m" | plus: 0 -%}
+{%- assign idx = mi | minus: 1 -%}
+{{- include.date | date: "%-d" }} {{ months[idx] }} {{ include.date | date: "%Y" -}}

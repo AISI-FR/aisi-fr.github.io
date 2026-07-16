@@ -1,31 +1,55 @@
-# Nom du site
+# ─────────────────────────────────────────────────────────────
+#  AISI Cyber-Team — Blog Jekyll · thème « aisi-blog »
+# ─────────────────────────────────────────────────────────────
 title: AISI Cyber-Team
-description: Cyber-Team Homepage
+description: >-
+  Analyses techniques, veille et recherche — les retours de
+  terrain des équipes cybersécurité d'AISI.
+lang: fr
+# url: https://aisi-fr.github.io   # à renseigner pour la production
 
-# URL du site (remplacez par votre URL GitHub Pages)
+# ── Moteur ────────────────────────────────────────────────────
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  auto_ids: true            # ids automatiques sur les titres (nécessaire au sommaire)
+  syntax_highlighter: rouge
 
-# Paramètres de Jekyll
-#theme: minima  # Thème par défaut de Jekyll
-#remote_theme: academicpages/academicpages.github.io@v0.8.4
-remote_theme: pages-themes/hacker@v0.2.0
-# remote_theme: pages-themes/architect@v0.2.0
-plugins:
-- jekyll-remote-theme
+# Ancien thème gem neutralisé (le thème « aisi-blog » est local).
+# theme:  ~
+# remote_theme: ~
+plugins: []
 
-#custom_css_path: /assets/css/style.css
-
-markdown: kramdown  # Moteur de conversion Markdown
-
-# Dossiers et fichiers à inclure/exclure
-#include: [_pages]
-#include:
-#  - dfir
-#  - offsec
-#  - threatintel
-#exclude: [README.md, LICENSE]
-
-# Paramètres pour les articles de blog
+# ── Permaliens ────────────────────────────────────────────────
+# Les articles sont des page bundles (<catégorie>/<slug>/index.md) ;
+# leur URL découle du chemin de fichier.
 permalink: /:year/:month/:day/:title/
 
+# ── Valeurs par défaut par dossier ────────────────────────────
+# Chaque dossier de contenu = une catégorie. On applique layout + category
+# sans avoir à réécrire chaque fichier. Les pages de liste (<cat>/index.md)
+# redéfinissent localement `layout: category`.
+defaults:
+  - scope: { path: "dfir" }
+    values: { layout: post, category: investigations }
+  - scope: { path: "threatintel" }
+    values: { layout: post, category: threatintel }
+  - scope: { path: "offsec" }
+    values: { layout: post, category: offensive }
 
+# ── Exclusions ────────────────────────────────────────────────
+exclude:
+  - design/
+  - README.md
+  - Tuto.md
+  - Licence_Creative_Commons_Attribution-NonCommercial_4.0.txt
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .sass-cache/
 
+# ── Sass ──────────────────────────────────────────────────────
+sass:
+  style: compressed
+  sass_dir: _sass

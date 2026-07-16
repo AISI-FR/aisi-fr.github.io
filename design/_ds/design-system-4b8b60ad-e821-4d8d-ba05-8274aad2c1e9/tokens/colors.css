@@ -1,0 +1,62 @@
+/* AISI color system — sourced from the official 3-COULEURS palette
+   (100% / 60% / 30% tints on white). */
+:root {
+  /* ---- Base brand colors (100%) ---- */
+  --aisi-blue:   #31a3dd; /* primary  R50  G162 B220 */
+  --aisi-orange: #f06a36; /* accent   R240 G106 B54  */
+  --aisi-gray:   #727480; /* neutral  R114 G116 B128 */
+  --aisi-navy:   #21578e; /* deep     brand blue      */
+  --aisi-white:  #ffffff;
+
+  /* ---- 60% tints (color mixed 60% onto white) ---- */
+  --aisi-blue-60:   color-mix(in srgb, var(--aisi-blue)   60%, #fff);
+  --aisi-orange-60: color-mix(in srgb, var(--aisi-orange) 60%, #fff);
+  --aisi-gray-60:   color-mix(in srgb, var(--aisi-gray)   60%, #fff);
+  --aisi-navy-60:   color-mix(in srgb, var(--aisi-navy)   60%, #fff);
+
+  /* ---- 30% tints ---- */
+  --aisi-blue-30:   color-mix(in srgb, var(--aisi-blue)   30%, #fff);
+  --aisi-orange-30: color-mix(in srgb, var(--aisi-orange) 30%, #fff);
+  --aisi-gray-30:   color-mix(in srgb, var(--aisi-gray)   30%, #fff);
+  --aisi-navy-30:   color-mix(in srgb, var(--aisi-navy)   30%, #fff);
+
+  /* ---- Extended neutral ramp (derived from --aisi-gray) ---- */
+  --gray-50:  #f6f7f8;
+  --gray-100: #eceef0;
+  --gray-200: #d9dbdf;
+  --gray-300: #bcbfc6;
+  --gray-400: #9a9da6;
+  --gray-500: #727480;
+  --gray-600: #565863;
+  --gray-700: #3e404a;
+  --gray-800: #292b32;
+  --gray-900: #16171c;
+
+  /* ---- Semantic aliases ---- */
+  --color-primary:        var(--aisi-blue);
+  --color-primary-hover:  var(--aisi-navy);
+  --color-accent:         var(--aisi-orange);
+  --color-accent-hover:   #d8551f;
+
+  --text-strong:  var(--aisi-navy);
+  --text-body:    var(--gray-800);
+  --text-muted:   var(--gray-500);
+  --text-inverse: #ffffff;
+  --text-link:    var(--aisi-blue);
+  --text-link-hover: var(--aisi-navy);
+
+  --surface-page:    #ffffff;
+  --surface-subtle:  var(--gray-50);
+  --surface-card:    #ffffff;
+  --surface-inverse: var(--aisi-navy);
+
+  --border-subtle:  var(--gray-200);
+  --border-default: var(--gray-300);
+  --border-strong:  var(--gray-400);
+  --border-focus:   var(--aisi-blue);
+
+  --color-success: #1f8a5b;
+  --color-warning: var(--aisi-orange);
+  --color-danger:  #d64545;
+  --color-info:    var(--aisi-blue);
+}

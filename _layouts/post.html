@@ -1,0 +1,82 @@
+---
+layout: default
+---
+{%- assign cat = site.data.categories | where: "id", page.category | first -%}
+{%- assign author = site.data.authors[page.author] -%}
+
+{%- comment -%} Chapô : description explicite, sinon dérivée du corps. {%- endcomment -%}
+{%- assign lead = page.description -%}
+{%- unless lead -%}{%- assign lead = content | strip_html | strip_newlines | truncate: 200 -%}{%- endunless -%}
+
+{%- comment -%} Badges de l'en-tête. {%- endcomment -%}
+{%- assign badge_primary = page.badge_primary | default: page.badge | default: "Cybersécurité" -%}
+{%- assign badge_secondary = page.badge_secondary | default: page.tags[0] -%}
+
+{%- comment -%} Fil d'Ariane — dernier segment. {%- endcomment -%}
+{%- assign subject = page.subject -%}
+{%- unless subject -%}{%- assign subject = page.title | truncatewords: 6 -%}{%- endunless -%}
+
+{%- comment -%} Temps de lecture ≈ 200 mots / min. {%- endcomment -%}
+{%- assign words = content | number_of_words -%}
+{%- assign minutes = words | divided_by: 200 | plus: 1 -%}
+
+{%- assign show_toc = true -%}
+{%- if page.toc == false -%}{%- assign show_toc = false -%}{%- endif -%}
+
+<!-- Bandeau d'en-tête -->
+<section class="hero">
+  <div class="post-hero__inner">
+    <nav class="breadcrumb" aria-label="Fil d'Ariane">
+      <a href="{{ '/' | relative_url }}">Blog</a>
+      <span class="breadcrumb__sep">/</span>
+      {%- if cat -%}<a href="{{ '/' | relative_url }}{{ cat.slug }}/">{{ cat.title }}</a>{%- else -%}<span>Cybersécurité</span>{%- endif -%}
+      <span class="breadcrumb__sep">/</span>
+      <span class="breadcrumb__current">{{ subject }}</span>
+    </nav>
+    <div class="post-hero__badges">
+      {%- if badge_primary -%}<span class="badge badge--orange">{{ badge_primary }}</span>{%- endif -%}
+      {%- if badge_secondary -%}<span class="badge badge--blue">{{ badge_secondary }}</span>{%- endif -%}
+    </div>
+    <h1 class="post-hero__title">{{ page.title }}</h1>
+    {%- if lead -%}<p class="post-hero__lead">{{ lead }}</p>{%- endif -%}
+    <div class="post-meta">
+      <div class="post-meta__author">
+        <div class="post-meta__avatar">{% if author %}{{ author.initials | default: author.name | slice: 0,2 | upcase }}{% else %}AI{% endif %}</div>
+        <div>
+          <div class="post-meta__name">{% if author %}{{ author.name }}{% else %}{{ page.author }}{% endif %}</div>
+          <div class="post-meta__role">{% if author %}{{ author.role }} · AISI{% else %}AISI{% endif %}</div>
+        </div>
+      </div>
+      <div class="post-meta__sep"></div>
+      <div class="post-meta__facts">
+        <span>{%- include date-fr.html date=page.date -%}</span>
+        <span class="post-meta__reading">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          {{ minutes }} min de lecture
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Corps : sommaire + article -->
+<div class="article-grid{% unless show_toc %} article-grid--no-toc{% endunless %}">
+  {%- if show_toc -%}{%- include toc.html -%}{%- endif -%}
+  <article class="prose" id="js-article">
+    {{ content }}
+
+    {%- if page.tags and page.tags.size > 0 -%}
+    <div class="post-tags">
+      {%- for tag in page.tags -%}
+        <span class="tag tag--blue">{{ tag }}</span>
+      {%- endfor -%}
+    </div>
+    {%- endif -%}
+  </article>
+</div>
+
+{%- include author-card.html -%}
+{%- include related.html -%}
+{%- include cta.html title=page.cta_title subtitle=page.cta_subtitle button=page.cta_button href=page.cta_href -%}
+
+<script src="{{ '/assets/js/article.js' | relative_url }}" defer></script>

@@ -1,0 +1,103 @@
+// ═══════════════════════════════════════════════════════════════
+//  Page d'accueil du blog
+// ═══════════════════════════════════════════════════════════════
+.home-hero__inner { max-width: var(--container-wide); margin: 0 auto; padding: 64px 32px 72px; }
+.home-hero__title {
+  font-family: var(--font-display);
+  font-weight: var(--fw-black);
+  font-size: 48px;
+  line-height: 1.06;
+  letter-spacing: var(--ls-tight);
+  margin: 20px 0 20px;
+  max-width: 760px;
+}
+.home-hero__lead {
+  font-size: 20px;
+  line-height: 1.6;
+  color: var(--aisi-blue-60);
+  max-width: 640px;
+  margin: 0;
+}
+.home-stats { display: flex; gap: 32px; margin-top: 40px; flex-wrap: wrap; }
+.home-stats__sep { width: 1px; background: rgba(255, 255, 255, .16); }
+.home-stats__num {
+  font-family: var(--font-display); font-weight: var(--fw-black);
+  font-size: 34px; line-height: 1; color: #fff;
+}
+.home-stats__label {
+  font-size: 13.5px; color: var(--aisi-blue-60); margin-top: 6px;
+  font-family: var(--font-display); font-weight: var(--fw-medium);
+}
+
+// ── Section catégories ──────────────────────────────────────────
+.home-cats { flex: 1; background: var(--gray-50); }
+.home-cats__inner { max-width: var(--container-wide); margin: 0 auto; padding: 64px 32px 80px; }
+.home-cats__head {
+  display: flex; align-items: baseline; justify-content: space-between;
+  gap: 16px; margin-bottom: 32px; flex-wrap: wrap;
+}
+.home-cats__title {
+  font-family: var(--font-display); font-weight: var(--fw-black);
+  font-size: 28px; color: var(--aisi-navy); margin: 0; letter-spacing: var(--ls-snug);
+}
+.home-cats__count {
+  font-size: 14px; color: var(--text-muted);
+  font-family: var(--font-display); font-weight: var(--fw-medium);
+}
+.home-cats__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: stretch;
+}
+
+// ── Carte catégorie ─────────────────────────────────────────────
+.cat-card { display: flex; flex-direction: column; height: 100%; text-decoration: none; }
+.cat-card:hover { color: inherit; }
+.cat-card .card { height: 100%; display: flex; flex-direction: column; }
+.cat-card__body { display: flex; flex-direction: column; height: 100%; min-height: 296px; }
+.cat-card__top {
+  display: flex; align-items: center; justify-content: space-between; margin-bottom: 22px;
+}
+.cat-card__icon {
+  width: 52px; height: 52px; border-radius: 14px;
+  display: flex; align-items: center; justify-content: center; color: #fff;
+}
+.cat-card__count {
+  font-family: var(--font-display); font-weight: var(--fw-black);
+  font-size: 13px; color: var(--text-muted); letter-spacing: .02em;
+}
+.cat-card__title {
+  font-family: var(--font-display); font-weight: var(--fw-black);
+  font-size: 22px; line-height: 1.2; color: var(--aisi-navy);
+  margin: 0 0 12px; letter-spacing: var(--ls-snug);
+  transition: color var(--dur-base) var(--ease-standard); min-height: 53px;
+}
+.cat-card__desc { font-size: 15px; line-height: 1.6; color: var(--gray-700); margin: 0 0 22px; min-height: 72px; }
+.cat-card__tags {
+  display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 24px;
+  min-height: 59px; align-content: flex-start;
+}
+.cat-card__tag {
+  font-family: var(--font-display); font-weight: var(--fw-semibold);
+  font-size: 12px; color: var(--aisi-navy); background: var(--aisi-blue-30);
+  padding: 4px 10px; border-radius: var(--radius-sm);
+}
+.cat-card__foot {
+  margin-top: auto; display: flex; align-items: center; gap: 10px;
+  font-family: var(--font-display); font-weight: var(--fw-bold);
+  font-size: 14px; color: var(--aisi-navy);
+}
+.cat-card__arrow {
+  width: 28px; height: 28px; border-radius: 50%; background: var(--aisi-blue);
+  display: flex; align-items: center; justify-content: center; color: #fff;
+  transition: transform var(--dur-base) var(--ease-standard), background var(--dur-base) var(--ease-standard);
+}
+.cat-card:hover .cat-card__title { color: var(--aisi-blue); }
+.cat-card:hover .cat-card__arrow { transform: translateX(4px); background: var(--aisi-navy); }
+
+@media (max-width: 900px) {
+  .home-hero__title { font-size: 36px; }
+  .home-cats__grid { grid-template-columns: 1fr; }
+  .cat-card__body, .cat-card__title, .cat-card__desc, .cat-card__tags { min-height: 0; }
+}

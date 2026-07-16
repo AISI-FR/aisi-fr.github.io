@@ -3,8 +3,11 @@ title: "Sensibilisation - Hameçonnage MITM"
 date: 2025-10-07 09:00:00 +0100
 author: elf
 categories: [blog]
-layout: default
+layout: post
 tags: [sensibilisation, hameçonnage, phishing, mitm]
+category: investigations
+description: "L'hameçonnage Man-in-the-Middle contourne l'authentification multifacteur en relayant la session en temps réel. Cas concret et parades."
+badge: "Sensibilisation"
 ---
 
 # Hameçonnage Man-In-The-Middle (MITM)

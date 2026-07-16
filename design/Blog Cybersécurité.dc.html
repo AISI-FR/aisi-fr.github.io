@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Mulish:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="_ds/design-system-4b8b60ad-e821-4d8d-ba05-8274aad2c1e9/styles.css">
+<script src="_ds/design-system-4b8b60ad-e821-4d8d-ba05-8274aad2c1e9/_ds_bundle.js"></script>
+<style>
+  body { margin: 0; font-family: var(--font-body); color: var(--text-body); background: #fff; -webkit-font-smoothing: antialiased; }
+  a { color: var(--text-link); text-decoration: none; }
+  a:hover { color: var(--text-link-hover); }
+  .cat-card { display: flex; flex-direction: column; height: 100%; text-decoration: none; }
+  .cat-card:hover { color: inherit; }
+  .cat-card:hover .cat-arrow { transform: translateX(4px); background: var(--aisi-navy); }
+  .cat-card:hover .cat-title { color: var(--aisi-blue); }
+</style>
+</helmet>
+
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#21578e"/><g transform="translate(50 48)" fill="none" stroke="#eaf4fb" stroke-width="5" stroke-linecap="round"><path d="M-13 -2a13 13 0 0 1 26 0" transform="translate(0 -12)"/><rect x="-16" y="-2" width="32" height="26" rx="5" fill="#eaf4fb" stroke="none"/><circle cx="0" cy="8" r="4" fill="#21578e"/><path d="M0 10v7" stroke="#21578e" stroke-width="4"/></g></svg></template>
+
+<div style="min-height:100vh;display:flex;flex-direction:column">
+
+<header style="position:sticky;top:0;z-index:50;background:rgba(255,255,255,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--border-subtle)">
+  <div style="max-width:1180px;margin:0 auto;padding:14px 32px;display:flex;align-items:center;gap:32px">
+    <img src="assets/aisi-mark.png" alt="AISI" style="height:30px;width:auto;display:block" />
+    <nav style="display:flex;gap:4px;margin-left:auto;font-family:var(--font-display);font-size:15px;font-weight:500">
+      <span style="padding:8px 14px;color:var(--text-muted)">Services</span>
+      <span style="padding:8px 14px;color:var(--aisi-navy);font-weight:700">Blog</span>
+      <span style="padding:8px 14px;color:var(--text-muted)">À propos</span>
+      <span style="padding:8px 14px;color:var(--text-muted)">Contact</span>
+    </nav>
+    <x-import component-from-global-scope="DesignSystem_4b8b60.Button" variant="primary" size="sm" hint-size="140px,36px">Nous contacter</x-import>
+  </div>
+</header>
+
+<!-- Hero band -->
+<section style="background:linear-gradient(155deg,var(--aisi-navy) 0%,#173f68 55%,#102d4b 100%);color:#fff">
+  <div style="max-width:1180px;margin:0 auto;padding:64px 32px 72px">
+    <div style="display:inline-flex;align-items:center;gap:8px;font-family:var(--font-display);font-weight:600;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--aisi-blue-60);margin-bottom:20px">
+      <span style="width:20px;height:2px;background:var(--aisi-orange);border-radius:2px"></span>Blog cybersécurité
+    </div>
+    <h1 style="font-family:var(--font-display);font-weight:800;font-size:48px;line-height:1.06;letter-spacing:-.02em;margin:0 0 20px;max-width:760px">Analyses techniques, veille et recherche offensive</h1>
+    <p style="font-size:20px;line-height:1.6;color:var(--aisi-blue-60);max-width:640px;margin:0">Les retours de terrain de nos équipes cybersécurité. Choisissez une catégorie pour explorer nos articles, classés par date.</p>
+    <div style="display:flex;gap:32px;margin-top:40px;flex-wrap:wrap">
+      <div>
+        <div style="font-family:var(--font-display);font-weight:800;font-size:34px;line-height:1;color:#fff">{{ totalArticles }}</div>
+        <div style="font-size:13.5px;color:var(--aisi-blue-60);margin-top:6px;font-family:var(--font-display);font-weight:500">articles publiés</div>
+      </div>
+      <div style="width:1px;background:rgba(255,255,255,.16)"></div>
+      <div>
+        <div style="font-family:var(--font-display);font-weight:800;font-size:34px;line-height:1;color:#fff">3</div>
+        <div style="font-size:13.5px;color:var(--aisi-blue-60);margin-top:6px;font-family:var(--font-display);font-weight:500">domaines d'expertise</div>
+      </div>
+      <div style="width:1px;background:rgba(255,255,255,.16)"></div>
+      <div>
+        <div style="font-family:var(--font-display);font-weight:800;font-size:34px;line-height:1;color:#fff">2026</div>
+        <div style="font-size:13.5px;color:var(--aisi-blue-60);margin-top:6px;font-family:var(--font-display);font-weight:500">dernière mise à jour</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Categories -->
+<section style="flex:1;background:var(--gray-50)">
+  <div style="max-width:1180px;margin:0 auto;padding:64px 32px 80px">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:32px;flex-wrap:wrap">
+      <h2 style="font-family:var(--font-display);font-weight:800;font-size:28px;color:var(--aisi-navy);margin:0;letter-spacing:-.01em">Explorer par catégorie</h2>
+      <span style="font-size:14px;color:var(--text-muted);font-family:var(--font-display);font-weight:500">{{ totalArticles }} articles au total</span>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:stretch">
+      <sc-for list="{{ categories }}" as="cat" hint-placeholder-count="3">
+        <a href="{{ cat.href }}" class="cat-card">
+          <x-import component-from-global-scope="DesignSystem_4b8b60.Card" interactive="{{ true }}" accent="{{ cat.accent }}" style="height:100%;display:flex;flex-direction:column" hint-size="100%,340px">
+            <div style="display:flex;flex-direction:column;height:100%;min-height:296px">
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:22px">
+                <div style="width:52px;height:52px;border-radius:14px;background:{{ cat.iconBg }};display:flex;align-items:center;justify-content:center;color:#fff" data-icon="{{ cat.id }}">
+                  <span data-slot="icon">{{ cat.icon }}</span>
+                </div>
+                <span style="font-family:var(--font-display);font-weight:800;font-size:13px;color:var(--text-muted);letter-spacing:.02em">{{ cat.countLabel }}</span>
+              </div>
+              <h3 class="cat-title" style="font-family:var(--font-display);font-weight:800;font-size:22px;line-height:1.2;color:var(--aisi-navy);margin:0 0 12px;letter-spacing:-.01em;transition:color .15s;min-height:53px">{{ cat.title }}</h3>
+              <p style="font-size:15px;line-height:1.6;color:var(--gray-700);margin:0 0 22px;min-height:72px">{{ cat.desc }}</p>
+              <div style="display:flex;flex-wrap:wrap;gap:7px;margin-bottom:24px;min-height:59px;align-content:flex-start">
+                <sc-for list="{{ cat.tags }}" as="tag" hint-placeholder-count="3">
+                  <span style="font-family:var(--font-display);font-weight:600;font-size:12px;color:var(--aisi-navy);background:var(--aisi-blue-30);padding:4px 10px;border-radius:6px">{{ tag }}</span>
+                </sc-for>
+              </div>
+              <div style="margin-top:auto;display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:700;font-size:14px;color:var(--aisi-navy)">
+                <span>Voir les articles</span>
+                <span class="cat-arrow" style="width:28px;height:28px;border-radius:50%;background:var(--aisi-blue);display:flex;align-items:center;justify-content:center;color:#fff;transition:transform .18s,background .18s">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </div>
+            </div>
+          </x-import>
+        </a>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<footer style="background:var(--aisi-navy);color:#fff;padding:40px 32px">
+  <div style="max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px">
+    <img src="assets/aisi-mark-white.png" alt="AISI" style="height:26px;width:auto;display:block" />
+    <span style="font-size:13px;color:var(--aisi-blue-60)">© 2026 AISI — Infrastructure, Cybersécurité & Gouvernance. Tous droits réservés.</span>
+  </div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  makeIcon(paths) {
+    return React.createElement('svg', { width: 26, height: 26, viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 2, strokeLinecap: 'round', strokeLinejoin: 'round' },
+      paths.map((d, i) => React.createElement('path', { key: i, d })));
+  }
+
+  renderVals() {
+    const cats = [
+      {
+        id: 'investigations',
+        accent: 'blue',
+        iconBg: 'linear-gradient(135deg,var(--aisi-blue),var(--aisi-navy))',
+        icon: this.makeIcon(['M11 3a8 8 0 1 0 0 16 8 8 0 0 0 0-16z', 'M21 21l-4.3-4.3']),
+        title: 'Investigations & Réponse à incident',
+        desc: "Analyses forensiques, détection et retours d'expérience sur des compromissions réelles, du dump LSASS à la remédiation.",
+        tags: ['Forensic', 'Détection', 'DFIR', 'Sensibilisation'],
+        count: 6,
+        href: 'Liste Articles.dc.html?cat=investigations',
+      },
+      {
+        id: 'threatintel',
+        accent: 'orange',
+        iconBg: 'linear-gradient(135deg,var(--aisi-orange),#c74e21)',
+        icon: this.makeIcon(['M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z', 'M2 12h20', 'M12 2a15 15 0 0 1 0 20', 'M12 2a15 15 0 0 0 0 20']),
+        title: 'Intelligence de la menace / ThreatIntel',
+        desc: "Veille sur les acteurs, les campagnes et les modes opératoires. Décryptage des tendances et des menaces émergentes.",
+        tags: ['CTI', 'Acteurs', 'Campagnes', 'IOC'],
+        count: 0,
+        href: 'Liste Articles.dc.html?cat=threatintel',
+      },
+      {
+        id: 'offensive',
+        accent: 'navy',
+        iconBg: 'linear-gradient(135deg,var(--aisi-navy),#0f2a47)',
+        icon: this.makeIcon(['M14.5 3.5l6 6-11 11-6-6z', 'M20.5 9.5l-6-6', 'M3.5 20.5l3-3', 'M9 9l6 6']),
+        title: 'Sécurité Offensive',
+        desc: "Pentest, red team et recherche de vulnérabilités. Techniques d'exploitation et contournement documentés par nos équipes.",
+        tags: ['Pentest', 'Red Team', 'Exploit', 'CVE'],
+        count: 0,
+        href: 'Liste Articles.dc.html?cat=offensive',
+      },
+    ];
+
+    const total = cats.reduce((s, c) => s + c.count, 0);
+
+    const categories = cats.map((c) => ({
+      ...c,
+      countLabel: c.count === 0 ? 'Bientôt' : (c.count + (c.count > 1 ? ' articles' : ' article')),
+    }));
+
+    return { categories, totalArticles: total };
+  }
+}
+</script>
+</body>
+</html>

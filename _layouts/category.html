@@ -1,0 +1,65 @@
+---
+layout: default
+---
+{%- assign cat = site.data.categories | where: "id", page.category | first -%}
+{%- assign articles = site.pages | where: "category", page.category | where: "layout", "post" | sort: "date" | reverse -%}
+{%- assign count = articles | size -%}
+
+<!-- Bandeau d'en-tête -->
+<section class="hero">
+  <div class="cat-hero__inner">
+    <nav class="breadcrumb" aria-label="Fil d'Ariane">
+      <a href="{{ '/' | relative_url }}">Blog</a>
+      <span class="breadcrumb__sep">/</span>
+      <span class="breadcrumb__current">{{ cat.title }}</span>
+    </nav>
+    <div class="cat-hero__row">
+      <span class="cat-hero__icon" style="background:{{ cat.icon_bg }}">
+        {%- include cat-icon.html paths=cat.icon size=28 -%}
+      </span>
+      <div>
+        <h1 class="cat-hero__title">{{ cat.title }}</h1>
+        <p class="cat-hero__desc">{{ cat.desc }}</p>
+        <span class="cat-hero__count">
+          {%- if count == 0 -%}Aucun article pour le moment{%- elsif count == 1 -%}1 article{%- else -%}{{ count }} articles{%- endif -%}
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Liste des articles -->
+<section class="cat-list">
+  <div class="cat-list__inner">
+    {%- if count > 0 -%}
+      {%- assign groups = articles | group_by_exp: "a", "a.date | date: '%Y'" | sort: "name" | reverse -%}
+      {%- for group in groups -%}
+        <div class="year-group">
+          <div class="year-group__head">
+            <h2 class="year-group__year">{{ group.name }}</h2>
+            <span class="year-group__count">{{ group.items | size }} {% if group.items.size == 1 %}article{% else %}articles{% endif %}</span>
+            <span class="year-group__rule"></span>
+          </div>
+          {%- for a in group.items -%}
+            <a href="{{ a.url | relative_url }}" class="art-row">
+              <time class="art-row__date" datetime="{{ a.date | date: '%Y-%m-%d' }}">{{ a.date | date: "%Y-%m-%d" }}</time>
+              <div class="art-row__main">
+                <div class="art-row__title">{{ a.title }}</div>
+                {%- if a.badge -%}<span class="art-row__badge">{{ a.badge }}</span>{%- endif -%}
+              </div>
+              <span class="art-row__arrow">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </span>
+            </a>
+          {%- endfor -%}
+        </div>
+      {%- endfor -%}
+    {%- else -%}
+      <div class="cat-empty">
+        <div class="cat-empty__title">Articles en préparation</div>
+        <p class="cat-empty__text">Nos équipes rédigent les premiers articles de cette catégorie. Revenez prochainement.</p>
+        <a href="{{ '/' | relative_url }}">← Retour aux catégories</a>
+      </div>
+    {%- endif -%}
+  </div>
+</section>
