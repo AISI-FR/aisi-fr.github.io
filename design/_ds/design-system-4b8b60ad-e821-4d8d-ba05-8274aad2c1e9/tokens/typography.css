@@ -1,0 +1,43 @@
+/* AISI typography
+   NOTE: the brand's exact typefaces are not defined in the supplied source
+   (a single color-palette page). The families below are close-matched
+   Google Fonts substitutes — see readme.md "Font substitution". */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Mulish:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  /* Families */
+  --font-display: 'Montserrat', system-ui, sans-serif;
+  --font-body:    'Mulish', system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', ui-monospace, monospace;
+
+  /* Weights */
+  --fw-regular:  400; /* @kind other */
+  --fw-medium:   500; /* @kind other */
+  --fw-semibold: 600; /* @kind other */
+  --fw-bold:     700; /* @kind other */
+  --fw-black:    800; /* @kind other */
+
+  /* Type scale (1.25 major-third) */
+  --fs-display: 3.815rem; /* 61px */
+  --fs-h1:      3.052rem; /* 49px */
+  --fs-h2:      2.441rem; /* 39px */
+  --fs-h3:      1.953rem; /* 31px */
+  --fs-h4:      1.563rem; /* 25px */
+  --fs-h5:      1.25rem;  /* 20px */
+  --fs-body-lg: 1.125rem; /* 18px */
+  --fs-body:    1rem;     /* 16px */
+  --fs-sm:      0.875rem; /* 14px */
+  --fs-xs:      0.75rem;  /* 12px */
+
+  /* Line heights */
+  --lh-tight:   1.1; /* @kind other */
+  --lh-heading: 1.2; /* @kind other */
+  --lh-snug:    1.4; /* @kind other */
+  --lh-body:    1.6; /* @kind other */
+
+  /* Letter spacing */
+  --ls-tight:   -0.02em; /* @kind other */
+  --ls-normal:  0; /* @kind other */
+  --ls-wide:    0.04em; /* @kind other */
+  --ls-caps:    0.08em; /* @kind other */
+}

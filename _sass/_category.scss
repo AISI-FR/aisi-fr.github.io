@@ -1,0 +1,88 @@
+// ═══════════════════════════════════════════════════════════════
+//  Page catégorie / liste d'articles
+// ═══════════════════════════════════════════════════════════════
+.cat-hero__inner { max-width: var(--container-narrow); margin: 0 auto; padding: 48px 32px 56px; }
+
+.breadcrumb {
+  display: flex; align-items: center; gap: 9px; flex-wrap: wrap;
+  font-size: 13px; font-family: var(--font-display); font-weight: var(--fw-medium);
+  color: var(--aisi-blue-60); margin-bottom: 26px;
+}
+.breadcrumb a { color: var(--aisi-blue-60); }
+.breadcrumb a:hover { color: #fff; }
+.breadcrumb__sep { opacity: .5; }
+.breadcrumb__current { color: #fff; opacity: .9; }
+
+.cat-hero__row { display: flex; align-items: flex-start; gap: 20px; }
+.cat-hero__icon {
+  width: 56px; height: 56px; border-radius: 15px; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center; color: #fff;
+}
+.cat-hero__title {
+  font-family: var(--font-display); font-weight: var(--fw-black);
+  font-size: 38px; line-height: 1.1; letter-spacing: var(--ls-tight); margin: 0 0 12px;
+}
+.cat-hero__desc { font-size: 18px; line-height: 1.55; color: var(--aisi-blue-60); max-width: 600px; margin: 0 0 16px; }
+.cat-hero__count {
+  font-family: var(--font-display); font-weight: var(--fw-bold); font-size: 14px;
+  color: #fff; background: rgba(255, 255, 255, .12); padding: 5px 14px; border-radius: var(--radius-pill);
+}
+
+// ── Liste ───────────────────────────────────────────────────────
+.cat-list { flex: 1; }
+.cat-list__inner { max-width: var(--container-narrow); margin: 0 auto; padding: 48px 32px 72px; }
+
+.year-group { margin-bottom: 40px; }
+.year-group__head { display: flex; align-items: center; gap: 16px; margin-bottom: 6px; }
+.year-group__year {
+  font-family: var(--font-display); font-weight: var(--fw-black);
+  font-size: 15px; letter-spacing: .06em; color: var(--aisi-blue); margin: 0;
+}
+.year-group__count { font-size: 13px; color: var(--text-muted); font-family: var(--font-display); font-weight: var(--fw-medium); }
+.year-group__rule { flex: 1; height: 1px; background: var(--border-subtle); }
+
+.art-row {
+  display: grid;
+  grid-template-columns: 128px 1fr auto;
+  gap: 24px;
+  align-items: center;
+  padding: 22px 4px;
+  border-bottom: 1px solid var(--border-subtle);
+  transition: background var(--dur-base) var(--ease-standard);
+}
+.art-row:hover { background: var(--gray-50); }
+.art-row__date { font-family: var(--font-mono); font-size: 13.5px; color: var(--text-muted); white-space: nowrap; }
+.art-row__main { min-width: 0; }
+.art-row__title {
+  font-family: var(--font-display); font-weight: var(--fw-bold);
+  font-size: 17px; line-height: 1.35; color: var(--aisi-navy);
+  transition: color var(--dur-base) var(--ease-standard); text-wrap: pretty;
+}
+.art-row:hover .art-row__title { color: var(--aisi-blue); }
+.art-row__badge {
+  display: inline-block; margin-top: 8px;
+  font-family: var(--font-display); font-weight: var(--fw-semibold);
+  font-size: 11px; letter-spacing: var(--ls-wide); text-transform: uppercase;
+  color: var(--aisi-orange); background: var(--aisi-orange-30);
+  padding: 3px 9px; border-radius: var(--radius-sm);
+}
+.art-row__arrow {
+  opacity: .45; color: var(--aisi-navy); display: flex;
+  transition: transform var(--dur-base) var(--ease-standard), opacity var(--dur-base) var(--ease-standard);
+}
+.art-row:hover .art-row__arrow { transform: translateX(3px); opacity: 1; }
+
+// ── État vide ───────────────────────────────────────────────────
+.cat-empty {
+  text-align: center; padding: 72px 24px;
+  background: var(--gray-50); border: 1px dashed var(--border-subtle);
+  border-radius: var(--radius-lg);
+}
+.cat-empty__title { font-family: var(--font-display); font-weight: var(--fw-black); font-size: 20px; color: var(--aisi-navy); margin-bottom: 10px; }
+.cat-empty__text { font-size: 15px; color: var(--text-muted); max-width: 420px; margin: 0 auto 24px; }
+
+@media (max-width: 900px) {
+  .cat-hero__title { font-size: 30px; }
+  .art-row { grid-template-columns: 1fr auto; }
+  .art-row__date { grid-column: 1 / -1; }
+}

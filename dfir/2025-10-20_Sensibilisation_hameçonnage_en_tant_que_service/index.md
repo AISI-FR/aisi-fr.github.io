@@ -2,9 +2,12 @@
 title: "Sensibilisation - Hameçonnage en tant que service"
 date: 2025-10-20 09:00:00 +0100
 author: elf
-layout: default
+layout: post
 categories: [blog]
 tags: [hameçonnage, phishing, sensibilisation]
+category: investigations
+description: "Les kits d'hameçonnage clés en main industrialisent le phishing. Décryptage du modèle « Phishing-as-a-Service » et des réflexes de défense."
+badge: "Sensibilisation"
 ---
 
 # Sensibilisation — Hameçonnage en tant que service

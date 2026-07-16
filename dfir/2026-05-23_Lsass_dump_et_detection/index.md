@@ -3,8 +3,10 @@ title: "Lsass dump et détection"
 date: 2026-05-23 09:00:00 +0100
 author: ngt
 categories: [blog]
-layout: default
+layout: post
 tags: [privilege_escalation,credentail theft,detection,signature]
+category: investigations
+description: "Comment un dump de la mémoire du processus LSASS permet le vol d'identifiants, et les signatures qui permettent de le détecter côté SOC."
 ---
 
 

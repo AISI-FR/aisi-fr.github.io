@@ -1,0 +1,164 @@
+// ═══════════════════════════════════════════════════════════════
+//  Page d'article
+// ═══════════════════════════════════════════════════════════════
+.post-hero__inner { max-width: var(--container-article); margin: 0 auto; padding: 56px 32px 64px; }
+.post-hero__badges { display: flex; gap: 10px; margin-bottom: 22px; flex-wrap: wrap; }
+.post-hero__title {
+  font-family: var(--font-display); font-weight: var(--fw-black);
+  font-size: 46px; line-height: 1.08; letter-spacing: var(--ls-tight); margin: 0 0 20px;
+}
+.post-hero__lead { font-size: 20px; line-height: 1.6; color: var(--aisi-blue-60); max-width: 660px; margin: 0 0 34px; }
+
+.post-meta { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.post-meta__author { display: flex; align-items: center; gap: 12px; }
+.post-meta__avatar {
+  width: 44px; height: 44px; border-radius: 50%; flex-shrink: 0;
+  background: var(--aisi-blue);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display); font-weight: var(--fw-black); font-size: 16px; color: #fff;
+}
+.post-meta__name { font-family: var(--font-display); font-weight: var(--fw-bold); font-size: 15px; color: #fff; line-height: 1.35; }
+.post-meta__role { font-size: 13px; color: var(--aisi-blue-60); line-height: 1.35; }
+.post-meta__sep { width: 1px; height: 32px; background: rgba(255, 255, 255, .18); }
+.post-meta__facts {
+  display: flex; align-items: center; gap: 18px; flex-wrap: wrap;
+  font-size: 13.5px; color: var(--aisi-blue-60);
+  font-family: var(--font-display); font-weight: var(--fw-medium);
+}
+.post-meta__reading { display: inline-flex; align-items: center; gap: 6px; }
+
+// ── Corps : sommaire + article ──────────────────────────────────
+.article-grid {
+  max-width: var(--container-mid); margin: 0 auto; padding: 56px 32px 40px;
+  display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: 56px; align-items: start;
+}
+// Placement explicite : la prose reste dans la colonne de contenu même
+// quand le sommaire est masqué (attribut `hidden` avant exécution de
+// article.js), sinon la prose retomberait dans la piste 230px.
+.article-grid .toc   { grid-column: 1; }
+.article-grid .prose { grid-column: 2; }
+.article-grid--no-toc { grid-template-columns: 1fr; max-width: var(--container-article); }
+.article-grid--no-toc .prose { grid-column: 1; }
+
+// ── Sommaire ────────────────────────────────────────────────────
+.toc { position: sticky; top: 88px; }
+.toc__title {
+  font-family: var(--font-display); font-weight: var(--fw-black);
+  font-size: 12px; letter-spacing: var(--ls-caps); text-transform: uppercase;
+  color: var(--text-muted); margin-bottom: 16px;
+}
+.toc__nav { display: flex; flex-direction: column; gap: 2px; border-left: 2px solid var(--border-subtle); }
+.toc__link {
+  display: block; padding: 7px 0 7px 16px; margin-left: -2px;
+  font-size: 14px; line-height: 1.4; font-family: var(--font-body);
+  border-left: 2px solid transparent; color: var(--text-muted); font-weight: var(--fw-medium);
+  transition: color var(--dur-base) var(--ease-standard), border-color var(--dur-base) var(--ease-standard);
+}
+.toc__link:hover { color: var(--aisi-navy); }
+.toc__link.is-active { border-left-color: var(--aisi-blue); color: var(--aisi-navy); font-weight: var(--fw-bold); }
+.toc__link--sub { padding-left: 28px; font-size: 13px; }
+
+// ── Prose ───────────────────────────────────────────────────────
+.prose { max-width: 680px; min-width: 0; }
+.prose > :first-child { margin-top: 0; }
+
+.prose p { font-size: 18px; line-height: 1.75; color: var(--gray-800); margin: 0 0 22px; }
+.prose p:first-of-type { font-size: 20px; }
+
+.prose h1 {
+  font-family: var(--font-display); font-weight: var(--fw-black); font-size: 32px;
+  letter-spacing: var(--ls-snug); color: var(--aisi-navy); margin: 52px 0 18px; scroll-margin-top: 96px;
+}
+.prose h2 {
+  font-family: var(--font-display); font-weight: var(--fw-black); font-size: 30px;
+  letter-spacing: var(--ls-snug); color: var(--aisi-navy); margin: 52px 0 18px; scroll-margin-top: 96px;
+}
+.prose h3 {
+  font-family: var(--font-display); font-weight: var(--fw-bold); font-size: 21px;
+  color: var(--aisi-navy); margin: 34px 0 12px; scroll-margin-top: 96px;
+}
+.prose h4 { font-family: var(--font-display); font-weight: var(--fw-bold); font-size: 17px; color: var(--aisi-navy); margin: 26px 0 10px; }
+
+.prose ul { margin: 0 0 22px; padding-left: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; }
+.prose ul li { position: relative; padding-left: 30px; font-size: 18px; line-height: 1.65; color: var(--gray-800); }
+.prose ul li::before {
+  content: ""; position: absolute; left: 6px; top: 11px; width: 7px; height: 7px;
+  border-radius: 2px; background: var(--aisi-blue); transform: rotate(45deg);
+}
+.prose ol { margin: 0 0 22px; padding-left: 22px; display: flex; flex-direction: column; gap: 14px; }
+.prose ol li { font-size: 18px; line-height: 1.65; color: var(--gray-800); padding-left: 6px; }
+.prose ol li::marker { font-family: var(--font-display); font-weight: var(--fw-black); color: var(--aisi-blue); }
+// listes imbriquées : pas de marge résiduelle
+.prose li > ul, .prose li > ol { margin: 12px 0 0; }
+
+.prose strong { color: var(--aisi-navy); font-weight: var(--fw-bold); }
+.prose em { font-style: italic; }
+.prose a { color: var(--text-link); text-decoration: underline; text-underline-offset: 2px; text-decoration-thickness: 1px; }
+.prose a:hover { color: var(--text-link-hover); }
+
+.prose code {
+  font-family: var(--font-mono); font-size: .88em;
+  background: var(--aisi-blue-30); color: var(--aisi-navy);
+  padding: 2px 7px; border-radius: 5px;
+}
+// le code au sein d'un bloc <pre> reprend le thème sombre (cf. _code.scss)
+.prose pre code { background: transparent; color: inherit; padding: 0; border-radius: 0; font-size: 13.5px; }
+
+.prose blockquote {
+  margin: 36px 0; padding: 4px 0 4px 26px; border-left: 4px solid var(--aisi-orange);
+}
+.prose blockquote p {
+  font-family: var(--font-display); font-weight: var(--fw-semibold);
+  font-size: 22px; line-height: 1.5; color: var(--aisi-navy); margin: 0 0 12px;
+}
+.prose blockquote footer,
+.prose blockquote cite { font-size: 14px; color: var(--text-muted); font-style: normal; }
+
+.prose img { display: block; max-width: 100%; height: auto; border-radius: var(--radius-md); margin: 26px 0; box-shadow: var(--shadow-sm); }
+
+.prose figure { margin: 26px 0; }
+.prose figcaption { font-size: 13px; color: var(--text-muted); margin-top: 10px; font-style: italic; }
+
+.prose hr { border: 0; border-top: 1px solid var(--border-subtle); margin: 40px 0; }
+
+.prose table {
+  width: 100%; border-collapse: collapse; margin: 26px 0; font-size: 15px;
+  display: block; overflow-x: auto;
+}
+.prose th, .prose td { border: 1px solid var(--border-subtle); padding: 10px 14px; text-align: left; vertical-align: top; }
+.prose th { background: var(--gray-50); font-family: var(--font-display); font-weight: var(--fw-bold); color: var(--aisi-navy); }
+.prose table img { margin: 0; box-shadow: none; }
+
+// ── Bloc de tags en pied d'article ──────────────────────────────
+.post-tags {
+  display: flex; flex-wrap: wrap; gap: 8px; margin: 40px 0 8px;
+  padding-top: 28px; border-top: 1px solid var(--border-subtle);
+}
+
+// ── Sections annexes ────────────────────────────────────────────
+.author-section { max-width: var(--container-mid); margin: 0 auto; padding: 24px 32px 8px; }
+
+.related { background: var(--gray-50); border-top: 1px solid var(--border-subtle); margin-top: 48px; }
+.related__inner { max-width: var(--container-mid); margin: 0 auto; padding: 64px 32px; }
+.related__title { font-family: var(--font-display); font-weight: var(--fw-black); font-size: 26px; color: var(--aisi-navy); margin: 0 0 28px; letter-spacing: var(--ls-snug); }
+.related__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.related-card { text-decoration: none; display: block; }
+.related-card__eyebrow {
+  font-family: var(--font-display); font-weight: var(--fw-medium); font-size: 12px;
+  letter-spacing: .05em; text-transform: uppercase; margin-bottom: 12px;
+}
+.related-card__eyebrow--blue   { color: var(--aisi-blue); }
+.related-card__eyebrow--orange { color: var(--aisi-orange); }
+.related-card__eyebrow--navy   { color: var(--aisi-navy); }
+.related-card__title { font-family: var(--font-display); font-weight: var(--fw-bold); font-size: 17px; line-height: 1.35; color: var(--aisi-navy); margin: 0 0 10px; }
+.related-card__excerpt { font-size: 14px; line-height: 1.6; color: var(--text-muted); margin: 0 0 14px; }
+.related-card__reading { font-size: 13px; color: var(--text-muted); }
+
+@media (max-width: 900px) {
+  .post-hero__title { font-size: 34px; }
+  .article-grid { grid-template-columns: 1fr; gap: 28px; }
+  .article-grid .toc, .article-grid .prose { grid-column: 1; }
+  .toc { position: static; top: auto; padding: 16px; background: var(--gray-50); border-radius: var(--radius-lg); }
+  .prose { max-width: none; }
+  .related__grid { grid-template-columns: 1fr; }
+}

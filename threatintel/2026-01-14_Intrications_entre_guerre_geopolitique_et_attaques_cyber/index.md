@@ -2,9 +2,12 @@
 title: "Intrications entre guerre-géopolitique et attaques cyber"
 date: 2026-01-14 09:00:00 +0100
 author: elf
-layout: default
+layout: post
 categories: [blog]
 tags: [threatintel, geopolitique]
+category: threatintel
+description: "Comment les tensions géopolitiques et les cyberattaques s'entremêlent : la menace cyber comme instrument militaire, économique et informationnel."
+badge: "Géopolitique"
 ---
 
 # Introduction 

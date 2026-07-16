@@ -1,0 +1,33 @@
+# ─────────────────────────────────────────────────────────────
+#  Auteur·e·s. La clé correspond au champ `author` des articles.
+#  Champs : name, role, initials (2 lettres, avatar), bio.
+#
+#  NOTE : « elf » et « ngt » sont des identifiants ; les libellés
+#  ci-dessous sont des PLACEHOLDERS à remplacer par les vrais
+#  noms/rôles. « thomas.milleret@aisi.fr » et « camille-mercier »
+#  sont renseignés d'après le contenu.
+# ─────────────────────────────────────────────────────────────
+elf:
+  name: "Elisa LE FLOCH"
+  role: "Ingénieur en Réponse à incident"
+  initials: "DLF"
+  bio: "Experte en Réponse à incident dans l'équipe DFIR d'AISI, Elisa intervient sur les investigations numériques, l'analyse de compromissions et la sensibilisation des organisations aux menaces courantes."
+
+mrn:
+  name: "Maminiaina RABAKOSON"
+  role: "Ingénieur en Réponse à incident"
+  initials: "MRN"
+  bio: "Expert en Réponse à incident dans l'équipe DFIR d'AISI, Maminiaina intervient sur les investigations numériques, l'analyse de compromissions et la sensibilisation des organisations aux menaces courantes."
+
+
+ngt:
+  name: "Nirina GALLOT"
+  role: "Analyste SOC"
+  initials: "NGT"
+  bio: "Analyse dans l'équipe SOC d'AISI, Nirina conçoit et affine les règles de supervision, du durcissement des journaux à la chasse aux menaces au sein du SOC managé."
+
+tmt:
+  name: "Thomas Milleret"
+  role: "Analyste SOC"
+  initials: "TMT"
+  bio: "Analyse dans l'équipe SOC d'AISI, Thomas conçoit et affine les règles de supervision, du durcissement des journaux à la chasse aux menaces au sein du SOC managé."

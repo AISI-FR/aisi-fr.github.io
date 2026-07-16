@@ -1,0 +1,75 @@
+---
+layout: default
+---
+{%- comment -%} Tous les articles = pages sous un dossier-catégorie, en layout post. {%- endcomment -%}
+{%- assign all_posts = site.pages | where: "layout", "post" -%}
+{%- assign total = all_posts | size -%}
+
+<!-- Bandeau héro -->
+<section class="hero">
+  <div class="home-hero__inner">
+    <span class="eyebrow"><span class="eyebrow__tick"></span>Blog cybersécurité</span>
+    <h1 class="home-hero__title">Analyses techniques, veille et recherche</h1>
+    <p class="home-hero__lead">Les retours de terrain de nos équipes cybersécurité. Choisissez une catégorie pour explorer nos articles, classés par date.</p>
+    <div class="home-stats">
+      <div>
+        <div class="home-stats__num">{{ total }}</div>
+        <div class="home-stats__label">{% if total == 1 %}article publié{% else %}articles publiés{% endif %}</div>
+      </div>
+      <div class="home-stats__sep"></div>
+      <div>
+        <div class="home-stats__num">3</div>
+        <div class="home-stats__label">domaines d'expertise</div>
+      </div>
+      <div class="home-stats__sep"></div>
+      <div>
+        <div class="home-stats__num">2026</div>
+        <div class="home-stats__label">dernière mise à jour</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section catégories -->
+<section class="home-cats">
+  <div class="home-cats__inner">
+    <div class="home-cats__head">
+      <h2 class="home-cats__title">Explorer par catégorie</h2>
+      <span class="home-cats__count">{{ total }} {% if total == 1 %}article au total{% else %}articles au total{% endif %}</span>
+    </div>
+
+    <div class="home-cats__grid">
+      {%- for cat in site.data.categories -%}
+        {%- assign cat_posts = site.pages | where: "category", cat.id | where: "layout", "post" -%}
+        {%- assign count = cat_posts | size -%}
+        <a class="cat-card" href="{{ '/' | relative_url }}{{ cat.slug }}/">
+          <div class="card card--interactive card--accent-{{ cat.accent }}">
+            <div class="cat-card__body">
+              <div class="cat-card__top">
+                <span class="cat-card__icon" style="background:{{ cat.icon_bg }}">
+                  {%- include cat-icon.html paths=cat.icon size=26 -%}
+                </span>
+                <span class="cat-card__count">
+                  {%- if count == 0 -%}Bientôt{%- elsif count == 1 -%}1 article{%- else -%}{{ count }} articles{%- endif -%}
+                </span>
+              </div>
+              <h3 class="cat-card__title">{{ cat.title }}</h3>
+              <p class="cat-card__desc">{{ cat.desc }}</p>
+              <div class="cat-card__tags">
+                {%- for tag in cat.tags -%}
+                  <span class="cat-card__tag">{{ tag }}</span>
+                {%- endfor -%}
+              </div>
+              <div class="cat-card__foot">
+                <span>Voir les articles</span>
+                <span class="cat-card__arrow">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>

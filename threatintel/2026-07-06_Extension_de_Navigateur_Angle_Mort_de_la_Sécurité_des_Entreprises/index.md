@@ -2,9 +2,11 @@
 layout: post
 title: "Extension de navigateur, un angle mort de la sécurité des entreprises"
 date: 2026-07-06 12:00:00 +0100
-author: thomas.milleret@aisi.fr
+author: tmt
 categories: [blog]
 tags: [threatintel]
+category: threatintel
+description: "Les extensions de navigateur disposent parfois de plus de visibilité qu'un agent EDR. Panorama d'un angle mort de la sécurité des entreprises."
 ---
 
 # Introduction

@@ -1,0 +1,5 @@
+{%- comment -%}
+  Icône SVG d'une catégorie (style Lucide, grille 24, traits 2 px).
+  Paramètres : paths (liste de « d »), size (px, défaut 26).
+{%- endcomment -%}
+<svg width="{{ include.size | default: 26 }}" height="{{ include.size | default: 26 }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{% for d in include.paths %}<path d="{{ d }}"></path>{% endfor %}</svg>
