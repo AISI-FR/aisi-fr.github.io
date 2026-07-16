@@ -1,17 +1,7 @@
 ---
-title: Accueil
+layout: home
+title: Blog cybersécurité
+description: >-
+  Analyses techniques, veille et recherche offensive — les retours de terrain
+  des équipes cybersécurité d'AISI, classés par catégorie.
 ---
-
-AISI sécurise votre entreprise avec des solutions sur-mesure : audit, tests d'intrusion, SOC managé et formations. Faites confiance à notre expertise.
-<ul>
-    <li>
-      <a href="dfir/">Investigations & Réponse à incident</a>
-    </li>
-    <li>
-      <a href="threatintel/"> Intelligence de la menace / ThreatIntel </a>
-    </li>
-    <li>
-      <a href="offsec/"> Sécurité Offensive </a>
-    </li>
-</ul>
-

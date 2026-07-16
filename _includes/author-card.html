@@ -1,0 +1,19 @@
+{%- comment -%} Carte auteur·e. Lit _data/authors.yml via page.author. {%- endcomment -%}
+{%- assign author = site.data.authors[page.author] -%}
+{%- if author -%}
+{%- assign initials = author.initials | default: author.name | slice: 0, 2 | upcase -%}
+<div class="author-section">
+  <div class="author-card-wrap">
+    <div class="card">
+      <div class="author-card">
+        <div class="author-card__avatar">{{ initials }}</div>
+        <div>
+          <div class="author-card__eyebrow">À propos de l'auteur·e</div>
+          <div class="author-card__name">{{ author.name }}</div>
+          <p class="author-card__bio">{{ author.bio }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{%- endif -%}

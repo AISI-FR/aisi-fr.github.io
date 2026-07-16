@@ -3,8 +3,11 @@ title: "Sensibilisation - Arnaque au président"
 date: 2025-10-07 09:00:00 +0100
 author: elf
 categories: [blog]
-layout: default
+layout: post
 tags: [sensibilisation, hameçonnage, phishing, arnaque]
+category: investigations
+description: "Cas concrets, mécanismes et signaux d'alerte de la fraude au président — une menace d'ingénierie sociale qui vise toutes les organisations."
+badge: "Sensibilisation"
 ---
 
 # Arnaque au président 

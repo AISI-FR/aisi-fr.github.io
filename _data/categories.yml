@@ -1,0 +1,43 @@
+# ─────────────────────────────────────────────────────────────
+#  Catégories du blog. 1 entrée = 1 dossier de contenu.
+#  id    : valeur du champ `category` des articles (voir _config.yml defaults)
+#  slug  : dossier physique (= segment d'URL de la page de liste)
+#  accent: blue | orange | navy
+#  icon  : liste de « d » SVG (style Lucide, viewBox 24)
+# ─────────────────────────────────────────────────────────────
+- id: investigations
+  slug: dfir
+  title: "Investigations & Réponse à incident"
+  desc: "Analyses forensiques, détection et retours d'expérience sur des compromissions réelles, du dump LSASS à la remédiation."
+  accent: blue
+  icon_bg: "linear-gradient(135deg,var(--aisi-blue),var(--aisi-navy))"
+  icon:
+    - "M11 3a8 8 0 1 0 0 16 8 8 0 0 0 0-16z"
+    - "M21 21l-4.3-4.3"
+  tags: [Forensic, Détection, DFIR, Sensibilisation]
+
+- id: threatintel
+  slug: threatintel
+  title: "Intelligence de la menace / ThreatIntel"
+  desc: "Veille sur les acteurs, les campagnes et les modes opératoires. Décryptage des tendances et des menaces émergentes."
+  accent: orange
+  icon_bg: "linear-gradient(135deg,var(--aisi-orange),#c74e21)"
+  icon:
+    - "M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"
+    - "M2 12h20"
+    - "M12 2a15 15 0 0 1 0 20"
+    - "M12 2a15 15 0 0 0 0 20"
+  tags: [CTI, Acteurs, Campagnes, IOC]
+
+- id: offensive
+  slug: offsec
+  title: "Sécurité Offensive"
+  desc: "Pentest, red team et recherche de vulnérabilités. Techniques d'exploitation et contournement documentés par nos équipes."
+  accent: navy
+  icon_bg: "linear-gradient(135deg,var(--aisi-navy),#0f2a47)"
+  icon:
+    - "M14.5 3.5l6 6-11 11-6-6z"
+    - "M20.5 9.5l-6-6"
+    - "M3.5 20.5l3-3"
+    - "M9 9l6 6"
+  tags: [Pentest, "Red Team", Exploit, CVE]

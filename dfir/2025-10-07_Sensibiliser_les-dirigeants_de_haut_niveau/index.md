@@ -2,9 +2,12 @@
 title: "Sensibilisation - Sensibiliser les dirigeants de haut niveau"
 date: 2025-10-07 09:00:00 +0100
 author: elf
-layout: default
+layout: post
 categories: [blog]
 tags: [sensibilisation]
+category: investigations
+description: "Pourquoi et comment sensibiliser les dirigeants au risque cyber : impacts réels sur l'activité, la réputation et la confiance des partenaires."
+badge: "Sensibilisation"
 ---
 
 # Contexte 

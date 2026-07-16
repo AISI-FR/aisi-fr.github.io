@@ -1,0 +1,10 @@
+{%- comment -%}
+  Bloc CTA final. Paramètres optionnels : title, subtitle, button, href.
+{%- endcomment -%}
+<section class="cta-section">
+  <div class="cta">
+    <h2 class="cta__title">{{ include.title | default: "Vous êtes cyberattaqué ou suspectez une attaque ?" }}</h2>
+    <p class="cta__sub">{{ include.subtitle | default: "Nos experts SOC réalisent un premier diagnostic de votre posture de sécurité — gratuit et sans engagement." }}</p>
+    <a class="btn btn--accent btn--lg" href="{{ include.href | default: 'https://www.aisi.fr/contact/' }}">{{ include.button | default: "Appelez le 01 84 23 02 91" }}</a>
+  </div>
+</section>

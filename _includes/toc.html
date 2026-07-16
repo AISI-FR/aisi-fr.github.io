@@ -1,0 +1,9 @@
+{%- comment -%}
+  Sommaire. Les entrées sont générées par article.js à partir des
+  titres <h1>/<h2> de l'article (ids kramdown). Scrollspy via
+  IntersectionObserver. Masqué si l'article ne contient aucun titre.
+{%- endcomment -%}
+<aside class="toc" id="js-toc" hidden>
+  <div class="toc__title">Sommaire</div>
+  <nav class="toc__nav" aria-label="Sommaire de l'article"></nav>
+</aside>

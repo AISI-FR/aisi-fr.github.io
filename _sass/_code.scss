@@ -1,0 +1,103 @@
+// ═══════════════════════════════════════════════════════════════
+//  Blocs de code — thème « éditeur » sombre (highlighter: rouge)
+//  Barre supérieure (badge langage + bouton Copier) injectée côté
+//  client par assets/js/code-blocks.js. Pas de gouttière de numéros
+//  de ligne : la sortie Rouge de kramdown est incohérente selon que
+//  le langage de la clôture est précisé ou non ; le badge et le
+//  bouton Copier suffisent au rendu « éditeur » (cf. option B).
+// ═══════════════════════════════════════════════════════════════
+
+// Sortie Rouge : div.language-xxx.highlighter-rouge > div.highlight
+//                > pre.highlight > code
+.highlighter-rouge { margin: 0; }
+
+// ── Conteneur « éditeur » ───────────────────────────────────────
+// `div.highlight` uniquement : `pre.highlight` porte aussi la classe
+// `highlight`, il ne faut donc pas lui appliquer le cadre du conteneur.
+div.highlight {
+  background: #1b1f2a;
+  border: 1px solid rgba(255, 255, 255, .07);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  margin: 26px 0;
+}
+
+// ── Barre supérieure (générée par code-blocks.js) ───────────────
+.code-bar {
+  display: flex;
+  align-items: center;
+  background: #151822;
+  border-bottom: 1px solid rgba(255, 255, 255, .07);
+  padding: 0 10px 0 16px;
+}
+
+.code-lang {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--gray-400);
+}
+
+.code-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 2px;
+  background: #f0a36a; // rappel orange discret
+}
+
+.code-copy {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 8px 0 8px auto; // margin-left:auto → poussé à droite
+  padding: 5px 11px;
+  background: rgba(255, 255, 255, .04);
+  border: 1px solid rgba(255, 255, 255, .1);
+  border-radius: 6px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--gray-400);
+  cursor: pointer;
+  transition: background .15s, color .15s;
+}
+.code-copy:hover { background: rgba(255, 255, 255, .08); color: #e6e8ec; }
+.code-copy.is-copied {
+  background: rgba(95, 206, 127, .15);
+  color: #7fdca0;
+}
+
+// ── Zone de code ────────────────────────────────────────────────
+.highlight pre,
+.highlight > code,
+pre.highlight {
+  margin: 0;
+  padding: 20px 22px;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 13.5px;
+  line-height: 1.65;
+  color: #e6e8ec;
+  background: transparent;
+}
+.highlight pre code { background: transparent; padding: 0; }
+
+// ── Palette de tokens Rouge (thème sombre — inchangé) ───────────
+.highlight {
+  .c, .c1, .cm, .cs, .cd, .cp { color: #8b93a1; font-style: italic; } // commentaires
+  .k, .kn, .kd, .kr, .kt, .kp { color: #7cc7f0; }                     // mots-clés
+  .nt, .na, .nl, .nb, .nn     { color: #7cc7f0; }                     // clés YAML / attributs
+  .s, .s1, .s2, .sb, .sc, .sd, .se, .sh, .si, .sx, .sr, .dl { color: #9fdca0; } // chaînes
+  .mi, .mf, .mh, .mo, .m, .il { color: #f0a36a; }                     // nombres
+  .kc, .no, .bp, .vc, .vg, .vi { color: #f0a36a; }                    // valeurs / constantes
+  .o, .ow, .p                  { color: #c2c7d0; }                    // opérateurs / ponctuation
+  .nf, .fm                     { color: #7cc7f0; }                    // fonctions
+  .err                         { color: #f0605a; }
+  .gh, .gu                     { color: #7cc7f0; font-weight: 700; }
+  .gd                          { color: #f0605a; }
+  .gi                          { color: #9fdca0; }
+}
