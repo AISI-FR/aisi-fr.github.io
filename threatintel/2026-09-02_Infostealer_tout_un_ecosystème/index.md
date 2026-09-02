@@ -2,7 +2,7 @@
 layout: post
 title: "Infostealer: tout un écosystème"
 description: "Comprendre l'écosystème qui tourne autour des infostealers, en partant des développeurs, distributeurs et puis les acheteurs"
-date: 2026-07-15 09:00:00 +0100
+date: 2026-08-15 09:00:00 +0100
 author: mrn
 category: threatintel
 tags: [Infostealer, CTI, "MITRE ATT&CK", DFIR]
