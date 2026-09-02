@@ -28,7 +28,7 @@ Enfin, nous allons proposer quelques bonnes pratiques permettant de limiter le r
 
 ## Infostealer
 
-Les **Infostealers** sont souvent considérés comme juste un logiciel qui va aller voler des logins / mot de passe sur une machine. 
+Les **Infostealers** sont souvent considérés comme des logiciels allant uniquement voler des logins / mot de passe sur une machine. 
 Leur écosystème a évolué pour tendre vers un modèle économique similaire au **Malware-as-a-Service (MaaS)** ou au **Ransomware-as-a-Service (RaaS)**.
 Un **Infostealer** en 2026 est principalement vendu sous forme d'abonnement, avec de multiples fonctionnalités.
 
