@@ -2,7 +2,7 @@
 layout: post
 title: "Infostealer: tout un écosystème"
 description: "Comprendre l'écosystème qui tourne autour des infostealers, en partant des développeurs, distributeurs et puis les acheteurs"
-date: 2026-08-15 09:00:00 +0100
+date: 2026-07-15 09:00:00 +0100
 author: mrn
 category: threatintel
 tags: [Infostealer, CTI, "MITRE ATT&CK", DFIR]
@@ -28,7 +28,7 @@ Enfin, nous allons proposer quelques bonnes pratiques permettant de limiter le r
 
 ## Infostealer
 
-Les **Infostealers** sont souvent considérés comme juste un logiciel qui va aller voler des logins / mot de passe sur une machine. 
+Les **Infostealers** sont souvent considérés comme des logiciels allant uniquement voler des logins / mot de passe sur une machine. 
 Leur écosystème a évolué pour tendre vers un modèle économique similaire au **Malware-as-a-Service (MaaS)** ou au **Ransomware-as-a-Service (RaaS)**.
 Un **Infostealer** en 2026 est principalement vendu sous forme d'abonnement, avec de multiples fonctionnalités.
 
